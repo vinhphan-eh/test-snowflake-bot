@@ -1,4 +1,4 @@
-import { Button } from "@ehrock/hero-design-react";
+import { Button } from "@ehrocks/hero-design-react";
 
 const Test = () => (
   <Button text="Test" onClick={() => {}} sx={{ backgroundColor: "red" }} />
