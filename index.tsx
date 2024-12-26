@@ -1,9 +1,9 @@
 import { Button, Alert } from "@hero-design/rn";
 import styled from "@emotion/native";
 
-const StyledAlert = styled(Alert)(({ theme }) => ({
-  backgroundColor: theme.colors.danger,
-}));
+const StyledAlert = styled(Alert)`
+  background-color: red;
+`;
 
 const Test = () => (
   <>
