@@ -36,6 +36,17 @@ const styles = {
 
 const Sample = () => {
   <>
+    {/* Snowflakes using style prop */}
+    <Tabs barStyle={{ padding: 10 }} />
+    <Tabs.Scroll barStyle={{ padding: 10 }} />
+    <Tabs containerStyle={{ padding: 10, backgroundColor: "red" }} />
+    <Tabs containerStyle={{ width: 100 }} />
+    <Tabs.Scroll containerStyle={{ padding: 10, backgroundColor: "red" }} />
+    <Tabs.Scroll containerStyle={{ width: 100 }} />
+    <TextInput textStyle={{ color: "red", borderColor: "red" }} />
+    <Search.OneLine textStyle={{ color: "red", borderColor: "red" }} />
+    <Toolbar.Message textStyle={{ color: "red", borderColor: "red" }} />
+    {/* Snowflakes using styled components */}
     <StyledButton />
     <StyledLinkButton />
     <StyledIcon />
