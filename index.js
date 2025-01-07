@@ -1,6 +1,14 @@
 // @flow
-import * as React from "react";
-import { Button, Empty, Card } from "@hero-design/rn";
+import React from "react";
+import {
+  Button,
+  Empty,
+  Card,
+  TextInput,
+  Search,
+  Toolbar,
+  Tabs,
+} from "@hero-design/rn";
 import styled from "@emotion/native";
 
 // Snowflakes using styled-components
@@ -22,11 +30,11 @@ const StyledIcon = styled(Icon)`
   color: red;
 `;
 
-const customBtnStyles: { [string]: mixed } = {
+const customBtnStyles: { [key: string]: mixed } = {
   padding: 30,
 };
 
-const styles: { [string]: { [string]: mixed } } = {
+const styles: { [key: string]: { [key: string]: mixed } } = {
   btn: {
     padding: 30,
   },
@@ -37,6 +45,18 @@ const styles: { [string]: { [string]: mixed } } = {
 
 const Sample = (): React.Node => (
   <>
+    {/* Snowflakes using additional style props */}
+    <Tabs barStyle={{ padding: 10 }} containerStyle={{ width: 100 }} />
+    <Tabs.Scroll containerStyle={{ padding: 10, backgroundColor: "red" }} />
+    <Tabs.Scroll containerStyle={{ width: 100 }} />
+    <TextInput textStyle={{ color: "red", borderColor: "red" }} />
+    <Search.OneLine textStyle={{ color: "red", borderColor: "red" }} />
+    <Toolbar.Message textStyle={{ color: "red", borderColor: "red" }} />
+    {/* @snowflake-guard/approved-inline-style attributes: textStyle */}
+    <Toolbar.Message textStyle={{ color: "red", borderColor: "red" }} />
+    {/* @snowflake-guard/approved-inline-style attributes: barStyle */}
+    <Tabs barStyle={{ padding: 10 }} containerStyle={{ width: 100 }} />
+    {/* Snowflakes using styled components */}
     <StyledButton />
     <StyledLinkButton />
     <StyledIcon />
