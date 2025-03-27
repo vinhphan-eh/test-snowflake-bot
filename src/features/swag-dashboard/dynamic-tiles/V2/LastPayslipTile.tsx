@@ -61,7 +61,7 @@ export const TileComponent = ({
       <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
         <Box
           style={{
-            borderRadius: radii.rounded,
+            borderRadius: 20,
             backgroundColor: colors.decorativePrimarySurface,
             paddingTop: !showValue ? space.small : undefined, // trick to move the asterisk to middle
             padding: space.xsmall,
