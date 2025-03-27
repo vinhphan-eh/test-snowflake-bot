@@ -83,7 +83,7 @@ export const TileComponent = ({
           testID="last-payslip-tile-button-icon"
           icon={showValue ? 'eye-invisible-outlined' : 'eye-outlined'}
           size="small"
-          style={{ backgroundColor: '#fefefe', borderRadius: radii.rounded, padding: space.xsmall }}
+          style={{ backgroundColor: '#f1f1f1', borderRadius: radii.rounded, padding: space.xsmall }}
           hitSlop={{ top: space.medium, bottom: space.medium, left: space.medium, right: space.medium }}
           onPress={onIconPress}
         />
