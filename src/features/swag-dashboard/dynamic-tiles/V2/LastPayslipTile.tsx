@@ -61,7 +61,7 @@ export const TileComponent = ({
       <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
         <Box
           style={{
-            borderRadius: radii.rounded,
+            borderRadius: 20,
             backgroundColor: colors.decorativePrimarySurface,
             paddingTop: !showValue ? space.small : undefined, // trick to move the asterisk to middle
             padding: space.xsmall,
@@ -83,7 +83,7 @@ export const TileComponent = ({
           testID="last-payslip-tile-button-icon"
           icon={showValue ? 'eye-invisible-outlined' : 'eye-outlined'}
           size="small"
-          style={{ backgroundColor: colors.defaultGlobalSurface, borderRadius: radii.rounded, padding: space.xsmall }}
+          style={{ backgroundColor: '#222222', borderRadius: radii.rounded, padding: space.xsmall }}
           hitSlop={{ top: space.medium, bottom: space.medium, left: space.medium, right: space.medium }}
           onPress={onIconPress}
         />
