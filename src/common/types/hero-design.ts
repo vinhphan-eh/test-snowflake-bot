@@ -1,5 +1,4 @@
 import type { ComponentProps } from 'react';
-// eslint-disable-next-line ebf-local-rules/no-hd-theme-switcher
 import type { ThemeSwitcher } from '@hero-design/rn';
 import type { BrandSystemPalette, GlobalSystemPalette } from '@hero-design/rn/types/theme/global/colors/types';
 

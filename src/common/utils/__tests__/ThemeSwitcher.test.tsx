@@ -1,13 +1,13 @@
 import React from 'react';
-import { Button, ehWorkDarkSystemPalette, swagLightSystemPalette } from '@hero-design/rn';
+import { Button, swagLightSystemPalette, swagSystemPalette } from '@hero-design/rn';
 import { render } from '@testing-library/react-native';
 import { useSessionStore } from '../../stores/useSessionStore';
 import ThemeSwitcher from '../ThemeSwitcher';
 
 describe('ThemeSwitcher', () => {
-  it('renders correctly when darkmode is true', () => {
+  it('renders correctly when swagRebrandEnabled is false', () => {
     useSessionStore.setState({
-      darkModeEnabled: true,
+      swagRebrandEnabled: false,
     });
 
     const { getByTestId, getByText } = render(
@@ -17,12 +17,12 @@ describe('ThemeSwitcher', () => {
     );
 
     expect(getByText('Content')).toBeVisible();
-    expect(getByTestId('test-button')).toHaveStyle({ backgroundColor: ehWorkDarkSystemPalette.primary });
+    expect(getByTestId('test-button')).toHaveStyle({ backgroundColor: swagSystemPalette.primary });
   });
 
-  it('renders correctly when darkmode is false', () => {
+  it('renders correctly when swagRebrandEnabled is true', () => {
     useSessionStore.setState({
-      darkModeEnabled: false,
+      swagRebrandEnabled: true,
     });
 
     const { getByTestId, getByText } = render(

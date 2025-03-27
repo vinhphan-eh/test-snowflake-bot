@@ -93,7 +93,7 @@ export const PayeeDetailsScreen = () => {
                       testID="accountName-input"
                       error={error?.message}
                       {...field}
-                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>
@@ -121,7 +121,7 @@ export const PayeeDetailsScreen = () => {
                         onBSBChanged(field.value, getFieldState, setValue);
                       }}
                       error={error?.message}
-                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>
@@ -142,7 +142,7 @@ export const PayeeDetailsScreen = () => {
                       testID="accountNumber-input"
                       {...field}
                       error={error?.message}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

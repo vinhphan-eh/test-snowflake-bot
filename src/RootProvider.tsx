@@ -116,7 +116,6 @@ interface Props {
   swagRebrandEnabled?: boolean;
   swagTextAndImageRebrandEnabled?: boolean;
   getEnvironmentConfig?: () => typeof Config;
-  darkModeEnabled?: boolean;
 }
 
 export const RootProvider = ({
@@ -128,7 +127,6 @@ export const RootProvider = ({
   currentPillar,
   currentUser,
   currentWorkzoneOrgId,
-  darkModeEnabled,
   getEnvironmentConfig,
   handleFeedbackPrompt,
   handleInternalRatingPrompt,
@@ -332,12 +330,6 @@ export const RootProvider = ({
       });
     }
   }, [getEnvironmentConfig]);
-
-  useEffect(() => {
-    useSessionStore.setState({
-      darkModeEnabled,
-    });
-  }, [darkModeEnabled]);
 
   return (
     <QueryClientProvider client={queryClient}>

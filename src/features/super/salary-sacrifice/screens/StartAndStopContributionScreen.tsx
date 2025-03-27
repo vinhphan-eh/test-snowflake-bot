@@ -67,7 +67,7 @@ export const StartAndStopContributionScreen = () => {
                       value={field.value as Date}
                       required={field.isRequired}
                       onChange={date => handleOnChangeStartDate(date, setValue)}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>
@@ -83,7 +83,7 @@ export const StartAndStopContributionScreen = () => {
                       confirmLabel="Confirm"
                       value={field.value as Date}
                       onChange={date => handleOnChangeEndDate(date, setValue)}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

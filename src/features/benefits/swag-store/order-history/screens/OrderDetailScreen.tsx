@@ -125,7 +125,7 @@ export const OrderDetailScreen = () => {
             <Box testID={`barCode-${barCodeString}`} style={{ alignItems: 'center' }}>
               <BarcodeCreatorView
                 value={barCodeString}
-                background={colors.defaultGlobalSurface}
+                background={colors.defaultSurface}
                 foregroundColor={colors.onDefaultGlobalSurface}
                 format={BarcodeFormat.CODE128}
                 style={{ width: screenWidth, height: 120, marginBottom: space.large }}

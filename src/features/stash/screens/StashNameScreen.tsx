@@ -58,7 +58,7 @@ export const StashNameScreen = () => {
                       required={field.isRequired}
                       testID="stashName-input"
                       error={error?.message}
-                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

@@ -398,7 +398,7 @@ export const CardManagementDashboardScreen = () => {
               >
                 <SettingToggle
                   borderTopWidth="base"
-                  borderColor="defaultGlobalSurface"
+                  borderColor="defaultSurface"
                   paddingTop="medium"
                   onChange={onContactless}
                   label={labelContactless}

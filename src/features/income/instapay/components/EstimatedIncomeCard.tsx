@@ -126,7 +126,7 @@ export const EstimatedIncomeCard = ({ country, openDescription }: EstimatedIncom
     <Box>
       <Box
         testID="instapay-estimated-income-tile"
-        backgroundColor="defaultGlobalSurface"
+        backgroundColor="defaultSurface"
         padding="medium"
         justifyContent="space-between"
         display="flex"

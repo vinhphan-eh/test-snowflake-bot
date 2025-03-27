@@ -21,7 +21,7 @@ type CustomBottomSheetViewProps = {
 
 export const CustomBottomSheetView = ({
   actions = [],
-  backgroundColor = 'defaultGlobalSurface',
+  backgroundColor,
   bsRef,
   content,
   icon = 'arrow-down',

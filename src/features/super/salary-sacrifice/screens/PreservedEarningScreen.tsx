@@ -134,7 +134,7 @@ If your take-home pay (including the salary sacrifice) is less than the reserve 
                       onChangeText={field.onChange}
                       required={field.isRequired}
                       error={error?.message}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

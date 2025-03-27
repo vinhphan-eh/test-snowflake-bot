@@ -100,7 +100,7 @@ export const EWARecurringPushNotificationSettingToggleByType = ({
     <SettingToggle
       testID="ewa_recurring_push_notification_setting_toggle"
       borderTopWidth="base"
-      borderColor="defaultGlobalSurface"
+      borderColor="defaultSurface"
       paddingTop="medium"
       paddingBottom="smallMedium"
       onChange={onChanged}

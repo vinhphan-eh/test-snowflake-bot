@@ -91,7 +91,7 @@ export const FindYourLostSuperScreen = () => {
       <Page.TopBar hideRight onBack={navigateBack} title={screenTitle} />
       <Page
         keyboardShouldPersistTaps="handled"
-        style={{ paddingBottom: bottomInset, backgroundColor: colors.defaultGlobalSurface }}
+        style={{ paddingBottom: bottomInset, backgroundColor: colors.defaultSurface }}
       >
         <Page.Body marginTop="large">
           <DataCard hideIcon data={consolidationDataCard} />

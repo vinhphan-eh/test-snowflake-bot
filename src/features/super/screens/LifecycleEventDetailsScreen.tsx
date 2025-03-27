@@ -72,7 +72,7 @@ export const LifecycleEventDetailsScreen = () => {
       <Page.TopBar hideRight onBack={onBack} title={screenTitle} />
       <Page
         keyboardShouldPersistTaps="handled"
-        style={{ paddingBottom: bottomInset, backgroundColor: colors.defaultGlobalSurface }}
+        style={{ paddingBottom: bottomInset, backgroundColor: colors.defaultSurface }}
       >
         <OffboardingDetails event={eventDetails} onBack={onBack} onAcceptNotify={onAcceptNotify} />
       </Page>

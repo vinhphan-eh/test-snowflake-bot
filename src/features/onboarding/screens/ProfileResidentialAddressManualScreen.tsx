@@ -134,7 +134,7 @@ const ProfileResidentialAddressManualScreen = () => {
                             testID="unitNumber"
                             error={error?.message}
                             {...field}
-                            style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                            style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                           />
                         )}
                       </Field>
@@ -151,7 +151,7 @@ const ProfileResidentialAddressManualScreen = () => {
                             onChangeText={field.onChange}
                             required={field.isRequired}
                             {...field}
-                            style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                            style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                           />
                         )}
                       </Field>
@@ -169,7 +169,7 @@ const ProfileResidentialAddressManualScreen = () => {
                           onChangeText={field.onChange}
                           required={field.isRequired}
                           {...field}
-                          style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                          style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                         />
                       )}
                     </Field>
@@ -186,7 +186,7 @@ const ProfileResidentialAddressManualScreen = () => {
                           onChangeText={field.onChange}
                           required={field.isRequired}
                           {...field}
-                          style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                          style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                         />
                       )}
                     </Field>
@@ -208,7 +208,7 @@ const ProfileResidentialAddressManualScreen = () => {
                         onChangeText={field.onChange}
                         required={field.isRequired}
                         {...field}
-                        style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                        style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                       />
                     )}
                   </Field>

@@ -1798,7 +1798,7 @@ SPEC CHECKSUMS:
   StripeUICore: d8d6fdcbc77bd8697052501452cbb0fcf1bc6840
   weavr-react-native: fdd8ba723d85e118a43a7b85ef1a16557a999ade
   WeavrComponents: 909bdb9ca03a173e1409cd7aefdbc35a45f2c8ff
-  Yoga: 2a16e58450c48e110211dae1159fb114bbcdcfc0
+  Yoga: e5b887426cee15d2a326bdd34afc0282fc0486ad
 
 PODFILE CHECKSUM: 5174eda637c07013a89505c940d0b26ab33dee25
 

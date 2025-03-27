@@ -127,8 +127,8 @@ const BottomSheet = React.forwardRef<BottomSheetRef, BottomSheetProps>(
       if (title !== undefined) {
         return (
           <Box
-            borderTopLeftRadius="large"
-            borderTopRightRadius="large"
+            borderTopLeftRadius="xlarge"
+            borderTopRightRadius="xlarge"
             backgroundColor={backgroundColor}
             flexDirection="row"
             alignItems="center"

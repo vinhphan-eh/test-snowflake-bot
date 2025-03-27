@@ -51,7 +51,7 @@ export const ManageContributionsScreen = () => {
     <>
       <CustomStatusBar />
       <Page.TopBar hideRight onBack={navigation.goBack} title={screenTitle} />
-      <Box flex={1} backgroundColor="defaultGlobalSurface">
+      <Box flex={1} backgroundColor="defaultSurface">
         <Typography.Title level="h3" style={{ marginLeft: space.medium, marginVertical: space.medium }}>
           Manage contributions
         </Typography.Title>

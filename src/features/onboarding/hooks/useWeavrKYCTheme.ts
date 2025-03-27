@@ -10,7 +10,7 @@ export const useWeavrKYCTheme = () => {
     both: {
       colors: {
         // background
-        backgroundCommon: { light: hexToHex8(colors.defaultGlobalSurface), dark: hexToHex8(colors.darkGlobalSurface) },
+        backgroundCommon: { light: hexToHex8(colors.defaultSurface), dark: hexToHex8(colors.darkGlobalSurface) },
         // primary button
         primaryButtonBackground: { light: hexToHex8(colors.primary), dark: hexToHex8(colors.primary) },
         primaryButtonContent: { light: hexToHex8(colors.onPrimary), dark: hexToHex8(colors.onPrimary) },

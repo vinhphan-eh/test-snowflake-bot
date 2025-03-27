@@ -50,7 +50,7 @@ export const PostcodeInput = ({ control, currentRegion, keyboardType, maxLength 
             onChangeText={field.onChange}
             required={field.isRequired}
             {...field}
-            style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+            style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
           />
         )}
       </Field>

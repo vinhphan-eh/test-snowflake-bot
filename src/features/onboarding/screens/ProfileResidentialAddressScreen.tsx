@@ -149,7 +149,7 @@ const ProfileResidentialAddressScreen = () => {
                 onAddressSelected={onLocationSelect}
                 onOpenManualInput={openManualInput}
                 ref={searchAddressInputRef}
-                textInputStyle={{ backgroundColor: colors.defaultGlobalSurface }}
+                textInputStyle={{ backgroundColor: colors.defaultSurface }}
               />
             </Box>
           </Page.Body>

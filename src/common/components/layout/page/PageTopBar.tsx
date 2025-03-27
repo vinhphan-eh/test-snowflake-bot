@@ -139,7 +139,7 @@ const PageTopBar = ({
     <Box
       flexDirection="row"
       alignItems="center"
-      backgroundColor="defaultGlobalSurface"
+      backgroundColor="defaultSurface"
       paddingHorizontal="medium"
       {...boxProps}
       style={{

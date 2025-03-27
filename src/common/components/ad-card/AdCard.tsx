@@ -22,7 +22,7 @@ interface AdCardProps {
 
 export const AdCard = ({
   accessibilityLabel,
-  backgroundColor = 'defaultGlobalSurface',
+  backgroundColor = 'defaultSurface',
   cta,
   ctaAccessibilityLabel,
   description,

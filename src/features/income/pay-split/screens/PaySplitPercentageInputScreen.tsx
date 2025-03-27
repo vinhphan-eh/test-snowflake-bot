@@ -89,7 +89,7 @@ export const PaySplitPercentageInputScreen = () => {
                           onChangeText={field.onChange}
                           required={field.isRequired}
                           {...field}
-                          style={{ backgroundColor: colors.defaultGlobalSurface }}
+                          style={{ backgroundColor: colors.defaultSurface }}
                         />
                       )}
                     </Field>

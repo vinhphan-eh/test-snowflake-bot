@@ -114,7 +114,7 @@ export const SuperDetailConfirmScreen = () => {
       <Page.TopBar hideRight onBack={navigation.goBack} title={screenTitle} />
       <Page
         keyboardShouldPersistTaps="handled"
-        style={{ paddingBottom: bottomInset, backgroundColor: colors.defaultGlobalSurface }}
+        style={{ paddingBottom: bottomInset, backgroundColor: colors.defaultSurface }}
       >
         <Page.Title>Please confirm your details are correct</Page.Title>
         <Page.Body>

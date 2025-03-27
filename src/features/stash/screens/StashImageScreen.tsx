@@ -47,12 +47,12 @@ export const StashImageScreen = () => {
       <Page.Title
         containerTitleStyle={{
           paddingHorizontal: 'medium',
-          backgroundColor: 'defaultGlobalSurface',
+          backgroundColor: 'defaultSurface',
         }}
       >
         Select an image for your Stash
       </Page.Title>
-      <Page.Body paddingHorizontal="medium" backgroundColor="defaultGlobalSurface">
+      <Page.Body paddingHorizontal="medium" backgroundColor="defaultSurface">
         <FlatList
           data={LIST_STASH_IMAGES}
           numColumns={3}

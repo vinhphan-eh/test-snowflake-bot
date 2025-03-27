@@ -2530,12 +2530,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hero-design/colors@npm:8.45.3":
-  version: 8.45.3
-  resolution: "@hero-design/colors@npm:8.45.3"
+"@hero-design/colors@npm:8.45.2":
+  version: 8.45.2
+  resolution: "@hero-design/colors@npm:8.45.2"
   dependencies:
     values.js: "npm:^2.1.1"
-  checksum: 10c0/ae6e1c1e5159c45be243164cad739ebc9675b47a676b71d2e3726caa4327d0aac7c2e1fb1b1cddfc1350dccbb60c9843282a2c89a9aa175cfec0eb275548b8d9
+  checksum: 10c0/55bb48ed7f20f98d29a72b5456025d994225061619af1ef2b320da5ccc2dc107e7a669d906be10ec7cdae7347c0082373cb535ab7ab1bb0d2018f00f0d2fda71
   languageName: node
   linkType: hard
 
@@ -2578,7 +2578,7 @@ __metadata:
     "@emotion/native": "npm:^11.9.3"
     "@emotion/primitives-core": "npm:11.0.0"
     "@emotion/react": "npm:^11.9.3"
-    "@hero-design/colors": "npm:8.45.3"
+    "@hero-design/colors": "npm:8.45.2"
     date-fns: "npm:^2.16.1"
     hero-editor: "npm:^1.15.5"
     nanoid: "npm:^5.0.9"

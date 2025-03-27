@@ -125,7 +125,7 @@ const DriversLicenceScreen = () => {
                   label={field.label ?? ''}
                   required={field.isRequired}
                   error={error?.message}
-                  style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                  style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                 />
               )}
             </Field>
@@ -139,7 +139,7 @@ const DriversLicenceScreen = () => {
                   onChangeText={field.onChange}
                   required={field.isRequired}
                   {...field}
-                  style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                  style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                 />
               )}
             </Field>
@@ -153,7 +153,7 @@ const DriversLicenceScreen = () => {
                   onChangeText={field.onChange}
                   required={field.isRequired}
                   {...field}
-                  style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                  style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                 />
               )}
             </Field>

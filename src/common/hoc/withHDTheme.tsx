@@ -1,13 +1,14 @@
 import React from 'react';
+import { ThemeSwitcher } from '@hero-design/rn';
+import { useSessionStore } from '../stores/useSessionStore';
 import type { ThemeName } from '../types/hero-design';
-import ThemeSwitcher from '../utils/ThemeSwitcher';
 
 export const withHDTheme =
   <T extends object>(Component: () => JSX.Element, name: ThemeName = 'wallet') =>
   (props: T) => {
+    const swagRebrandEnabled = useSessionStore(s => s.swagRebrandEnabled);
     return (
-      // name isn't doing anything here, will remove in next phase
-      <ThemeSwitcher name={name}>
+      <ThemeSwitcher name={swagRebrandEnabled ? 'swagLight' : name}>
         <Component {...props} />
       </ThemeSwitcher>
     );

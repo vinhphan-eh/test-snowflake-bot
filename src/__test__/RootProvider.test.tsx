@@ -337,21 +337,4 @@ describe('RootProvider', () => {
       getEnvConfig: mockFn,
     });
   });
-
-  it.each`
-    darkModeEnabled
-    ${true}
-    ${false}
-  `('save darkModeEnabled when this prop change to $darkModeEnabled', ({ darkModeEnabled }) => {
-    jest.spyOn(useSessionStore, 'setState');
-    render(
-      <RootProvider {...defaultProps} darkModeEnabled={darkModeEnabled}>
-        <View />
-      </RootProvider>
-    );
-
-    expect(useSessionStore.setState).toHaveBeenCalledWith({
-      darkModeEnabled,
-    });
-  });
 });

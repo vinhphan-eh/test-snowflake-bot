@@ -18,7 +18,7 @@ export const CustomStatusBar = ({
 }: CustomStatusBarProps) => {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
-  const defaultBgColor = barStyle === 'default' ? colors.defaultGlobalSurface : colors.decorativePrimarySurface;
+  const defaultBgColor = barStyle === 'default' ? colors.defaultSurface : colors.decorativePrimarySurface;
   const bgColor = backgroundColor ?? defaultBgColor;
 
   return (

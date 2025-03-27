@@ -52,7 +52,7 @@ export const NearbyOfferDrawerV2 = ({
   onSelectLocation,
   shouldSelectNearestOfferByDefault,
 }: NearbyOfferDrawerV2Props) => {
-  const { colors, radii, shadows, space } = useTheme();
+  const { radii, shadows, space } = useTheme();
   const { bottom: bottomInset } = useSafeAreaInsets();
   const storeIndex = useRef(0);
   const flatlistRef = useRef<BottomSheetFlatListMethods>(null);
@@ -217,11 +217,13 @@ export const NearbyOfferDrawerV2 = ({
           flatlistRef.current?.scrollToOffset({ animated: false, offset: 0 });
         }
       }}
-      backgroundStyle={{
-        backgroundColor: colors.defaultGlobalSurface,
-      }}
+      backgroundStyle={
+        {
+          // leave this empty for border radius to work
+        }
+      }
       style={{
-        backgroundColor: colors.defaultGlobalSurface,
+        backgroundColor: 'white',
         borderRadius: radii.xlarge,
         ...shadows.default,
       }}

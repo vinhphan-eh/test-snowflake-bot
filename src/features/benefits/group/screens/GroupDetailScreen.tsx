@@ -240,7 +240,7 @@ export const GroupDetailScreen = () => {
             style={{
               position: 'absolute',
               bottom: 0,
-              color: colors.defaultGlobalSurface,
+              color: 'white',
               marginBottom: space.xxlarge,
               paddingHorizontal: space.medium,
               marginRight: space.xxxlarge,
