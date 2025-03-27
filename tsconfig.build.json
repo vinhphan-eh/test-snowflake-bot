@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig",
+  "exclude": ["**/*/*.test.*", "**/*/*.spec.*", "**/*/testing.*", "**/*/__mocks__/*"],
+  "include": ["src"],
+  "compilerOptions": {
+    "declarationMap": true,
+    "declaration": true
+  }
+}

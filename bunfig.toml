@@ -1,0 +1,5 @@
+[install]
+[install.scopes]
+meawallet = { url = "https://nexus.ext.meawallet.com/repository/react-native-mpp/",  username = "$MEAWALLET_USERNAME",   password = "$MEAWALLET_PASSWORD", alwaysAuth = true}
+ehrocks = { url = "https://registry.npmjs.org",  token = "$EH_NPM_TOKEN", alwaysAuth = true}
+

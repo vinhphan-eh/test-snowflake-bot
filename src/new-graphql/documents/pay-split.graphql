@@ -1,0 +1,55 @@
+query GetPayAccount($orgId: ID!, $memberId: String!) {
+  me {
+    org(id: $orgId) {
+      member {
+        paySplit {
+          bankAccounts(memberId: $memberId) {
+            splitType
+            details {
+              accountName
+              accountNumber
+              bsb
+              amount
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+mutation SavePayAccount($input: PaySplitInput!) {
+  savePaySplit(input: $input) {
+    success
+  }
+}
+
+query GetAllocations($orgId: ID!) {
+  me {
+    org(id: $orgId) {
+      member {
+        paySplit {
+          allocations {
+            allocation {
+              splitType
+              details {
+                accountName
+                accountNumber
+                bsb
+                amount
+              }
+            }
+            membership {
+              orgId
+              memberId
+              orgUUID
+              orgName
+              xeroConnected
+              isIndependentContractor
+            }
+          }
+        }
+      }
+    }
+  }
+}

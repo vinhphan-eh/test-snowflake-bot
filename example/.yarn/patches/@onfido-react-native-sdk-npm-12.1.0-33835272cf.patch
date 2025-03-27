@@ -1,0 +1,17 @@
+diff --git a/js/Onfido.ts b/js/Onfido.ts
+index db354710be52fd38a4c893b86b41a9221f03e075..61695a283b732d7f3aa865dc9b0ab911fba5beb2 100644
+--- a/js/Onfido.ts
++++ b/js/Onfido.ts
+@@ -2,9 +2,11 @@ import {NativeModules, Platform, NativeEventEmitter} from 'react-native';
+ import {
+     OnfidoAlpha2CountryCode,
+     OnfidoCaptureType,
+-    OnfidoConfig,
+     OnfidoCountryCode,
+     OnfidoDocumentType,
++} from "./config_constants";
++import type {
++    OnfidoConfig,
+     OnfidoError,
+     OnfidoMediaResult,
+     OnfidoResult

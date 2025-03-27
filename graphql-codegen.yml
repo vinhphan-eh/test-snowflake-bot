@@ -1,0 +1,121 @@
+overwrite: true
+generates:
+  src/new-graphql/generated.ts:
+    schema: github:Thinkei/ebf-bff-mobile#main:schema.json
+    documents: 'src/new-graphql/documents/*.graphql'
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-query
+      - typescript-msw
+    config:
+      exposeQueryKeys: true
+      fetcher:
+        func: '../common/shared-hooks/useFetchNewData#useFetchNewData'
+        isReactHook: true
+      addInfiniteQuery: true
+      scalars:
+        Date: 'string'
+        Timestamp: 'string'
+        Map: 'Record<string, unknown>'
+  src/new-graphql/mocks/generated-mocks.ts:
+    schema: github:Thinkei/ebf-bff-mobile#main:schema.json
+    documents: 'src/new-graphql/documents/*.graphql'
+    plugins:
+      - typescript-mock-data:
+          typesFile: '../generated'
+          generateLibrary:
+          scalars:
+            AWSTimestamp: unix_time # gets translated to casual.unix_time
+            Date:
+              generator: date
+              arguments: 'YYYY-MM-DD'
+            Timestamp: moment
+            Map: '{}'
+  e2e/new-graphql/generated.ts:
+    schema: github:Thinkei/ebf-bff-mobile#main:schema.json
+    documents: 'src/new-graphql/documents/*.graphql'
+    plugins:
+      - typescript
+      - typescript-operations
+    config:
+      scalars:
+        Date: 'string'
+        Timestamp: 'string'
+        Map: 'Record<string, unknown>'
+  e2e/new-graphql/mocks/generated-mocks.ts:
+    schema: github:Thinkei/ebf-bff-mobile#main:schema.json
+    documents: 'src/new-graphql/documents/*.graphql'
+    plugins:
+      - typescript-mock-data:
+          typesFile: '../generated'
+          scalars:
+            AWSTimestamp: unix_time # gets translated to casual.unix_time
+            Date:
+              generator: date
+              arguments: 'YYYY-MM-DD'
+            Timestamp: moment
+            Map: '{}'
+  src/graphql/generated.ts:
+    schema: 'src/graphql/schema.json'
+    documents: 'src/graphql/documents/*.ts'
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-query
+      - typescript-msw
+    config:
+      exposeQueryKeys: true
+      fetcher:
+        func: '../common/shared-hooks/useFetchData#useFetchData'
+        isReactHook: true
+      addInfiniteQuery: true
+  src/graphql/mocks/generated-mocks.ts:
+    schema: 'src/graphql/schema.json'
+    documents: 'src/graphql/documents/*.ts'
+    plugins:
+      - typescript-mock-data:
+          typesFile: '../generated'
+          scalars:
+            AWSTimestamp: unix_time # gets translated to casual.unix_time
+  e2e/graphql/generated.ts:
+    schema: 'src/graphql/schema.json'
+    documents: 'src/graphql/documents/*.ts'
+    plugins:
+      - typescript
+      - typescript-operations
+  e2e/graphql/mocks/generated-mocks.ts:
+    schema: 'src/graphql/schema.json'
+    documents: 'src/graphql/documents/*.ts'
+    plugins:
+      - typescript-mock-data:
+          typesFile: '../generated'
+          scalars:
+            AWSTimestamp: unix_time # gets translated to casual.unix_time
+  # temporarily comment out because no usage
+  # src/: #custom query
+  #   schema: 'src/graphql/schema.json'
+  #   documents: 'src/**/graphql-documents/*.graphql'
+  #   preset: 'near-operation-file'
+  #   presetConfig:
+  #     extension: '.generated.ts'
+  #     baseTypesPath: 'graphql/generated.ts'
+  #   plugins:
+  #     - typescript-operations
+  #     - typescript-react-query
+  #     - typescript-msw
+  #   config:
+  #     exposeQueryKeys: true
+  #     fetcher:
+  #       func: 'src/common/shared-hooks/useFetchData#useFetchData'
+  #       isReactHook: true
+  #     addInfiniteQuery: true
+  #   hooks:
+  #     afterOneFileWrite:
+  #       - bash ./scripts/fix-graphqlcodegen-custom-query.sh
+hooks:
+  afterAllFileWrite:
+    - prettier --write
+    - perl -ni -e 'print unless /^  QueryFunctionContext,$/'
+    - perl -ni -e 'print unless /^  CountryOfOrigin,$/'
+    - ./scripts/run-eslint-quietly.sh

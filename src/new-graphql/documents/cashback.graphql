@@ -1,0 +1,520 @@
+query GetCashbackOffers($input: AllOffersInput) {
+  me {
+    cashback {
+      allOffers(input: $input) {
+        edges {
+          node {
+            ... on OnlineOffer {
+              id
+              type
+              categoryCode
+              title
+              description
+              cashback
+              imageUrl
+              logoUrl
+              trackingUrl
+              howItWorks
+              tnc
+              about
+              advertiserName
+              advertiserAbout
+              isCardLinkedOffer
+              popularScore
+              createdAt
+              updatedAt
+            }
+            ... on InStoreOffer {
+              id
+              type
+              offerId
+              title
+              description
+              cashback
+              categoryCode
+              howItWorks
+              imageUrl
+              logoUrl
+              advertiserName
+              advertiserAbout
+              tnc
+              website
+              phone
+              address
+              latitude
+              longitude
+              popularScore
+              startDate
+              endDate
+              createdAt
+              updatedAt
+            }
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+      }
+    }
+  }
+}
+
+query GetOnlineOfferById($id: ID!) {
+  me {
+    cashback {
+      onlineOfferById(id: $id) {
+        id
+        type
+        categoryCode
+        title
+        description
+        cashback
+        imageUrl
+        logoUrl
+        trackingUrl
+        howItWorks
+        tnc
+        about
+        advertiserName
+        advertiserAbout
+        isCardLinkedOffer
+        popularScore
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}
+
+query GetInstoreOfferById($id: ID!) {
+  me {
+    cashback {
+      inStoreOfferById(id: $id) {
+        id
+        type
+        offerId
+        title
+        description
+        cashback
+        categoryCode
+        howItWorks
+        imageUrl
+        logoUrl
+        advertiserId
+        advertiserName
+        advertiserAbout
+        tnc
+        website
+        phone
+        address
+        latitude
+        longitude
+        popularScore
+        startDate
+        endDate
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}
+
+query CashbackCategories {
+  me {
+    cashback {
+      categories {
+        categoryCode
+        name
+        imageUrl
+      }
+    }
+  }
+}
+
+mutation AcceptTnc {
+  cashback {
+    acceptTnc {
+      success
+    }
+  }
+}
+
+query GetFeaturedOffers($input: FeaturesOffersInput) {
+  me {
+    cashback {
+      featuresOffers(input: $input) {
+        edges {
+          node {
+            id
+            type
+            categoryCode
+            title
+            description
+            cashback
+            imageUrl
+            logoUrl
+            trackingUrl
+            howItWorks
+            tnc
+            about
+            advertiserId
+            advertiserName
+            advertiserAbout
+            isCardLinkedOffer
+            popularScore
+            createdAt
+            updatedAt
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+      }
+    }
+  }
+}
+
+query GetCashbackOffersGroupByAdvertiser($input: AllAdvertisersInput) {
+  me {
+    cashback {
+      allAdvertisers(input: $input) {
+        edges {
+          node {
+            id
+            advertiserId
+            advertiserName
+            advertiserAbout
+            type
+            offers {
+              ... on OnlineOffer {
+                id
+                type
+                categoryCode
+                title
+                description
+                cashback
+                imageUrl
+                logoUrl
+                trackingUrl
+                howItWorks
+                tnc
+                about
+                advertiserId
+                advertiserName
+                advertiserAbout
+                isCardLinkedOffer
+                popularScore
+                createdAt
+                updatedAt
+              }
+              ... on InstoreOfferV2 {
+                id
+                type
+                offerId
+                title
+                description
+                cashback
+                categoryCode
+                howItWorks
+                imageUrl
+                logoUrl
+                advertiserName
+                advertiserAbout
+                tnc
+                website
+                phone
+                locations {
+                  locationId
+                  address
+                  latitude
+                  longitude
+                }
+                popularScore
+                startDate
+                endDate
+                createdAt
+                updatedAt
+              }
+            }
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+      }
+    }
+  }
+}
+
+query GetInstoreOffersByAdvertiserId($id: ID!) {
+  me {
+    cashback {
+      instoreOffersByAdvertiserId(id: $id) {
+        offers {
+          id
+          type
+          offerId
+          title
+          description
+          cashback
+          categoryCode
+          howItWorks
+          imageUrl
+          logoUrl
+          advertiserName
+          advertiserAbout
+          tnc
+          website
+          phone
+          locations {
+            locationId
+            address
+            latitude
+            longitude
+          }
+          popularScore
+          startDate
+          endDate
+          createdAt
+          updatedAt
+        }
+      }
+    }
+  }
+}
+
+query GetCashbackTermsAndConditions {
+  me {
+    cashback {
+      termsAndConditions {
+        items {
+          text
+          textVariant
+          type
+          boldText
+          boldTextVariant
+          showListItemSymbol
+          url
+        }
+      }
+    }
+  }
+}
+
+query GetCashbackTermsAndConditionsAcceptance {
+  me {
+    cashback {
+      termsAndConditionsAcceptance {
+        isAccepted
+      }
+    }
+  }
+}
+
+query GetEnrolCardDetailScreen {
+  me {
+    cashback {
+      banks {
+        edges {
+          node {
+            id
+            name
+            region
+          }
+        }
+      }
+      ehProviderId {
+        id
+      }
+    }
+    wallet {
+      ehBinRange {
+        from
+        to
+      }
+    }
+  }
+}
+
+query GetEhProviderId {
+  me {
+    cashback {
+      ehProviderId {
+        id
+      }
+    }
+  }
+}
+
+mutation CashbackDeleteCard($deleteCard: CashbackDeleteCardInput!) {
+  cashback {
+    deleteCard(deleteCard: $deleteCard) {
+      success
+    }
+  }
+}
+
+query CashbackTransactionsV2($input: CashbackTransactionsV2Input) {
+  me {
+    cashback {
+      transactionsV2(input: $input) {
+        total
+        pending
+        confirmed
+        edges {
+          node {
+            id
+            transactionId
+            offerId
+            imageUrl
+            amount
+            created
+            advertiserName
+            state
+            title
+            description
+            recordType
+            purchaseAmount
+            fee
+          }
+        }
+        error {
+          message
+          __typename
+        }
+      }
+    }
+  }
+}
+
+mutation CashbackOnboardUser {
+  cashback {
+    onboardUser {
+      success
+      error {
+        message
+      }
+    }
+  }
+}
+
+query CashbackOnboardStatus {
+  me {
+    cashback {
+      onboardStatus {
+        hasCLOOnboarded
+        error {
+          message
+        }
+      }
+    }
+  }
+}
+
+mutation CashbackUpdateBankDetails($updateBankDetails: UpdateBankDetailsInput!) {
+  cashback {
+    updateBankDetails(updateBankDetails: $updateBankDetails) {
+      success
+      error {
+        message
+      }
+    }
+  }
+}
+
+query CashbackLinkedCards {
+  me {
+    cashback {
+      linkedCards {
+        cards {
+          id
+          description
+          cardMasked
+          issuer
+          expiry
+          provider
+          isExpired
+          lastFour
+        }
+        error {
+          message
+        }
+      }
+    }
+  }
+}
+
+mutation CashbackUpdateBankLinkedStatus($updateBankLinkedStatus: UpdateBankLinkedStatusInput!) {
+  cashback {
+    updateBankLinkedStatus(updateBankLinkedStatus: $updateBankLinkedStatus) {
+      success
+      error {
+        message
+      }
+    }
+  }
+}
+
+mutation CashbackUpdateAutoEnrol($updateAutoEnrolment: UpdateAutoEnrolmentInput!) {
+  cashback {
+    updateAutoEnrolment(updateAutoEnrolment: $updateAutoEnrolment) {
+      success
+      error {
+        message
+      }
+    }
+  }
+}
+
+query CashbackUserBankDetails {
+  me {
+    cashback {
+      userBankDetails {
+        id
+        bsb
+        accountNumber
+        error {
+          message
+        }
+      }
+    }
+  }
+}
+
+query CashbackUserInfo {
+  me {
+    cashback {
+      cashbackUserInfo {
+        error {
+          message
+        }
+        autoEnrolMessage
+        autoEnrolStatus
+        bankLinkedMessage
+        bankLinkedStatus
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}
+
+query CashbackUserToken {
+  me {
+    cashback {
+      cashbackUserToken {
+        token
+        key
+      }
+    }
+  }
+}

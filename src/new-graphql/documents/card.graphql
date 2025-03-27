@@ -1,0 +1,90 @@
+query getCurrentCardDetails {
+  me {
+    wallet {
+      card {
+        details {
+          id
+          status
+        }
+      }
+    }
+  }
+}
+
+query getCurrentCardMeta {
+  me {
+    wallet {
+      card {
+        meta {
+          id
+          contactless
+          frozen
+          magStrip
+          mobileWalletPaymentEnabled
+          digitalWalletDetails {
+            primaryAccountIdentifier
+            wallets {
+              reference
+              type
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query getOemProvisioning {
+  me {
+    wallet {
+      card {
+        oemProvisioning {
+          cardHolderName
+          cardToken
+          expiryDate
+          otp
+        }
+      }
+    }
+  }
+}
+
+mutation createCard($input: CreateCardInput!) {
+  card {
+    create(input: $input) {
+      success
+    }
+  }
+}
+
+mutation activateCard {
+  card {
+    activate {
+      success
+    }
+  }
+}
+
+mutation requestNewCard($address: RequestNewCardInput!) {
+  card {
+    requestNewCard(input: $address) {
+      success
+    }
+  }
+}
+
+mutation updateCardMeta($cardMeta: CardMetaInput!) {
+  card {
+    updateMeta(input: $cardMeta) {
+      success
+    }
+  }
+}
+
+mutation updateCardPin($cardPIN: String!) {
+  card {
+    updatePin(input: $cardPIN) {
+      success
+    }
+  }
+}

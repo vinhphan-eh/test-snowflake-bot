@@ -1,0 +1,318 @@
+
+query GetBuyAgainGiftCards($input: SSBuyAgainGiftCardsInput!) {
+  me {
+    swagStore {
+      buyAgainGiftCards(input: $input) {
+        edges {
+          node {
+            type
+            id
+            name
+            title
+            price
+            discountPrice
+            serviceFee
+            productCode
+            image {
+              url
+              small {
+                url
+                __typename
+              }
+              product {
+                url
+                __typename
+              }
+              large {
+                url
+                __typename
+              }
+              __typename
+            }
+            storefrontImage {
+              url
+              small {
+                url
+                __typename
+              }
+              product {
+                url
+                __typename
+              }
+              large {
+                url
+                __typename
+              }
+              __typename
+            }
+            giftpayBalance
+            productType
+            description
+            termsAndConditions
+            country
+            currency
+            priceInPoints
+            discountPriceInPoints
+            __typename
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+      }
+    }
+  }
+}
+
+query GetDiscountOrderHistory($input: DiscountOrderHistoryInput!) {
+  me {
+    swagStore {
+      discountOrderHistory(input: $input) {
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+        edges {
+          node {
+            id
+            name
+            memberId
+            status
+            createdAt
+            billableAmount
+            transactionFee
+            freightCost
+            orderDetails {
+              id
+              discount
+              quantity
+              price
+              billableAmount
+              transactionFee
+              status
+              freightCost
+              currency
+              purchaseItems {
+                id
+                data {
+                  issuedAt
+                  pinNumber
+                  cardNumber
+                  serialNumber
+                  activationUrl
+                  orderDetailId
+                  expiredAt
+                  giftCode
+                  uberGiftCode
+                  barCode
+                  promoCode
+                  __typename
+                }
+                purchaseId
+                productVariantId
+                fulfil {
+                  id
+                  isUsed
+                  balance
+                  __typename
+                }
+                __typename
+              }
+              productVariant {
+                variantCode
+                price
+                imageUrl
+                discountPrice
+                amount
+                product {
+                  id
+                  code
+                  name
+                  title
+                  imageUrl
+                  logoUrl
+                  email
+                  description
+                  howItWorks
+                  productType
+                  __typename
+                }
+                __typename
+              }
+              __typename
+            }
+            __typename
+          }
+        } 
+        __typename
+      }
+    }
+  }
+}
+
+query GetSSAllOffers($allOffersInput: SSAllOffersInput) {
+  me {
+    swagStore {
+      allOffers(input: $allOffersInput) {
+        edges {
+          node {
+            id
+            name
+            title
+            price
+            discountPrice
+            serviceFee
+            productCode
+            imageUrl
+            productType
+            description
+            termsAndConditions
+            country
+            currency
+            priceInPoints
+            discountPriceInPoints
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+        error {
+          message
+        }
+      }
+    }
+  }
+}
+
+query GetStripePublishableKey($input: StripePublishableKeyInput!) {
+  me {
+    swagStore {
+      stripePublishableKey(input: $input) {
+        publishableKey
+        __typename
+      }
+    }
+  }
+}
+
+query GetDiscountShopProductDetail($input: DiscountShopProductDetailsInput!) {
+  me {
+    swagStore {
+      discountShopProductDetails(input: $input) {
+        product {
+          type
+          id
+          name
+          title
+          price
+          discountPrice
+          productCode
+          image {
+            url
+            small {
+              url
+              __typename
+            }
+            product {
+              url
+              __typename
+            }
+            large {
+              url
+              __typename
+            }
+            __typename
+          }
+          storefrontImage {
+            url
+            small {
+              url
+              __typename
+            }
+            product {
+              url
+              __typename
+            }
+            large {
+              url
+              __typename
+            }
+            __typename
+          }
+          giftpayBalance
+          productType
+          description
+          termsAndConditions
+          email
+          howItWorks
+          logo {
+            url
+            small {
+              url
+              __typename
+            }
+            product {
+              url
+              __typename
+            }
+            large {
+              url
+              __typename
+            }
+            __typename
+          }
+          usage
+          participant
+          disabled
+          supplierId
+          productCategoryId
+          transactionFee
+          instapayFee
+          heroDollarsFee
+          serviceFee
+          supplier {
+            id
+            name
+            description
+            email
+            phoneNumber
+            website
+            __typename
+          }
+          productVariants {
+            id
+            variantCode
+            price
+            amount
+            stockAvailable
+            numberInStock
+            imageUrl
+            discountPrice
+            freightPrice
+            status
+            label
+            cardId
+            position
+            priceInPoints
+            discountPriceInPoints
+            description
+            __typename
+          }
+          country
+          currency
+          priceInPoints
+          discountPriceInPoints
+          __typename
+        }
+      }
+    }
+  }
+}

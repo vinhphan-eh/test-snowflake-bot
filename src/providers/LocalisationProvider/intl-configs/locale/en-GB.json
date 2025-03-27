@@ -1,0 +1,64 @@
+{
+  "support": {
+    "caption": "We are here to answer your {pillar}-related queries."
+  },
+  "instapay": {
+    "drawdownSurveyCta": {
+      "title": "Your feedback is important to us",
+      "subtitle": "Please let us know your thoughts",
+      "button": "Share your feedback",
+      "secondaryButton": "Maybe later"
+    },
+    "drawdownSurveyScreen": {
+      "topBarTitle": "Share your feedback",
+      "title": "Your feedback is invaluable to us",
+      "submitButton": "Submit",
+      "notNowButton": "Not now",
+      "usageReason": {
+        "question": "Why did you use Earned Wage Access?",
+        "otherInputLabel": "Reason",
+        "option1": "Emergency use",
+        "option2": "Savings",
+        "option3": "Managing bills",
+        "option4": "Spending",
+        "option5": "Other"
+      },
+      "idealFreq": {
+        "question": "What is your ideal pay frequency?",
+        "option1": "Daily",
+        "option2": "Weekly",
+        "option3": "Fortnightly",
+        "option4": "Monthly"
+      },
+      "moreFeedback": {
+        "question": "Would you like to provide more feedback later?",
+        "option1": "Yes",
+        "option2": "No"
+      }
+    },
+    "howItWorksDetails": {
+      "whatPayIsEligible": {
+        "title": "What pay is eligible?",
+        "content": "You are eligible to access 50% of your unpaid net pay owed using earned wage access.There is a maximum withdrawal limit of {withdrawalMaxLimit} per week."
+      },
+      "howAreFundsDeducted": {
+        "title": "How are funds deducted?",
+        "content1": "Earned Wage Access Now transactions in a given pay period will be deducted from your payslip in that pay period's pay run.",
+        "content2": "You will see the transaction reflected on your payslip as a deduction, with a corresponding reference number in your Earned Wage Access Now history."
+      },
+      "howAreFundsCalculated": {
+        "title": "How are funds calculated?",
+        "content1": "Earned Wage Access Now 'Available funds' shows 50% of an estimated total amount of money eligible for withdrawal. This total amount is calculated based on the amount of time you have worked - but have not yet been paid for - in the current pay period.",
+        "content2": "For salaried employees, InstaPay Now 'Available funds' shows 50% of a proportion of your salary eligible for withdrawal. This proportion is calculated based on the total number of days you have worked in the current pay period."
+      },
+      "whatAreTheFees": {
+        "title": "What are the fees?",
+        "content": "A 1% fee is charged per transaction."
+      },
+      "whenWillIReceiveMyFunds": {
+        "title": "When will I receive my funds?",
+        "content": "You will typically receive your funds within 1-2 hours depending on your bank."
+      }
+    }
+  }
+}

@@ -1,0 +1,1641 @@
+{
+  "common": {
+    "next": "Next",
+    "close": "Close",
+    "not.now": "Not now",
+    "something.wrong.went.wrong.try.again": "Something went wrong, please try again later",
+    "submit": "Submit",
+    "skip": "Skip",
+    "letGo": "Let's go",
+    "add": "Add",
+    "cancel": "Cancel",
+    "back": "Back",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "confirmation": "Confirmation",
+    "feedback": "Feedback",
+    "continue": "Continue",
+    "yes": "Yes",
+    "no": "No",
+    "noThanks": "No thanks",
+    "confirmed": "Confirmed",
+    "settled": "Settled",
+    "pending": "Pending",
+    "rejected": "Rejected",
+    "paid": "Paid",
+    "status": "Status",
+    "learnMore": "Learn more",
+    "done": "Done",
+    "remindMe": "Remind me",
+    "example": "Example",
+    "privacyPolicy": "Privacy Policy",
+    "gotIt": "Got it",
+    "getIt": "Get it",
+    "getItNow": "Get it now",
+    "maybeLater": "Maybe later",
+    "later": "Later",
+    "employmentHeroGroup": "Employment Hero Group",
+    "tnc": "Terms and conditions",
+    "bills": {
+      "title": {
+        "bills": "Bills",
+        "electricity": "Electricity",
+        "gas": "Gas"
+      },
+      "button": {
+        "renew": "Renew",
+        "signUp": "Sign up"
+      },
+      "status": {
+        "approved": "APPROVED",
+        "pendingApproval": "PENDING APPROVAL",
+        "unspecified": "UNSPECIFIED"
+      }
+    },
+    "howItWorks": "How it works",
+    "howItWorksWithoutQuestionMark": "How it works",
+    "availableWithAmount": "Available: {amount}",
+    "current": "CURRENT",
+    "thankYou": "Thank you",
+    "mostPopular": "MOST POPULAR",
+    "update": "Update",
+    "success": "Success",
+    "other": "Other",
+    "edit": "Edit",
+    "gettingStarted": "Getting started",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "recommended": "Recommended",
+    "findOutMore": "Find out more"
+  },
+  "support": {
+    "caption": "We are here to answer your {pillar}-related questions.",
+    "instapaySection": "Earned Wage Access",
+    "instapayHistory": {
+      "title": "Earned Pay history",
+      "paymentHistory": "Earned Pay history",
+      "noTransaction": "No transactions available",
+      "filter": "Filter",
+      "appliedFilters": "Filter ({count})",
+      "transaction": {
+        "account": "Account",
+        "amount": "Amount",
+        "bsb": "BSB",
+        "reference": "REF NO.",
+        "sortCode": "Sort code"
+      },
+      "all": "All",
+      "instapayNow": "Earned Pay",
+      "instapayDaily": "Earned Pay Daily"
+    },
+    "financialWellness": {
+      "title": "Financial wellness and support",
+      "heading": "Build your financial wellness",
+      "sections": {
+        "myFinancialInsights": {
+          "title": "My financial insights",
+          "readTime": "{minutesReading} mins read",
+          "carouselItem1Title": "We need to talk about financial wellness at work",
+          "carouselItem2Title": "5 Tips for creating a bulletproof budget",
+          "carouselItem3Title": "How to cut everyday expenses and save money",
+          "carouselItem4Title": "Employee Perks in Australia 2024"
+        },
+        "needMoreHelp": {
+          "title": "Need more help?",
+          "manageYourWageAccess": {
+            "title": "Manage your wage access settings",
+            "bottomSheet": {
+              "header": "Confirmation",
+              "content": "Are you sure you want to disable all earned wage access features? All earned wage products will no longer be available.",
+              "cancel": "Cancel",
+              "disable": "Disable"
+            }
+          }
+        }
+      },
+      "disableEwaFeatures": {
+        "success": "We have successfully received your request. The process will be completed within one working day.",
+        "failure": "Failed to request disabling all earned wage access features"
+      }
+    }
+  },
+  "community": {
+    "experiment": {
+      "community.plan": {
+        "name": "community plan",
+        "join.waitlist": "Join the waitlist",
+        "join.later": "Maybe later"
+      },
+      "intro": {
+        "title1": "Get paid daily",
+        "body1": "We're introducing a new way to get paid in real time, no more waiting weeks for payday! Feel the confidence of knowing you can afford unexpected things that come up in life, or save even faster, all without relying on loans or finance."
+      },
+      "survey": {
+        "welcome": "Woohoo! You have successfully joined our swag waitlist to get paid daily",
+        "dailypay": {
+          "heading": "Share your preferences below. Choose as many as you'd like!",
+          "subheading": "If I received pay daily, I would use my pay to...",
+          "expectation1": "Cover rent/mortgage",
+          "expectation2": "Cover my bills",
+          "expectation3": "Save faster",
+          "expectation4": "Spend my wages",
+          "expectation5": "Invest",
+          "expectation6": "Earn interest",
+          "expectation7": "Pay off my loans",
+          "expectation8": "For emergency cost",
+          "expectation9": "Treat myself"
+        },
+        "community": {
+          "heading": "Share your swag savings preferences below. Choose as many as you'd like!",
+          "subheading": "I would use swag to...",
+          "expectation1": "Unlock better deals",
+          "expectation2": "Enjoy discounts",
+          "expectation3": "Support local small businesses",
+          "expectation4": "Boost my savings",
+          "expectation5": "Treat myself",
+          "expectation6": "Connect with community",
+          "expectation7": "Contribute more to the community"
+        }
+      },
+      "not.now.survey": {
+        "heading": "We'd love to hear your thoughts. What's the reason you're not interested in getting paid daily right now?",
+        "reason1": "No time",
+        "reason2": "No current need",
+        "reason3": "Not interested",
+        "reason4": "Don't understand the offering",
+        "reason5": "Other financial priorities",
+        "reason6": "Privacy concerns",
+        "reason.other": "Other concerns (please specify)",
+        "reason.other.title": "Reason",
+        "reason.other.error": "Please enter a reason"
+      },
+      "income-dashboard": {
+        "title": "Want to get paid daily?",
+        "description": "Find out more"
+      },
+      "swag-dashboard-A": {
+        "title": "It's more fun to get paid daily!",
+        "description": "Find out how to get paid the same day you do work."
+      },
+      "swag-dashboard-B": {
+        "title": "Get paid daily and save even faster",
+        "description": "Find out how to get paid the same day you do work."
+      },
+      "upcomming": "UPCOMING",
+      "onboarding": {
+        "intro": {
+          "heading": "Level up your pay and savings.",
+          "body": "You can get paid daily, helping you reduce mortgage interest costs, supercharge your investments, and harness the power of compounding interest."
+        }
+      },
+      "find.out.more": "Find out more",
+      "successfully.join": "You've joined the Community plan waitlist.",
+      "payslips": {
+        "title": "Sick of waiting to get paid?",
+        "description": "Find out how to get paid daily."
+      }
+    }
+  },
+  "benefits": {
+    "name": "Perks",
+    "onlineOffers": {
+      "name": "Bills & Subscriptions",
+      "search": "Search bills & subscriptions"
+    },
+    "bill": {
+      "bills": "Bills",
+      "renew": "Renew",
+      "exclusivePayOnTime": "Exclusive pay-on-time discount with Simply Energy",
+      "signUpToday": "Sign up today",
+      "totalSaved": "Total saved",
+      "onAllBills": "On all bills",
+      "tncApply": "T&Cs apply.",
+      "exclusiveDiscount": "Exclusive energy discount",
+      "youVotedWeDelivered": "You Voted, We Delivered",
+      "simplyEnergy": "Simply Energy",
+      "swagDiscount": "Swag discounts on your energy",
+      "revolutionising": "Revolutionising how we SAVE",
+      "join2MSwaggers": "Join 2M+ {brandName} members. Unlock unprecedented deals through community power!",
+      "swagMembers": "{brandName} members",
+      "dealsWeAchieved": "deals we achieved",
+      "getMarketLeading": "Get market leading health insurance deals!",
+      "signUp": "Sign up to the waitlist",
+      "getUpTo27": "{brandName} discounts on your energy",
+      "electricCriteria": "Eligibility criteria & T&Cs apply.",
+      "communitySourced": "Community Sourced",
+      "getExclusiveDeals": "Get exclusive access to health insurance deals",
+      "seeImportantBills": "See important bills on one platform",
+      "getBestInMarketDiscounts": "Get best in market discounts",
+      "secureYourPot": "Secure your spot! Join the waitlist now for exclusive health insurance deals",
+      "joinTheWaitlist": "Join the waitlist",
+      "readAndAgree": "I read and agree to",
+      "consentToReceivingMarketingCommunications": "I consent to receiving marketing communications, promotions/offers and content from the",
+      "byEmailTextAndSocialMedia": "by email, text, and social media channels about our products, new services or brands.",
+      "defaultJoinWaitlistSuccess": "You've joined the waitlist to be one of the first to streamline and save on essential bills!",
+      "healthInsuranceJoinWaitlistSuccess": "You've joined the waitlist to be one of the first to access exclusive health insurance!",
+      "youAreIn": "You’re in!",
+      "whatIsCommunitySourced": "What is Community Sourced",
+      "communitySourcedDesc": "We leverage the buying power of our 2M+ {brandName} user community to negotiate the best deals on your behalf.",
+      "gotIt": "Got it",
+      "selectState": "Select a state to view your offer",
+      "potentialReference1": "That’s a ",
+      "potentialReference2": "potential ",
+      "potentialReference3": "% off the reference price ",
+      "potentialReference4": "in your first year!",
+      "offerExplaination": "Offer explanation",
+      "disclaimer": "Disclaimer",
+      "disclaimer.content": "Bill Management is a product provided to customers by Employment Hero Pty Ltd and its affiliates (Employment Hero) under its {brandName} brand. This product is provided by Employment Hero to facilitate its customers’ sign up process with the selected provider and to provide customers with the ability to view bills. The selected provider is an independent third party service provider and Employment Hero has no control over, or give any representation or warranties about, the selected provider’s services, business operations and websites. The selected provider will be solely responsible for any issues you have with their products, services or the content on their website. Your use of the selected provider’s services and access to their websites will be governed by their terms and conditions, including those which relate to data privacy and security. Any information provided in relation to the Bill Management product also does not take into account your objectives, financial situation or needs, and you should consider whether it is appropriate for you by carrying out your own research and seeking independent advice.",
+      "disclaimer.medibankContent": "Bill Management is a product provided to customers by Employment Hero Pty Ltd and its affiliates (Employment Hero) under its {brandName} brand. This product is provided by Employment Hero to facilitate its customers’ sign up process with the selected provider and to provide customers with the ability to view bills. The selected provider is an independent third party service provider and Employment Hero has no control over, or give any representation or warranties about, the selected provider’s services, business operations and websites. The selected provider will be solely responsible for any issues you have with their products, services or the content on their website. Your use of the selected provider’s services and access to their websites will be governed by their terms and conditions, including those which relate to data privacy and security. Any information provided in relation to the Bill Management product also does not take into account your objectives, financial situation or needs, and you should consider whether it is appropriate for you by carrying out your own research and seeking independent advice.\nBy using this offer you agree to the sharing of your personal information between Employment Hero and Medibank for the purposes of giving access to and promoting the offer, verifying your current and continued eligibility for the benefits, providing you with the services and benefits under this offer, personalising your experience on Employment Hero, and quality assurance and product development. {ehPrivacy} and {medibankPrivacy} will apply regarding their respective data privacy practices when handling your personal. Your personal information may be disclosed overseas as described in those privacy policies.",
+      "disclaimer.ehPrivacy": "Employment Hero's Privacy Policy",
+      "disclaimer.medibankPrivacy": "Medibank's Privacy Policy",
+      "overdueMessage1": "Please pay your recent bill via ",
+      "overdueMessage2": "ENGIE platform ",
+      "overdueMessage3": "or contact ENGIE.",
+      "extraOnePercent": "+ Extra 1% cashback",
+      "electricityAndGas": "Electricity & Gas",
+      "healthInsurace": "Health Insurance",
+      "enjoyUp": "Enjoy up to 12 weeks free!",
+      "ahmHealthInsurance": "ahm health insurance",
+      "tenPercentOff": "10% off Corporate Health Cover",
+      "medibank": "Medibank",
+      "ahm": "ahm",
+      "engie": "ENGIE",
+      "searchBills": "Search bills"
+    },
+    "cashback": {
+      "title": "Cashback",
+      "goodNews": "Good news! Your cashback for this eligible purchase has been processed and will be added to your Confirmed balance.",
+      "eligibleMessage": "Your cashback for this eligible purchase will be processed once the merchant’s returns period lapses.",
+      "rejectedMessage": "Your cashback has been rejected as you have either refunded or cancelled your eligible purchase.",
+      "offerLabel.instore": "In-store",
+      "shopByCategory": "Shop by category",
+      "featuredOffers": "Featured offers",
+      "searchOffers": "Search{offerType}offers",
+      "onlinePill": "Online",
+      "instorePill": "In-Store",
+      "selectLocation": "Select location",
+      "offerNearby": "{offerNum} cashback offers nearby",
+      "searchLocation": "Search location",
+      "howThisOfferWork": "How this Online offer works",
+      "dropdown.description": "Description",
+      "dropdown.tnc": "Terms and conditions",
+      "dropdown.aboutAdvertiser": "About {advertiser}",
+      "useCurrentLocation": "Use current location",
+      "transactionsError": "Unable to retrieve your transactions.\nPlease come back later.",
+      "noTransaction": "No transactions to display",
+      "lifetimeCashback": "Lifetime cashback",
+      "lifetimeCashbackPrefix": "Cashback:",
+      "cashbackHistory": "Cashback history",
+      "paidToYourAccount": "Paid to your Account",
+      "comingYourWay": "Coming your way",
+      "qualifyingAmount": "Qualifying Amount",
+      "sendToSwagSpendAccount": "Sent to Swag Spend account",
+      "withdrawMessage": "It might take a couple of days for your cashback pending balance to arrive in your Swag Spend account. Enjoy your savings!",
+      "shopNow": "Shop now",
+      "variousOffersAvailable": "Various offers available",
+      "storesNearYou": "{numStores, plural, one {# store} other {# stores}} near you",
+      "exclusiveOffers": "{numOffers, plural, one {# exclusive offer} other {# exclusive offers}}",
+      "viewAllNearbyStores": "View all nearby stores",
+      "allNearbyStores": "All nearby stores",
+      "noStoreFoundNearThisLocationTry": "No store found near this location, try",
+      "noStoreFoundNearThisLocation": "No store found near this location.",
+      "onlineType": "Online",
+      "instoreType": "In-Store",
+      "onlineCashback": "Online cashback",
+      "instoreCashback": "In-store cashback",
+      "map": "Map"
+    },
+    "error": {
+      "noResults": "No results found!",
+      "pleaseAdjustYourSearch": "Please adjust your search to find the offers you're looking for."
+    },
+    "group.detail": {
+      "info": {
+        "header1": "About",
+        "header2": "How it works",
+        "header3": "Terms & conditions"
+      },
+      "custom.info": {
+        "header1": "you are the",
+        "footer1": "member of this group",
+        "header2": "we're aiming for",
+        "footer2": "annual savings",
+        "header3": "you could be the"
+      },
+      "join.group.button": "Join Group",
+      "invite.others.button": "Invite others"
+    },
+    "support": {
+      "howCashbackWork": "How Cashback works",
+      "manageEnrolledCards": "Manage enrolled cards",
+      "enrolAdditionalCards": "or enrol additional cards",
+      "benefitsMoney": "Perks-Money"
+    },
+    "online": {
+      "billsCommunitySourced": "COMMUNITY SOURCED",
+      "bills": "Bills",
+      "giftCards": "Gift cards",
+      "saveUpTo": "Save up to {discount}%",
+      "from": "From ",
+      "or": " or "
+    },
+    "shortcut": {
+      "giftcards": "Gift cards",
+      "bills": "Bills"
+    },
+    "giftcard": {
+      "title": "Gift cards",
+      "searchGiftCards": "Search gift cards",
+      "buyAgain": "Buy again",
+      "noPurchase": "You haven’t made any purchases.",
+      "orderHistory": "Gift card order history",
+      "used": "USED"
+    },
+    "heroPoints": {
+      "balance": "Points balance",
+      "balancePrefix": "Points:"
+    },
+    "widgets": {
+      "linkACardStartEarnCashback": "Link a card, start earning cashback",
+      "linkACard": "Link a card",
+      "saveForWhatYouWant": "Save for what you want",
+      "createAStash": "Create a stash",
+      "lowHeroPointsCard": {
+        "title": "Time to hit the big screen!",
+        "subTitle": "Buy tickets with {points} PTS"
+      },
+      "highHeroPointsCard": {
+        "title": "Treat yourself to a gift card",
+        "subTitle": "Buy now with {points} PTS"
+      },
+      "noHeroPointsCard": {
+        "title": "Buy discounted movie tickets",
+        "subTitle": "Buy now from $10.97"
+      }
+    },
+    "swagStore": {
+      "payment": {
+        "creditCardFeeDescription": "A credit card fee of {fee}% will be added to your total when using your card.",
+        "cardFee": "Credit/debit card fee ({fee}%)",
+        "paymentDetailsTitle": "Payment details",
+        "heroPointsTitle": "Hero Points",
+        "cardTitle": "Card",
+        "noCardDetails": "No card details",
+        "payNow": "Pay now",
+        "payWithPoints": "Pay {points}",
+        "payWithCard": "Pay {amount}",
+        "payWithPointsAndCard": "Pay {points} and {amount}",
+        "payViaCard": "Amount",
+        "minimumAmountViaCardError": "A minimum of {amount} is required to select credit credit payment."
+      },
+      "product": {
+        "description": "Description",
+        "howItWorks": "How it works",
+        "termsAndConditions": "Terms and conditions",
+        "otherInformation": "Other information",
+        "otherInfoDescription": "The advertised price includes a service fee of {serviceFee}% of the price. This fee contributes to improving our user experience - along with better deals and discounts selection."
+      },
+      "savedAmountPrefix": "Save ",
+      "saveAmountPerTicket": "Save {amount}/ticket",
+      "fromPricePrefix": "From ",
+      "orPrice": "or",
+      "quantity": "Quantity"
+    },
+    "comingSoon": {
+      "title": "{brandName} Perks are coming soon!",
+      "description": "These features are under construction for your region.",
+      "subtitle": "Save up to 25% with our Cashback offers and unlock exclusive discounts at our {storeName} Store, featuring top deals from our partner merchants."
+    },
+    "forceUpdate": {
+      "title": "Update the app",
+      "caption": "Please update the {appName} app to the latest version to access Perks.",
+      "btnDoLater": "I’ll do this later",
+      "btnUpdateNow": "Update now"
+    },
+    "cardSetUp": {
+      "goToPerks": "Go to Perks"
+    }
+  },
+  "megadeal": {
+    "group": {
+      "card": {
+        "title": "Help shape the deals of the future",
+        "description": "Work collaboratively to secure deals together",
+        "titleOnBillManagement": "Join communities asking for deals"
+      },
+      "carousel": {
+        "step1": {
+          "heading": "Support the {brandName} community",
+          "body": "You're part of community of 2M users negotiating VIP deals to fight the rising cost of living. With the strength of millions behind you, unlock the best price on essentials like groceries, fuel and utilities. Shape future deals and secure exclusive offers everywhere you go."
+        },
+        "step2": {
+          "heading": "Power in numbers",
+          "body": "1,000 people —or 1M people —together have the power to create real change.\nJoin the deal groups to negotiate the best offers on everyday essentials. You can even shape their future.\nInterested? Join today and start curating the deals of tomorrow."
+        },
+        "stepSurvey": {
+          "heading": "Help shape future groups",
+          "body": "Saving money in which of these categories would benefit you most?"
+        },
+        "lastStep": {
+          "heading": "What's next?",
+          "body": "There's groups waiting for you to join.\nSoon, you'll also be able to create new groups for members to join."
+        },
+        "addCategory": "Add category",
+        "name": "Name"
+      },
+      "list": {
+        "title": "Join groups saving on bills",
+        "title2": "Fighting for pair",
+        "onlineTitle": "Join these communities for the BEST deals"
+      },
+      "joinCommunityAskingForDeal": "Join communities asking for deals"
+    },
+    "join.group": {
+      "bottom.sheet": {
+        "title": "Subscribe to group updates",
+        "content": "Would you like to subscribe to receiving updates and content from the Employment Hero Group about {brandName} groups you join via email, text and in-app notifications."
+      },
+      "success.screen": {
+        "heading": "Welcome to our group!",
+        "subheading": "You've taken the first step!",
+        "verbiage": "You can help grow this group and supercharge new deals by sharing it with others. Together, we can cut the cost of living."
+      }
+    }
+  },
+  "instapay": {
+    "drawdown-success": {
+      "experiment": {
+        "title": "Want pay every time you clock off?",
+        "description": "Find out more"
+      },
+      "version1": {
+        "title": "Your request has been processed.",
+        "content": "Please wait up to 5 days to see it in your account."
+      },
+      "version2": {
+        "title": "Cha-ching! Your request has been processed! 💸🎉",
+        "content": "Your funds will be in your account in up to 2 hours."
+      }
+    },
+    "drawdownSurveyCta": {
+      "title": "Your feedback is important to us",
+      "subtitle": "Please let us know your thoughts",
+      "button": "Share your feedback",
+      "secondaryButton": "Maybe later"
+    },
+    "open-swag-spend-account-cta": {
+      "title": "Get a head start",
+      "subtitle": {
+        "fragment_1": "Open a ",
+        "fragment_2": "Swag Spend account",
+        "fragment_3": " now to receive daily payments as soon as it's ready."
+      },
+      "swag-spend-account": "Swag Spend account",
+      "open-swag-spend-account": "Open Swag Spend account"
+    },
+    "now": {
+      "under-maintenance": {
+        "title": "Accessing your earned pay is currently under maintenance",
+        "description": "Please try again later"
+      },
+      "get-paid-on-demand": "Get paid on-demand",
+      "cta": {
+        "fragment_1": "Access up to ",
+        "fragment_2": "$1000 weekly",
+        "fragment_3": " !"
+      },
+      "free-transaction": {
+        "title": "FREE transaction",
+        "sub-title": "on your 5th use!",
+        "feeExplanation": "free transaction",
+        "sub-title-v2": "on your 1st and 5th use!",
+        "tnc-apply": "T&C’s apply"
+      },
+      "bankAccount": {
+        "ssaFeeAlert": "Use your Swag Spend account and only pay a 1.3% fee.",
+        "fee": "{amount} fee",
+        "feeExplanation": "based on {percentage}% fee",
+        "promotionFeeExplanation": {
+          "fragment_1": "based on ",
+          "fragment_2": "{originalPercentage}%",
+          "fragment_3": " {actualPercentage}% fee"
+        }
+      },
+      "payCycle": {
+        "weekly": "Weekly",
+        "fortnightly": "Fortnightly"
+      }
+    },
+    "daily": {
+      "under-maintenance": {
+        "title": "Accessing your earned pay is currently under maintenance",
+        "description": "Please try again later.",
+        "payment_description": "Your daily payments are temporarily unavailable.",
+        "maintenance_apology": "Apologies, Accessing your earned pay is currently under maintenance"
+      },
+      "ineligible": {
+        "comming-soon": "Coming soon: access your earned pay daily",
+        "explaination": "Due to your pay cycle, it's not available yet. We're working really hard on it!",
+        "while-you-wait": "While you wait"
+      },
+      "title": "Get paid daily",
+      "history": {
+        "title": "Get paid daily",
+        "heading": "Payment history",
+        "noTransaction": "No transactions available"
+      },
+      "card": {
+        "label.unavailable": "UNAVAILABLE",
+        "balanceReady": "Ready at 9:00pm today!"
+      },
+      "ad": {
+        "heading": "Get paid daily",
+        "caption": "Your pay your way!",
+        "learn_more": "Learn more"
+      },
+      "summary": {
+        "youVeReceived": "You've received",
+        "daysLeft": "{days, plural, one {# day} other {# days}} ahead of your pay cycle"
+      },
+      "intro": {
+        "title": "It's your pay, every day.",
+        "body": "What would you do if you could get paid every day? We’re flipping the script and giving you access to your own money, as soon as you earn it. It’s that just-got-paid feeling, now available every day.",
+        "cta_find_out_more": "Find out more",
+        "cta_skip": "Later",
+        "close": "Close",
+        "ssa_incentive": {
+          "title": "Get up to 50% of your daily salary deposited into your account every day!",
+          "content": "To start receiving your InstaPay Daily, simply open a Swag Spend Account.",
+          "cta": "Open Swag Spend Account"
+        },
+        "next": "Next",
+        "enjoy_one_percent_cashback": "Enjoy an extra 1% cashback",
+        "end_of_one_percent_cashback": "Ends 30th June 24",
+        "premier_partners": "When you shop with these premier partners: Booking.com, Virgin Australia, The Iconic, and Pet Circle.",
+        "ie_spend": "i.e. Spend $500, ",
+        "save_22": "save $22",
+        "with_these_partners": " with these partners:",
+        "terms_and_conditions": "T&C's apply",
+        "one_percent_tnc": {
+          "got_it": "Got it",
+          "extra_1_cashback": "Extra 1% cashback for InstaPay Daily Promotion Terms & Conditions",
+          "about_the_promo": "About the Promotion",
+          "this_promotion_offered": "This Promotion is offered by Employment Hero Pty Ltd (ABN 11 160 047 709)",
+          "enjoy_an_extra_1": "Enjoy an extra 1% cashback when you sign up for InstaPay Daily and shop with these premier partners: Booking.com, Virgin Australia, The Iconic, and Pet Circle.",
+          "promotion": "Promotion",
+          "this_promo_start": "This promotion will start on the day of your subscription and end on 30th June 24.",
+          "promotion_period": "Promotion Period",
+          "who_can_enter": "Who can enter?",
+          "the_promo_opened": "The Promotion is open to a select group of EH users who are eligible for InstaPay Daily and have not subscribed.",
+          "how_to_qualify": "How to qualify for the Promotion?",
+          "to_qualify": "To qualify for the Promotion, you must:",
+          "make_a_purchase": "Make a purchase on one of the 4 selected cashback offers within the promotion period.",
+          "the_status": "The status of the cashback transaction has to change to settled/cleared.",
+          "when_promo_apply": "When do the benefits of the Promotion apply?",
+          "any_use_that": "Any user that is subscribed during this promotion period AND make a purchase on one of the 4 selected cashback offers during the promotion period will get the extra 1% cashback, once the cashback status changes to settled/cleared.",
+          "the_extra_1": "The extra 1% cashback amount will be directly debited to the user's swag spend account.",
+          "restrections": "The Promotion cannot be used in conjunction with any other offer or promotion provided by Employment Hero. Restrictions to the Promotion apply to those who are not eligible according to the criteria of qualifications listed above.",
+          "the_promo_cannot": "The Promotion cannot be used in conjunction with any other offer or promotion provided by Employment Hero. Restrictions to the Promotion apply to those who are not eligible according to the criteria of qualifications listed above.",
+          "ohter_terms": "Other Terms and Conditions that apply",
+          "the_promo_managed": "This Promotion is managed in accordance with the",
+          "general_terms": "General Terms",
+          "discounts_provided_thorugh": "Discounts provided through the Promotion are not transferable to any other products.",
+          "eh_reserves": "Employment Hero reserves the right to terminate the Promotion early in full or in part at its absolute discretion.",
+          "laws_may_apply": "Laws may apply to you or to Employment Hero as a result of your specific location. If this is the case, and if those laws are inconsistent with any part of these terms, those laws will prevail to the extent of the inconsistency.",
+          "serverability": "Severability: If any part or provision of these terms are invalid, unenforceable or in conflict with the law, that part or provision is replaced with a provision which, as far as possible, accomplishes the original purpose of that part or provision. The remainder of these terms will be binding on the parties.",
+          "governing_law": "Governing Law: These terms are governed by the laws of New South Wales, Australia and the parties submit to the non-exclusive jurisdiction of its courts.",
+          "extra_one_percent_title": "Sign up with Instapay Daily and get extra 1% cashback at your favourite retailers"
+        }
+      },
+      "onboarding": {
+        "balance_preview": {
+          "title": "available to be paid to your account every day",
+          "caption": "Starting on {firstDay}"
+        },
+        "price": {
+          "heading": "Billed monthly, cancel anytime",
+          "value": "{price}/month"
+        },
+        "incentive": {
+          "explain": "How we calculate this",
+          "info": {
+            "heading": "How we calculate this"
+          },
+          "close": "Got it",
+          "saver": {
+            "heading": "{emoji} I have a mortgage",
+            "summary": "A user with a mortgage could pay off their loan up to 6 years faster.",
+            "info": "A user with a $500,000 loan over 30 years with an interest rate of 6.5% who has set repayments to weekly, can save up to $150,000 in interest and almost 6 years in loan term. All because they didn’t wait for payday. *Not financial advice"
+          },
+          "spender": {
+            "heading": "{emoji} I'm a spender",
+            "summary": "The average person could potentially save up to $337 each year on credit fees and interest.",
+            "info": {
+              "fragment_1": "Swag ",
+              "link_text_1": "research",
+              "fragment_2": " shows the average Australian has roughly $4,331 of credit debt. Using the ",
+              "link_text_2": "Australian Government MoneySmart",
+              "fragment_3": " credit calculator, we can see that this debt, if paid off in minimum repayments, would incur roughly $337 in interest charges per annum. *Not financial advice"
+            }
+          }
+        },
+        "terms_and_conditions": {
+          "prompt": "Please agree to Terms & Conditions",
+          "heading": "Terms & Conditions",
+          "content_1": "By agreeing to the T&C's you authorise your employer to make ongoing deductions from your salary for the specified amount.",
+          "content_2": "The subscription cost will be deducted from your first transaction amount. During your active subscription earned pay access now features will no longer be available.",
+          "content_3": "By selecting 'accept' you agree to our",
+          "text_link": "Perks and Earned Wage Access Terms and Conditions.",
+          "accept": "Accept"
+        },
+        "cta": "Subscribe"
+      },
+      "join": {
+        "success": {
+          "title": "Welcome to everyday pay!",
+          "content": "Get ready to change the way you manage your money! You will start receiving your earned pay daily in the next pay period starting on {firstDay}.",
+          "cta": "Access your pay daily"
+        }
+      },
+      "errors": {
+        "general": {
+          "title": "We're sorry, we're experiencing technical difficulties",
+          "content": "Please try again later",
+          "cta": "Got it"
+        }
+      },
+      "discountCode": {
+        "first_month_free": "FREE one month trial"
+      }
+    },
+    "errors": {
+      "unspecified": "Apologies, there's an error on our end",
+      "not_available_on_leave": "Unavailable as you are on leave today",
+      "only_available_on_weekdays": "Due to being on weekend",
+      "instapay_daily_only_available_next_pay_period": "Thank you for signing up, this will start in your next pay period on {nextPayPeriodStarting}",
+      "terminated_employee": "Due to your recent employment status change",
+      "after_payment_date_restricted": "Due to your pay run being underway",
+      "payment_date_restricted": "Due to your pay run being underway",
+      "historical_open_payrun_restricted": "Due to your pay run being underway"
+    },
+    "experimentRosterTile": {
+      "title": "Just submitted your roster?",
+      "description": "Access up to $1000 of your salary ahead of pay day!"
+    },
+    "experimentTimesheetTile": {
+      "title": "Enjoy up to $1000 of your salary each week!",
+      "description": "As your employer uses Swag, you have exclusive access to this perk."
+    },
+    "customSurveyExperimentTile": {
+      "title": "Enjoy up to $1000 of your salary each week!",
+      "description": "As your employer uses Swag, you have exclusive access to this perk."
+    },
+    "payIntroExperiment": {
+      "instaPayEducationCarousel": {
+        "title": "InstaPay Now",
+        "subtitle": "Access to your earnings instantly",
+        "description": "You’ve worked hard, so why wait.\nGet access to the money you’ve already earned before pay day.",
+        "bulletPoint1": "No credit, no interest.",
+        "bulletPoint2": "Withdraw directly to your Swag Spend account.",
+        "bulletPoint3": "Spend, save, or invest as you please!",
+        "buttonTextNext": "Next",
+        "buttonTextSkip": "Skip"
+      },
+      "payCircleEducationCarousel": {
+        "title": "Why is my\nbalance $0?",
+        "info": "Because InstaPay Now depends on your pay cycle. But don’t worry, we'll notify you when it's available, allowing you to access ",
+        "info1": "up to $1000 ",
+        "info2": "of your salary each week! 🤑",
+        "info3": "I get paid:",
+        "buttonTextMonthly": "Monthly",
+        "buttonTextFortnightly": "Fortnightly",
+        "buttonTextWeekly": "Weekly",
+        "buttonTextSkip": "Skip",
+        "buttonTextGotIt": "Got it"
+      },
+      "btmSheet": {
+        "gotIt": "Got it"
+      },
+      "payCircleMonthlyContent": {
+        "title": "I get paid monthly",
+        "info": "Most people are paid a portion of their salary in arrears and a portion in advance.",
+        "info2": "In the example you are paid half arrears, half advance: ",
+        "info3": "InstaPay Now available in the 2 weeks in arrears.",
+        "info4": "E.g: ",
+        "info5": "Jo’s pay cycle is 1st - 31st. Jo’s employer began processing their pay on the 14th and it was processed and paid on the 15th. InstaPay Now is available between 1st - 14th."
+      },
+      "payCircleFortnightlyContent": {
+        "title": "I get paid fortnightly",
+        "info": "You are paid half in arrears, half advance:",
+        "info2": "InstaPay Now available for arrears portion.",
+        "info3": "E.g: ",
+        "info4": "Sam’s pay cycle is 1st - 14th. Sam’s employer began processing their pay on the 6th and it was processed and paid on the 7th. InstaPay Now is available between the 1st - 6th."
+      },
+      "payCircleWeeklyContent": {
+        "title": "I get paid weekly",
+        "info": "You are always paid in arrears: ",
+        "info2": "InstaPay Now will only be available when your organisation is not actively processing your weekly pay run."
+      },
+      "payCircleDefinition": {
+        "header": "Definitions",
+        "arrears": "Arrears",
+        "arrearsDefinition": "Payment for time worked after completing the work.",
+        "advance": "Advance",
+        "advanceDefinition": "Payment received before completing the work.",
+        "salary": "Salary",
+        "salaryDefinition": "You can be a salaried employee without being full-time.",
+        "payRun": "Pay run",
+        "payRunDefinition": "Process by payroll admins to pay all employees.",
+        "payCycle": "Pay cycle",
+        "payCycleDefinition": "Time period of payment (weekly, fortnightly, monthly)."
+      }
+    },
+    "introduction": {
+      "wouldLikeToGetPaid": "I would like to\nget paid...",
+      "oldWayOption": "The old way - on payday",
+      "newWayOption": "The new way - everyday",
+      "oldWayToast": "You’ve opted in receive your salary on payday.",
+      "imSpender": "🤑  I'm a Spender",
+      "spenderDescription": "Save up to $337 annually on credit fees and interest.",
+      "iOwnHome": "🏠  I own a home",
+      "ownHomeDescription": "Pay off your mortgage up to 6 years faster.",
+      "emergencyUse": "🚨  Emergency use",
+      "emergencyUseDescription": "Tackle any unplanned expenses or emergencies.",
+      "manageBills": "💵  Manage bills",
+      "manageBillsDescription": "Managing your bills with ease and convenience.",
+      "spenderBts": {
+        "title": "How we calculate this",
+        "content": "{brandName} {research} shows the average Australian has roughly $4,331 of credit debt. Using the {AGM} credit calculator, we can see that this debt, if paid off in minimum repayments, would incur roughly $337 in interest charges per annum. *Not financial advice"
+      },
+      "homeOwnerBts": {
+        "title": "How we calculate this",
+        "content": "A user with a $500,000 loan over 30 years with an interest rate of 6.5% who has set repayments to weekly, can save up to $150,000 in interest and almost 6 years in loan term. All because they didn’t wait for payday. *Not financial advice"
+      },
+      "instapayNowCarousel": {
+        "secondPage": {
+          "title": "Access InstaPay Now after 2 pay runs",
+          "content1": "You can access InstaPay Now after completing two pay runs with your employer. Don't worry, we'll notify you when it's available.",
+          "content2": "InstaPay Now also depends on your pay cycle. "
+        }
+      },
+      "onboardingWidget": {
+        "title": "Onboarding progress",
+        "subTitle": "Next step: Choose how you get paid",
+        "description": "Almost there! Finalise your onboarding today and choose how you get paid.",
+        "cta": "Finish onboarding"
+      },
+      "options": {
+        "instapayNow": {
+          "title": "On-demand/now",
+          "subTitle": "InstaPay Now"
+        }
+      }
+    },
+    "usage.incentiveV2": {
+      "intro": {
+        "title": "InstaPay Now",
+        "heading": "Get FREE transactions on us!",
+        "description": "For a limited time, use InstaPay Now and get your 1st and 5th transactions free!",
+        "term": "T&C's apply."
+      },
+      "tile": {
+        "title": "FREE InstaPay Now transactions on us!",
+        "subTitle": {
+          "notReady": "{remaining} more to go",
+          "ready": "Ready to go!"
+        },
+        "tag": {
+          "ready": "FREE TRANSACTION"
+        }
+      }
+    },
+    "estimatedIncome": {
+      "tile": {
+        "income": "Income*",
+        "deduction": "Withdrawn",
+        "final": "Total on payday",
+        "countDaysFromNow": "in {countDaysFromNow} days*",
+        "clarification": "*estimated amount/date"
+      },
+      "bottomSheet": {
+        "button": "Got it",
+        "incomeAndTotal": {
+          "title": "Income and Total on Payday:",
+          "description": "Income is an estimate from your recent payslips. Total shows what you’ll receive on payday after early withdrawals, excluding leave or other deductions."
+        },
+        "paydayEstimate": {
+          "title": "Payday Estimate:",
+          "description": "This estimate doesn’t account for weekends or public holidays."
+        },
+        "budgetingTip": "Plan your budget carefully and be mindful of the actual amount you’ll receive on payday.",
+        "title": "Estimated amount/date"
+      }
+    },
+    "simplifiedFlowExperiment": {
+      "title": "Get your pay, on demand.",
+      "accessUpToStatement": "You can access up to {maximumAmount} of your salary each week.",
+      "inputPlaceholders": {
+        "amount": "Amount",
+        "minimumAmount": "Minimum {minimumAmount}"
+      },
+      "menuScreen": {
+        "loadingTitle": "We are working to get your available balance ready"
+      },
+      "amountReadyToGo": "You’ve got {amount} ready to go.",
+      "selectOrgs": {
+        "questionTitle": "Select which employers you’d like to get paid from?"
+      },
+      "detailsScreen": {
+        "titleQuestion": "How much would you like?",
+        "bankAccountEntryQuestion": "Where are we sending it?"
+      },
+      "successScreen": {
+        "ssaAdTile": {
+          "title": "Pay only a {percentage}% transaction fee",
+          "subtitle": "when you open a Swag Spend Account",
+          "cta": "Open now"
+        }
+      },
+      "history": "Earned pay history",
+      "payCycleHeader": "How does your pay cycle affect InstaPay Now?",
+      "done": "Done"
+    },
+    "confirmationScreen": {
+      "title": "Please confirm your request.",
+      "receiveCaption": "You'll receive",
+      "bankAccountCaption": "Into this bank account",
+      "feeAndDeductedMessage": {
+        "fragment_1": "You'll pay a {fee} fee.",
+        "fragment_2": "A total of {totalDeductedAmount} will be deducted from your payslip."
+      },
+      "footer": {
+        "byConfirmingStatement": "By confirming, you agree to our ",
+        "tncName": "Perks and Earned Wage Access Now Terms and Conditions",
+        "deductionStatement": ". This transaction will show as a deduction on your payslip from {organisation}."
+      },
+      "confirm": "Confirm"
+    },
+    "instapayAd": {
+      "title": "Pay a reduced fee of only 1.3% when you InstaPay Now into your Swag Spend account",
+      "description": "All you have to do is set up a Swag Spend account and select this account when making an InstaPay Now request.",
+      "actions": {
+        "getInstapayNow": "Get InstaPay Now",
+        "learnMore": "Learn more about InstaPay Now"
+      },
+      "learnMore": "Learn more"
+    },
+    "howItWorksDetails": {
+      "whatPayIsEligible": {
+        "title": "What pay is eligible?",
+        "content": "You are eligible to access 50% of your unpaid net pay owed. There is a maximum withdrawal limit of $1000 per week."
+      },
+      "howAreFundsDeducted": {
+        "title": "How are funds deducted?",
+        "content1": "Transactions in a given pay period will be deducted from your payslip in that pay period’s pay run.",
+        "content2": "You will see the transaction reflected on your payslip as a deduction, with a corresponding reference number in your history."
+      },
+      "howAreFundsCalculated": {
+        "title": "How are funds calculated?",
+        "content1": "‘Available funds’ shows 50% of an estimated total amount of money eligible for withdrawal. This total amount is calculated based on the amount of time you have worked - but have not yet been paid for - in the current pay period.",
+        "content2": "For salaried employees, ‘Available funds’ shows 50% of a proportion of your salary eligible for withdrawal. This proportion is calculated based on the total number of days you have worked in the current pay period."
+      },
+      "whatAreTheFees": {
+        "title": "What are the fees?",
+        "content": "A fee is charged per transaction depending on what account you nominate your funds be deposited into - 1.3% to your Swag Spend Account or 1.5% to all other bank accounts."
+      },
+      "whenWillIReceiveMyFunds": {
+        "title": "When will I receive my funds?",
+        "content": "You should receive your funds within 1-2 hours."
+      }
+    },
+    "mainTile": "Access your earned pay now",
+    "pageTitle": "Your Earned Pay",
+    "menuScreen": {
+      "menuTitle": "Get your pay, on demand with no interest or credit.",
+      "balanceAvailable": "{balance} of your net pay is available.",
+      "balanceUnavailable": "Accessing your earned pay is currently unavailable. This could be for the following reasons:",
+      "unavailableReason_1": "You haven't worked 3 consecutive pay periods.",
+      "unavailableReason_2": "You have not accrued any income during your current pay cycle.",
+      "unavailableReason_3": "You do not meet the minimum age requirement of 16 years and older.",
+      "warningAlert": "Accessing your earned pay is currently unavailable",
+      "limitCaption": "You can access up to {limit} of your salary each week.",
+      "balanceError": "Unable to retrieve current balance. Please come back later.",
+      "payCycleInfo": "This is due to your pay cycle.",
+      "learnMore": "Learn more",
+      "learnMoreContinue": "about how your pay cycle affects your eligibility",
+      "history": "Earned pay history",
+      "getStarted": "Get Started",
+      "payCycleIssueTitle": "How does your pay cycle affect your ability to access your earned pay?",
+      "done": "Done"
+    },
+    "drawdownSurveyScreen": {
+      "topBarTitle": "Share your feedback",
+      "title": "Your feedback is invaluable to us",
+      "submitButton": "Submit",
+      "notNowButton": "Not now",
+      "usageReason": {
+        "question": "Why did you use Earned Wage Access?",
+        "otherInputLabel": "Reason",
+        "option1": "Emergency use",
+        "option2": "Savings",
+        "option3": "Managing bills",
+        "option4": "Spending",
+        "option5": "Other"
+      },
+      "idealFreq": {
+        "question": "What is your ideal pay frequency?",
+        "option1": "Daily",
+        "option2": "Weekly",
+        "option3": "Fortnightly",
+        "option4": "Monthly"
+      },
+      "moreFeedback": {
+        "question": "Would you like to provide more feedback later?",
+        "option1": "Yes",
+        "option2": "No"
+      }
+    },
+    "historyScreen": {
+      "title": "Earned pay history",
+      "noTransaction": "No transactions available"
+    },
+    "selectOrgScreen": {
+      "title": "Select where you'd like to get money from.",
+      "invalidReasons": {
+        "title": {
+          "general": "Why is InstaPay Now unavailable?",
+          "payCycle": "How does your pay cycle affect InstaPay Now?"
+        },
+        "timeSheetError": "InstaPay Now is currently unavailable. This is because your time sheets are currently awaiting approval for this employer.",
+        "generalError": {
+          "caption": "InstaPay Now is currently unavailable. This could be for the following reasons:",
+          "leaveCurrentPosition": "You're about to leave your current position.",
+          "leavePayPeriod": "You've currently taken leave this pay period.",
+          "notWorked3ConsecutivePayPeriods": "You haven't worked 3 consecutive pay periods.",
+          "notAccuredIncome": "You have not accrued any income during your current pay cycle.",
+          "underMinimumAge": "You do not meet the minimum age requirement of 16 years and older."
+        }
+      },
+      "availableBalance": "available: {balance}",
+      "done": "Done"
+    },
+    "amountEntryScreen": {
+      "title": "You've got {balance} ready to go. How much would you like?",
+      "inputPlaceholder": "Amount (minimum {minLimit})",
+      "minAmountError": "You have not reached the minimum. Please adjust amount.",
+      "maxAmountError": "You do not have enough funds. Please adjust amount.",
+      "fieldCannotContainWords": "Field cannot contain words.",
+      "next": "Next"
+    },
+    "bankAccountScreen": {
+      "title": "Where are we sending it?",
+      "next": "Next"
+    },
+    "errorScreen": {
+      "ssaError": {
+        "title": "Oops! Looks like your Swag Spend account balance has reached its limit",
+        "description": "Please select a another account to send your InstaPay Now to"
+      },
+      "tryAgain": "Try again",
+      "close": "Close"
+    },
+    "introScreen": {
+      "carousel": {
+        "heading": "Access to your earnings instantly",
+        "body": "You've worked hard, so why wait. Get access to the money you've already earned before pay day.",
+        "bullet_1": "No credit, no interest.",
+        "bullet_2": "Withdraw directly to your Swag Spend account.",
+        "bullet_3": "Spend, save, or invest as you please!"
+      },
+      "withdrawNow": "Withdraw now"
+    },
+    "payrunInstruction": {
+      "body_1": "Availability depends on your employer and your pay frequency.",
+      "body_2": "If your employer is yet to process your pay, InstaPay Now will be unavailable, however you should expect to be paid soon. (Yay!)",
+      "pleaseNote": "Please note: ",
+      "note": "Your pay period may vary depending on when your employer chooses to process pay, weekends and public holidays.",
+      "definitions": {
+        "heading": "Definitions:",
+        "arrear": "Arrears:",
+        "arrear_explained": "Payment for time worked after completing the work.",
+        "advance": "Advance:",
+        "advance_explained": "Payment received before completing the work.",
+        "salary": "Salary:",
+        "salary_explained": "You can be a salaried employee without being full-time.",
+        "payrun": "Payrun:",
+        "payrun_explained": "Process by payroll admins to pay all employees.",
+        "payCycle": "Pay cycle:",
+        "payCycle_explained": "Time period of payment (weekly, fortnightly, monthly)."
+      },
+      "payCycle": {
+        "weekly": {
+          "if": "If you are paid weekly",
+          "heading": "You are paid weekly",
+          "body_1": "You are always paid in arrears: ",
+          "body_2": "Accessing your earned pay will only be available when your organisation is not actively processing your weekly pay run."
+        },
+        "fortnightly": {
+          "if": "If you are paid fortnightly",
+          "heading": "You are paid fortnightly",
+          "body_1": "You are paid half in arrears, half advance: ",
+          "body_2": "Accessing your earned pay available for arrears portion.",
+          "caption": "E.g. Sam's pay cycle is 1st - 14th. Sam's employer began processing their pay on the 6th and it was processed and paid on the 7th. Accessing your earned pay is available between the 1st - 6th."
+        },
+        "monthly": {
+          "if": "If you are paid monthly",
+          "heading": "You are paid monthly",
+          "body_1": "Most people are paid a portion of their salary in arrears and a portion in advance.",
+          "body_2": "In the example you are paid half arrears, half advance: ",
+          "body_3": "Accessing your earned pay is available in the 2 weeks in arrears.",
+          "caption_1": "For example: ",
+          "caption_2": "Jo's pay cycle is 1st - 31st. Jo's employer began processing their pay on the 14th and it was processed and paid on the 15th. Accessing your earned pay is available between 1st - 14th."
+        }
+      }
+    },
+    "scheduling-experiment": {
+      "ad": "Take control of the way you get paid!",
+      "subtitle-no-option": "Tell us your preferred InstaPay scheduling.",
+      "subtitle-choosed": "Update your current preference:",
+      "bottom-sheet": {
+        "title": "Your preferred InstaPay scheduling",
+        "daily": "Daily",
+        "weekly": "Weekly",
+        "next-pay-day": "Your next pay day",
+        "next-pay-day-description": "Thank you for your feedback, keep an eye out for your upcoming pay day.",
+        "weekly-description": "Thank you for choosing weekly as your preference. We're currently diligently working on InstaPay scheduling. You will receive a reminder notification each week when $50 is available for use. If you wish to opt out, simply visit the Support tab."
+      }
+    },
+    "submit-leave-ad": {
+      "title": "Access up to $1,000 of your salary per week!",
+      "actionText": "Withdraw now",
+      "cancelText": "Maybe later"
+    },
+    "scheduling": {
+      "howItWorks": {
+        "setACustomAmount": {
+          "caption": "Set a custom amount:",
+          "description": "Schedule to receive up to {amount}."
+        },
+        "availableBalance": {
+          "caption": "Available balance:",
+          "description": "You'll be paid when your available balance reaches your chosen amount (available balance is up to 50% of your earned pay). If your available balance is too low, we'll try again the next day."
+        },
+        "steps": {
+          "withDay": {
+            "chooseAmount": "1. Choose a recurring amount or day (if applicable)",
+            "selectReceivingAccount": "2. Select a receiving account",
+            "receiveAt9PM": "3. When your balance reaches the chosen amount or your set payment day arrives, the payment will be processed at 9 PM."
+          },
+          "withoutDay": {
+            "chooseAmount": "1. Choose a recurring amount",
+            "selectReceivingAccount": "2. Select a receiving account",
+            "receiveAt9PM": "3. Once the balance accumulates to your chosen amount, you’ll receive it at 9 PM."
+          }
+        }
+      },
+      "dashboardBox": {
+        "caption": "Withdraw your earned pay",
+        "subtitle": "Current earned pay"
+      },
+      "options": {
+        "byAmount": {
+          "caption": "Recurring",
+          "summaryBox": {
+            "caption": "Withdraw by amount",
+            "subtitle": "withdraw every time you earn"
+          },
+          "creationBox": {
+            "amount": {
+              "withdraw": "Withdraw",
+              "earned": "earned",
+              "everyAmount": "every {amount}",
+              "caption": "Set a withdrawal amount",
+              "limitHelperText": "maximum {maxAmount}, minimum {minAmount}"
+            },
+            "bankAccount": {
+              "caption": "Choose a receiving account",
+              "transactionFeeReminder": "* Each withdrawal incurs a transaction fee."
+            },
+            "ctas": {
+              "withdrawEveryAmountEarned": "Withdraw every {amount} earned",
+              "unselectedAmount": "Withdraw"
+            }
+          },
+          "errors": {
+            "unavailableStatement": "Recurring withdrawal is currently unavailable.",
+            "timesheetUnapproved": "This is because your timesheets are currently awaiting approval. Please try again later.",
+            "alreadyHaveDailySubscription": "This is because you already have an active daily subscription.",
+            "general": {
+              "caption": "This could be for the following reasons:",
+              "haveNotWorked3ConsecutivePayPeriods": "You haven’t worked 3 consecutive pay periods.",
+              "ageMinimumViolated": "You do not meet the minimum age requirement of 16 years and older."
+            },
+            "inputValidation": {
+              "maxAmountError": "You have exceeded the maximum. Please adjust amount."
+            }
+          },
+          "subscribed": {
+            "recurringPaymentSetTo": "Your recurring payments are set to:",
+            "promotionApplied": "{promotionPercentage}% FEE PROMO APPLIED"
+          },
+          "detailSection": {
+            "title": "Withdraw every {amount} earned."
+          }
+        },
+        "daily": {
+          "caption": "Daily",
+          "balancePerPeriod": {
+            "perDay": "{balance}/day",
+            "perMonth": "{balance}/month"
+          },
+          "body": {
+            "freeTrialAndCashback": "FREE one month trial + Extra 1% cashback*",
+            "billMonthly": "Billed monthly, cancel anytime.",
+            "unavailable": "Withdraw Daily is unavailable",
+            "underMaintenance": "Apologies, we are currently under maintenance, your daily payments are temporarily unavailable.",
+            "optedIn": {
+              "dailyPaymentSetTo": "Your daily payments are set to:",
+              "withdraw": "Withdraw",
+              "readyAtNinePM": "ready at 9pm!",
+              "markedForCancellationWarning": "You’ll continue receiving daily payments until your current monthly subscription ends."
+            }
+          },
+          "ctaCaptions": {
+            "withdrawUpTo": "Withdraw up to {amount} per day",
+            "viewPaymentHistory": "View payment history"
+          }
+        },
+        "now": {
+          "caption": "Now",
+          "ctas": {
+            "creation": {
+              "caption": "Withdraw {amount} now",
+              "unselectedAmount": "Withdraw now",
+              "helperText": "Available balance {balance}",
+              "recurringWithdrawal": "Try recurring withdrawal"
+            }
+          },
+          "unavailale": "Withdraw now is currently unavailable.",
+          "errorCaption": "This could be for the following reasons:",
+          "chooseYourAmount": "Choose your amount",
+          "underMaintenance": "Apologies, accessing your earned pay is currently under maintenance, please try again later."
+        },
+        "byDay": {
+          "title": "Withdraw {amount} on {day}.",
+          "availableBalance": "any balance"
+        }
+      },
+      "promotion": {
+        "content": "Subscribe to recurring pay and save 33% per transaction.",
+        "tnc-apply": "T&C apply"
+      },
+      "byDaySubscription": {
+        "title": "Get paid weekly",
+        "description": "Set up your custom payday",
+        "pageTitle": "Pay Weekly",
+        "dateOption": {
+          "title": "I want to get paid on...",
+          "recommendedDay": "We recommend scheduling for {day}, as that's typically when your employer pays you.",
+          "availableBalanceOption": "{amount} Available"
+        },
+        "amountOption": {
+          "title": "I want to be paid the amount of...",
+          "selectionDescription": "Ready at 9:00pm",
+          "anyBalances": "Any available balance"
+        },
+        "employerOption": {
+          "title": "From employer..."
+        },
+        "payCycleOption": {
+          "title": "I want to be paid..."
+        },
+        "startingDateOption": {
+          "title": "Starting from...",
+          "recommendedDay": "We recommend scheduling for {day}, as that's typically when your employer pays you. Please note only weekdays are allowed.",
+          "notAllowWeekendError": "Weekends are not allowed."
+        }
+      },
+      "screensHeaderTitle": "Your Earned Pay",
+      "confirmation": {
+        "caption": "Please confirm your ongoing withdrawal request.",
+        "amountInfo": {
+          "youWillReceive": "You’ll receive",
+          "wheneverItsReady": "Whenever it's ready, at 9pm.",
+          "wheneverItsReadyWithStartingDate": "Whenever it's ready, at 9pm. Starting {starting_date}",
+          "payByDayTime": "Weekly on {day} at 9pm",
+          "firstPaymentDate": "starting {date}",
+          "waitUntilDailyEndReminder": "Please note that you'll only start receiving this after your current daily subscription ends."
+        },
+        "bankAccountInfo": {
+          "intoThisAccount": "Into this account"
+        },
+        "amountAndFeeSummary": "You’ll pay a {fee} fee, a total of {deductionAmount} will be deducted from your payslip.",
+        "feeSummary": "You'll pay a {fee}% fee which will be deducted from your payslip.",
+        "paySlipDeductionSummary": {
+          "byConfirmingStatement": "By confirming, you agree to our ",
+          "tncName": "Perks and Earned Wage Access Terms and Conditions",
+          "deductionStatement": " for scheduled withdrawals. These transactions will show as a deduction on your payslip from {organisation}."
+        }
+      },
+      "successScreen": {
+        "title": "Cha-ching! You've scheduled to receive {amount} whenever it’s ready 💸🎉",
+        "subtitle": "which could happen multiple times a month.",
+        "modification": {
+          "subtitle": "You've successfully cancelled your ongoing withdraw."
+        },
+        "byDay": {
+          "title": "Cha-ching! You've scheduled to receive up to {amount} on {day} 💸🎉",
+          "anyBalanceTitle": "Cha-ching! You've scheduled to receive your pay on {day} 💸🎉"
+        }
+      },
+      "modificationScreen": {
+        "byAmountTitle": "You've selected to withdraw every {amount} you earn.",
+        "byDay": {
+          "title": "You've selected to withdraw {amount} weekly.",
+          "availableBalanceOption": "your available balance"
+        }
+      },
+      "optOutSurveyScreen": {
+        "title": "Opt out Your Earned Pay",
+        "heading": "We're sorry to hear you are opting out of your recurring schedule",
+        "body": "Your feedback is invaluable to us. Could you please share your reasons for opting out?",
+        "otherReason": "Other (Please specify)",
+        "reason1": {
+          "categoryName": "Change of mind",
+          "description": "I changed my mind because...",
+          "option1": "Decided to wait until my full paycheck",
+          "option2": "Unexpected expenses changed my needs",
+          "option3": "Felt more comfortable with usual payday",
+          "option4": "Fees were too high",
+          "option5": "Would prefer to pick the day instead",
+          "option6": "Other (Please specify)"
+        },
+        "reason2": {
+          "categoryName": "Not sure how it works",
+          "description": "I wasn't sure how it worked because...",
+          "option1": "Unclear on how much can be accessed",
+          "option2": "Unclear on the impact it has to payday",
+          "option3": "Unsure about repayment or fees",
+          "option4": "Unclear on how quickly funds are available",
+          "option5": "Other (Please specify)"
+        },
+        "reason3": {
+          "categoryName": "Prefer waiting for payday",
+          "description": "I prefer waiting for payday because...",
+          "option1": "Full paycheck at once",
+          "option2": "Concerns about overspending",
+          "option3": "Want to avoid fees",
+          "option4": "No need to access pay early",
+          "option5": "Don't understand how this helps me budget",
+          "option6": "Other (Please specify)"
+        },
+        "reason4": {
+          "categoryName": "Prefer different schedule",
+          "description": "I prefer a different schedule because...",
+          "option1": "Prefer to be paid weekly on the same day",
+          "option2": "Prefer to be paid fortnightly on the same day",
+          "option3": "Want to align pay schedule with specific bills or expenses",
+          "option4": "Prefer to access when needed",
+          "option5": "Other (Please specify)"
+        },
+        "reason5": {
+          "categoryName": "Confused about recurring scheduling",
+          "description": "I am confused about recurring scheduling because...",
+          "option1": "Unclear on when my balance will reach my set amount",
+          "option2": "Prefer to choose a specific regular day instead",
+          "option3": "Misunderstood how it aligns with pay dates",
+          "option4": "Difficulty in tracking payment timing",
+          "option5": "Other (Please specify)"
+        },
+        "reason6": {
+          "categoryName": "Not what I expected",
+          "description": "It was not what I expected because...",
+          "option1": "Different feature to what I expected",
+          "option2": "Expected a different level of flexibility",
+          "option3": "Did not help with budgeting",
+          "option4": "Expected quicker access to funds",
+          "option5": "Other (Please specify)"
+        },
+        "reason7": {
+          "categoryName": "Found better alternatives",
+          "description": "Alternatives were better because...",
+          "option1": "Alternative options had lower fees or costs",
+          "option2": "Other services aligned better with specific bills or expenses",
+          "option3": "Prefer features offered by other services",
+          "option4": "Found options with more flexibility in schedule timing",
+          "option5": "Other (Please specify)"
+        },
+        "selectLabel": "Reason"
+      },
+      "currentPlanBox": {
+        "tag": "CURRENT PLAN",
+        "byAmount": {
+          "subtitle": "withdraw every time you earn"
+        }
+      },
+      "adCTA": {
+        "versions": {
+          "menuScreenError": {
+            "caption": "Set up a recurring withdrawal",
+            "subtitle": "Automatically withdraw your earned pay when it’s available"
+          },
+          "successScreen": {
+            "caption": "Want to automate that?",
+            "subtitle": "Set up a recurring withdrawal of your earned pay",
+            "actionButtonText": "Set up now"
+          }
+        }
+      }
+    },
+    "instapayNow": {
+      "InstaPayNowReceivingAccount": {
+        "title": "You've selected to withdraw {amount} now.",
+        "accessUpToStatement": "You can access up to {maximumAmount} of your salary each week, with no minimum limit.",
+        "transactionFeeReminder": "* Each withdrawal incurs a transaction fee."
+      }
+    },
+    "withdrawEarnedPayBox": {
+      "now": {
+        "multipleOrgs": {
+          "chooseEmployerCaption": "Choose an employer to get paid from",
+          "selectLabel": "Employer",
+          "availableBalance": "available balance {balance}",
+          "errors": {
+            "noOrgsHaveAvailableBalance": "Apologies, none of the organisations have available balances right now. Please try again later."
+          }
+        }
+      }
+    },
+    "manage": {
+      "title": "Manage",
+      "scheduling": {
+        "heading": "Cancel recurring withdrawal",
+        "confirmation": {
+          "promotionStatement": "Your {promotionPercentage}% fee promotion will expire if you cancel. Are you sure you want to stop receiving recurring payments?",
+          "statement": "Are you sure you want to continue cancelling recurring withdrawal?"
+        }
+      },
+      "daily": {
+        "heading": "Cancel daily subscription",
+        "confirmation": "Are you sure you want to continue cancelling daily withdrawal?"
+      },
+      "yesCancel": "Yes, cancel"
+    },
+    "trustedBeneficiary": {
+      "error": {
+        "title": "Sorry, we failed to verify your account details",
+        "description": "Please use another account or try again later."
+      }
+    },
+    "pushNotification": {
+      "recurringSuccessCTA": {
+        "title": "Turn on push notifications",
+        "description": "Push notifications will be sent to you regarding your recurring schedule."
+      },
+      "management": {
+        "listItem": "Push Notifications",
+        "title": "Push Notification Settings"
+      },
+      "masterSwitch": "Notifications",
+      "recurring": {
+        "sectionTitle": "EWA Recurring"
+      },
+      "types": {
+        "rbaSuccessfulPayment": {
+          "caption": "Successful Payments"
+        },
+        "rbdSuccessfulPayment": {
+          "caption": "Successful Payments"
+        },
+        "rbdInsufficientBalance": {
+          "caption": "Insufficient Balance"
+        }
+      },
+      "bottomSheet": {
+        "successfulPayment": {
+          "caption": "More information",
+          "content": "Successful payment notifications will trigger whenever a scheduled transaction is successful."
+        },
+        "insufficientBalance": {
+          "caption": "More information",
+          "content": "Insufficient balance notifications will trigger when it is your payment day and you have not quite reached your set amount."
+        }
+      },
+      "error": {
+        "toastCaption": "Sorry, we could not process your request. Try again later."
+      }
+    }
+  },
+  "spend-account": {
+    "transaction-list": {
+      "instapay-daily": {
+        "title": "Earned Pay Daily"
+      }
+    },
+    "onboarding": {
+      "mobile-verification": {
+        "title": "Mobile Verification",
+        "heading": "Please confirm your mobile phone number.",
+        "description": "For your security, we need to confirm your mobile phone number and verify it with a One Time Password (OTP) before verifying your identity. This will ensure that only you can access any ID documents you upload."
+      },
+      "mobile-otp": {
+        "title": "Enter OTP below"
+      },
+      "ctaCaptions": {
+        "reviewApplication": "Review application",
+        "setUpNow": "Set up now"
+      },
+      "ageNotQualifiedScreen": {
+        "title": "We're sorry, you don't qualify for a Swag Spend account.",
+        "description": "Your application can't be processed as you need to be over the age of {age} to set up a Swag Spend account."
+      }
+    },
+    "alert": {
+      "CBA-issue": "ATM withdrawal alert"
+    },
+    "payment-fab": {
+      "paySomeone": "Pay Someone",
+      "stashCash": "Stash Cash",
+      "paySplit": "Pay Split",
+      "scheduledPayments": "Scheduled Payments"
+    },
+    "pay-anyone": {
+      "error": {
+        "dailyLimit": {
+          "title": "Oops! Looks like you have reached your Swag Spend Account daily transfer limit",
+          "description": "Please contact support for further assistance."
+        }
+      },
+      "confirmationScreen": {
+        "dailyLimit": {
+          "title": "Please note there is a transfer out limit of $5000 within a 24-hour period."
+        },
+        "accountNameWarning": {
+          "title": "Account names aren't used for payments, so check that the BSB and account number are correct. If the money is paid to the wrong account, you may not get it back."
+        }
+      }
+    }
+  },
+  "payeeAddress": {
+    "header": "Who are you sending money to?",
+    "availableBalance.statement": "Available balance:",
+    "search": "Search",
+    "removeTitle": "Are you sure?",
+    "removeDescription": "This action cannot be undone. The payee {payeeNickname} will be removed from your list of saved payees."
+  },
+  "getMoreSwag": {
+    "benefits": {
+      "joinAGroup": {
+        "title": "Join a group",
+        "contentFirst": "and push community",
+        "contentSecond": "driven discounts"
+      },
+      "billsManagement": {
+        "title": "Bill Management",
+        "contentFirst": "Save on your utility bills"
+      },
+      "cashback": {
+        "title": "Cashback",
+        "contentFirst": "Earn cashback at over",
+        "contentSecond": "50 stores"
+      }
+    },
+    "money": {
+      "swagSpend": {
+        "title": "Swag Spend",
+        "contentFirst": "Boost your savings",
+        "contentSecond": "with a swag card"
+      },
+      "createAStash": {
+        "title": "Create a stash",
+        "contentFirst": "Smart your savings goals"
+      }
+    }
+  },
+  "wallet": {
+    "onboarding": {
+      "biometric": {
+        "re-enroll": {
+          "title": "Please confirm your fingerprint / Face ID.",
+          "description": "For your security, we need to confirm your fingerprint/Face ID before verifying your identity",
+          "error": "Sorry, we could not process your request. Try again later."
+        }
+      },
+      "residential_address": {
+        "errors": {
+          "generic": "Please enter a valid address",
+          "missing_street_number": "Oops, it looks like the street number is missing from your address. If you live in a unit, apartment, or townhouse, don't forget to include the unit or apartment number.",
+          "missing_street_name": "Oops, it looks like the street name is missing from your address.",
+          "missing_suburb": "Oops, it looks like the Suburb is missing from your address.",
+          "missing_state": "Oops, it looks like the State is missing from your address."
+        }
+      }
+    }
+  },
+  "dynamicTiles": {
+    "instapayCarousel": {
+      "title": "Why wait until payday?"
+    },
+    "instaPayNow": {
+      "title": "InstaPay Now",
+      "subtitle": "Ready to go!"
+    },
+    "instaPayNowSwagTile": {
+      "subtitle": "InstaPay Now",
+      "learnAboutGetPaidOnDemand": "Learn about how to get paid on-demand",
+      "accessYourPaySoon": "Access your pay soon",
+      "accessYourPayNow": "Access your pay now",
+      "readyToGo": "Ready to go",
+      "minimumDesc": "$100 minimum required Your balance is growing",
+      "updatedMinutesAgo": "Updated {minutes, plural, one {# minute} other {# minutes}} ago",
+      "updatedHoursAgo": "Updated {hours, plural, one {# hour} other {# hours}} ago",
+      "yourLastBalanceIs": "Your latest balance is",
+      "updatingYourLiveBalance": "Updating your live balance"
+    },
+    "salarySacrifice": {
+      "title": "Start salary sacrificing",
+      "subtitle": "Contribute now"
+    },
+    "lastPaySlip": {
+      "title": "Last pay slip"
+    },
+    "lifecycle": {
+      "title": "Super",
+      "subtitle": "Tell",
+      "offboardingTitle": "Moving employers"
+    },
+    "stash": {
+      "title": "Save for your holiday",
+      "subtitle": "Create a stash"
+    }
+  },
+  "heroPoints": "Reimbursed by Hero Points",
+  "heroPoints.knowMore": "Want to know more about Hero Points?",
+  "heroPoints.redeem": "Redeem Hero Points",
+  "heroPoints.redeem.onYourCard": "Redeem Hero Points on your card",
+  "heroPoints.redeem.onEverydayPurchases": "Redeem Hero Points on everyday purchases",
+  "heroPoints.redeem.withSwagDebitCard": "Redeem Hero Points with your Swag Visa Debit card",
+  "heroPoints.topup.remindBalanceCard": "Balance is low, top up to spend with Hero Points",
+  "points": {
+    "1": "1.",
+    "2": "2.",
+    "3": "3.",
+    "spendHeroPoints": "Spend Hero Points with your Swag card",
+    "openSpendAccount": "Open Spend account to reimburse purchases with points",
+    "reimburseWithHeroPoints": "Reimburse with Hero Points",
+    "reimburseSwagCardWithHeroPoints": "Reimburse Swag card \npurchases with Hero Points.",
+    "optedIn": "You’ve successfully opted in to reimburse Swag card purchases with Hero Points.",
+    "optedOut": "You’ve successfully opted out to reimburse Swag card purchases with Hero Points.",
+    "failRequest": "Sorry, we could not process your request. Try again later.",
+    "reimburseExplain1": "Load your Swag Spend account with money.",
+    "reimburseExplain2": "Make a $10 purchase at a coffee shop using your Swag Visa Debit card.",
+    "reimburseExplain3": "Within a few days, get reimbursed $10 in your Spend account, taken from your Hero Points balance (approx. 220 points)."
+  },
+  "payslipsExperimentTile": {
+    "instapayTile": {
+      "title": "Sick of waiting to get paid?",
+      "description": "Access up to $1000 of your salary per week!",
+      "learnMore": "Learn more"
+    },
+    "budgetingTile": {
+      "title": "Take control of your finance",
+      "description": "Set your budget with ease",
+      "tryBudgeting": "Try Budgeting"
+    }
+  },
+  "budgetingIntro": {
+    "title": "Thanks for your interest, our new budgeting features are coming soon!",
+    "description": "While you wait, check out these helpful resources to supercharge your income",
+    "blogTitle1": "10 tips for budgeting in a cost of living crisis",
+    "blogReadTime1": "5 min read",
+    "blogTitle2": "Why is the cost of living going up in Australia?",
+    "blogReadTime2": "5 min read",
+    "blogTilte3": "How To Create A Bulletproof Budget",
+    "blogReadTime3": "7 min read"
+  },
+  "incomeDashboard": {
+    "instapayNow": {
+      "defaultBalance": "Get your pay, on demand",
+      "balanceBelowMinimum": "Your balance is still growing"
+    }
+  },
+  "enrolCardError": {
+    "invalidCardDetails": "Invalid card details. Please check and try again.",
+    "cardAlreadyLinkedRewards": "This card is already linked to another rewards program. Please link another one.",
+    "cardAlreadyLinked": "This card is already linked. Please link another one.",
+    "maxCardsLinked": "You've added the maximum number of cards.",
+    "incorrectCardDetails": "Card details are incorrect. Please check and try again.",
+    "incorrectExpiryDate": "Card expiry date is incorrect. Please check and try again.",
+    "providerCommunicationIssue": "We are currently experiencing issues communicating with the card provider. Please try again."
+  },
+  "sso": {
+    "backToSwag": "Back to Swag Dashboard",
+    "backToDashboard": "Back to Dashboard",
+    "ssoIsRequiredToAccessThisFeature": "Single Sign-On is required to access this feature"
+  }
+}

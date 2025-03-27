@@ -1,0 +1,1 @@
+export const PURCHASE_ITEM_LIMIT_PER_PAGE = 10;

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "347449433147",
+    "project_id": "ebf-mimic-app",
+    "storage_bucket": "ebf-mimic-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347449433147:android:730203e69f88d8b475501e",
+        "android_client_info": {
+          "package_name": "com.swagpersonalappexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347449433147-0fhlgrsrn38smuk13qp38od56svp822v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCumoL0IdC25MUBfPXDZAKkCeQrgbf7JiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347449433147-0fhlgrsrn38smuk13qp38od56svp822v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "347449433147-0ma8v93rcpjk5i240rvn6qdbvl5vvshh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.SwagPersonalAppExample"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

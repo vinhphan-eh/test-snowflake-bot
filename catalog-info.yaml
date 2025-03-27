@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ebf-swag-personal
+  description: repo for money pillar and benefits pillar
+  tags:
+    - external
+    - typescript
+    - react-native
+  annotations:
+    github.com/project-slug: Thinkei/ebf-swag-personal
+spec:
+  owner: Thinkei/ebenefits
+  type: service
+  system: ebenefits
+  lifecycle: production

@@ -1,0 +1,527 @@
+# this is an auto generated file. This will be overwritten
+
+mutation MailingAddress($address: AddressInput) {
+  mailingAddress(address: $address)
+}
+
+mutation PatchProfile(
+  $patch: EhProfilePatchRequest
+  $ehToken: String!
+  $orgId: String
+) {
+  patchProfile(patch: $patch, ehToken: $ehToken, orgId: $orgId) {
+    userId
+    userUuid
+    avatarUrl
+    firstName
+    lastName
+    email
+    phoneNumber
+    countryCode
+    stateCode
+    __typename
+  }
+}
+
+mutation EventLog($event: EventLogRequest) {
+  eventLog(event: $event)
+}
+
+mutation UpdateUserProfile($userProfile: UpdateUserProfileInput!) {
+  updateUserProfile(userProfile: $userProfile)
+}
+
+mutation FinishSpendAccountCarousel {
+  finishSpendAccountCarousel
+}
+
+mutation DrawdownWage(
+  $ehToken: String!
+  $orgId: String!
+  $bankAccountId: String!
+  $amount: Float!
+) {
+  drawdownWage(
+    ehToken: $ehToken
+    orgId: $orgId
+    bankAccountId: $bankAccountId
+    amount: $amount
+  )
+}
+
+mutation DrawdownWageV2(
+  $ehToken: String!
+  $orgId: String!
+  $bankAccountId: String!
+  $amount: Float!
+) {
+  drawdownWageV2(
+    ehToken: $ehToken
+    orgId: $orgId
+    bankAccountId: $bankAccountId
+    amount: $amount
+  ) {
+    drawdown {
+      status
+      message
+      messageCode
+      data {
+        transactionId
+        amount
+        bsb
+        accountNumber
+        accountName
+        accountEmail
+        createdAt
+        expectedPayDate
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}
+
+mutation PayAccount(
+  $ehToken: String!
+  $membership: EhMembershipInput!
+  $bankDetails: PayAllocationInput!
+) {
+  payAccount(
+    ehToken: $ehToken
+    membership: $membership
+    bankDetails: $bankDetails
+  )
+}
+
+mutation AccountTransfer($transferDetails: AccountTransferInput) {
+  accountTransfer(transferDetails: $transferDetails) {
+    transactionId
+    outcome
+    __typename
+  }
+}
+
+mutation MakePayment(
+  $ehToken: String!
+  $orgId: String!
+  $nonce: String!
+  $items: [MakePaymentItem!]!
+  $paymentMethod: MakePaymentPaymentMethod!
+  $deviceData: String!
+) {
+  makePayment(
+    ehToken: $ehToken
+    orgId: $orgId
+    nonce: $nonce
+    items: $items
+    paymentMethod: $paymentMethod
+    deviceData: $deviceData
+  ) {
+    billableAmount
+    createdAt
+    freightCost
+    id
+    ipAddress
+    memberId
+    name
+    status
+    transactionFee
+    type
+    __typename
+  }
+}
+
+mutation MakePaymentV2(
+  $ehToken: String!
+  $orgId: String!
+  $nonce: String!
+  $items: [MakePaymentItem!]!
+  $paymentMethod: MakePaymentPaymentMethod!
+  $deviceData: String!
+  $serviceFee: String!
+  $ehPlatform: String
+) {
+  makePaymentV2(
+    ehToken: $ehToken
+    orgId: $orgId
+    nonce: $nonce
+    items: $items
+    paymentMethod: $paymentMethod
+    deviceData: $deviceData
+    serviceFee: $serviceFee
+    ehPlatform: $ehPlatform
+  ) {
+    billableAmount
+    createdAt
+    freightCost
+    id
+    ipAddress
+    memberId
+    name
+    status
+    transactionFee
+    type
+    __typename
+  }
+}
+
+mutation CreateStripeClientToken(
+  $ehToken: String!
+  $orgId: String!
+  $createStripeClientTokenInput: CreateStripeClientTokenInput
+) {
+  createStripeClientToken(
+    ehToken: $ehToken
+    orgId: $orgId
+    createStripeClientTokenInput: $createStripeClientTokenInput
+  ) {
+    clientToken
+    __typename
+  }
+}
+
+mutation MakeStripePayment(
+  $ehToken: String!
+  $orgId: String!
+  $nonce: String!
+  $items: [MakePaymentItem!]!
+  $paymentMethod: MakePaymentPaymentMethod!
+  $deviceData: String!
+  $serviceFee: String!
+  $ehPlatform: String
+) {
+  makeStripePayment(
+    ehToken: $ehToken
+    orgId: $orgId
+    nonce: $nonce
+    items: $items
+    paymentMethod: $paymentMethod
+    deviceData: $deviceData
+    serviceFee: $serviceFee
+    ehPlatform: $ehPlatform
+  ) {
+    billableAmount
+    createdAt
+    freightCost
+    id
+    ipAddress
+    memberId
+    name
+    status
+    transactionFee
+    type
+    __typename
+  }
+}
+
+mutation CancelStripePayment(
+  $ehToken: String!
+  $orgId: String!
+  $clientToken: String!
+) {
+  cancelStripePayment(
+    ehToken: $ehToken
+    orgId: $orgId
+    clientToken: $clientToken
+  )
+}
+
+mutation ActivateCard {
+  activateCard
+}
+
+mutation Card($cardRequest: CardRequestInput!) {
+  card(cardRequest: $cardRequest)
+}
+
+mutation InitiateEWalletSetup($setupDetails: EWalletSetupDetailsInput) {
+  initiateEWalletSetup(setupDetails: $setupDetails) {
+    id
+    haasID
+    ehUUID
+    kpId
+    loginType
+    email
+    createdAt
+    updatedAt
+    deletedAt
+    ehTimezone
+    eWalletSetupStatus
+    eWalletStatusReason
+    residentialAddress {
+      region
+      country
+      addressLine1
+      unitNumber
+      streetNumber
+      streetName
+      streetType
+      postcode
+      townOrCity
+      addressLine2
+      addressLine3
+      __typename
+    }
+    mailingAddress {
+      region
+      country
+      addressLine1
+      addressLine2
+      addressLine3
+      postcode
+      townOrCity
+      __typename
+    }
+    phoneNumber {
+      countryCode
+      number
+      __typename
+    }
+    firstName
+    lastName
+    dateOfBirth
+    preferredName
+    gender
+    hasConsentedTermsConditions
+    termsConditionsConsentTimestamp
+    hasConsentedIdentityVerificationTerms
+    identityVerificationTermsConsentTimestamp
+    __typename
+  }
+}
+
+mutation InitiateEWalletSetupV2($setupDetails: EWalletSetupDetailsInputV2) {
+  initiateEWalletSetupV2(setupDetails: $setupDetails) {
+    id
+    haasID
+    ehUUID
+    kpId
+    loginType
+    email
+    createdAt
+    updatedAt
+    deletedAt
+    ehTimezone
+    eWalletSetupStatus
+    eWalletStatusReason
+    residentialAddress {
+      region
+      country
+      addressLine1
+      unitNumber
+      streetNumber
+      streetName
+      streetType
+      postcode
+      townOrCity
+      addressLine2
+      addressLine3
+      __typename
+    }
+    mailingAddress {
+      region
+      country
+      addressLine1
+      addressLine2
+      addressLine3
+      postcode
+      townOrCity
+      __typename
+    }
+    phoneNumber {
+      countryCode
+      number
+      __typename
+    }
+    firstName
+    lastName
+    dateOfBirth
+    preferredName
+    gender
+    hasConsentedTermsConditions
+    termsConditionsConsentTimestamp
+    hasConsentedIdentityVerificationTerms
+    identityVerificationTermsConsentTimestamp
+    __typename
+  }
+}
+
+mutation RequestNewCard($address: AddressInput) {
+  requestNewCard(address: $address)
+}
+
+mutation SendOtpToCurrentUser {
+  sendOtpToCurrentUser {
+    countryCode
+    number
+    __typename
+  }
+}
+
+mutation UpdateCardMeta($cardMeta: CardMetaInput!) {
+  updateCardMeta(cardMeta: $cardMeta)
+}
+
+mutation UpdateCardPIN($cardPIN: String!) {
+  updateCardPIN(cardPIN: $cardPIN)
+}
+
+mutation ClearPersistentNotification($type: WalletNotificationType!) {
+  clearPersistentNotification(type: $type)
+}
+
+mutation SaveWalletSetup($setupDetails: EWalletSetupDetailsInputV2) {
+  saveWalletSetup(setupDetails: $setupDetails) {
+    idvToken
+    applicantId
+    user {
+      id
+      haasID
+      ehUUID
+      kpId
+      loginType
+      email
+      createdAt
+      updatedAt
+      deletedAt
+      ehTimezone
+      eWalletSetupStatus
+      eWalletStatusReason
+      residentialAddress {
+        region
+        country
+        addressLine1
+        unitNumber
+        streetNumber
+        streetName
+        streetType
+        postcode
+        townOrCity
+        addressLine2
+        addressLine3
+        __typename
+      }
+      mailingAddress {
+        region
+        country
+        addressLine1
+        addressLine2
+        addressLine3
+        postcode
+        townOrCity
+        __typename
+      }
+      phoneNumber {
+        countryCode
+        number
+        __typename
+      }
+      firstName
+      lastName
+      dateOfBirth
+      preferredName
+      gender
+      hasConsentedTermsConditions
+      termsConditionsConsentTimestamp
+      hasConsentedIdentityVerificationTerms
+      identityVerificationTermsConsentTimestamp
+      __typename
+    }
+    __typename
+  }
+}
+
+mutation InitiateEWalletSetupV3 {
+  initiateEWalletSetupV3
+}
+
+mutation SetStashMeta($meta: StashMetaInput!) {
+  setStashMeta(meta: $meta)
+}
+
+mutation DepositStash($stashId: String!, $depositInput: DepositStashInput!) {
+  depositStash(stashId: $stashId, depositInput: $depositInput)
+}
+
+mutation CreateStash($stashInput: CreateStashInput!) {
+  createStash(stashInput: $stashInput)
+}
+
+mutation WithdrawStash($stashId: String!, $withdrawInput: WithdrawStashInput!) {
+  withdrawStash(stashId: $stashId, withdrawInput: $withdrawInput)
+}
+
+mutation CloseStash($stashId: String!) {
+  closeStash(stashId: $stashId) {
+    result
+    __typename
+  }
+}
+
+mutation StartWalletCreation(
+  $startWalletCreationInput: StartWalletCreationInput
+) {
+  startWalletCreation(startWalletCreationInput: $startWalletCreationInput) {
+    userToken
+    __typename
+  }
+}
+
+mutation CashbackRegisterUser {
+  cashbackRegisterUser
+}
+
+mutation CashbackOnboardUser {
+  cashbackOnboardUser
+}
+
+mutation CashbackEnrolCard($enrolCard: CashbackEnrolCardInput!) {
+  cashbackEnrolCard(enrolCard: $enrolCard) {
+    id
+    description
+    cardMasked
+    issuer
+    expiry
+    provider
+    isExpired
+    lastFour
+    __typename
+  }
+}
+
+mutation CashbackDeleteCard($deleteCard: CashbackDeleteCardInput!) {
+  cashbackDeleteCard(deleteCard: $deleteCard)
+}
+
+mutation CashbackUpdateBankDetails($bankDetails: CashbackBankDetailInput!) {
+  cashbackUpdateBankDetails(bankDetails: $bankDetails)
+}
+
+mutation CashbackAcceptTermsAndConditions {
+  cashbackAcceptTermsAndConditions {
+    isAccepted
+    __typename
+  }
+}
+
+mutation CashbackUpdateAutoEnrol($input: AutoEnrolInput!) {
+  cashbackUpdateAutoEnrol(input: $input)
+}
+
+mutation CashbackUpdateBankLinked($input: BankLinkedInput!) {
+  cashbackUpdateBankLinked(input: $input)
+}
+
+mutation UpdatePaymentPreferenceSettings(
+  $settings: PaymentPreferencesSettingsInput
+) {
+  updatePaymentPreferenceSettings(settings: $settings) {
+    payWithHDOnSwagCard
+    __typename
+  }
+}
+
+mutation SeenPayWithHDCarousel {
+  seenPayWithHDCarousel
+}

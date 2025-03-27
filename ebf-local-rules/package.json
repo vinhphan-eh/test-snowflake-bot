@@ -1,0 +1,5 @@
+{
+  "name": "eslint-plugin-ebf-local-rules",
+  "version": "1.0.2",
+  "main": "index.js"
+}

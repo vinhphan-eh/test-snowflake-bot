@@ -1,0 +1,59 @@
+{
+  "product": "UK Product Name",
+  "onboarding": {
+    "carousel": {
+      "citizen": "Be a UK citizen or permanent resident",
+      "personalDocument": "Have a valid UK passport",
+      "page_1": {
+        "introduction": "get a virtual Swag Debit Mastercard and transaction account to pay, send, and save money."
+      }
+    },
+    "detailsConfirmation": {
+      "bottomSheet": "To get your account up and running quickly, please make sure that your full name and residential address match the details on your UK passport or UK drivers license chosen in the next step."
+    },
+    "tncScreen": {
+      "title": "Take the time to read and accept our Swag Spend Account Terms and Conditions and Privacy Policy, provided by our partner Paynetics UK Limited."
+    }
+  },
+  "money": {
+    "faq": {
+      "url": "https://help.swagapp.com/hc/en-gb/articles/6052605941647-What-is-a-Swag-Spend-Account-Money",
+      "newUrl": "https://workhelp.employmenthero.com/hc/en-gb/articles/6052605941647-What-is-a-Swag-Spend-Account-Money"
+    }
+  },
+  "benefits": {
+    "faq": {
+      "url": "https://help.swagapp.com/hc/en-gb/articles/6052600351631",
+      "newUrl": "https://workhelp.employmenthero.com/hc/en-gb/articles/6052600351631"
+    }
+  },
+  "spend-account": {
+    "privacyPolicy.url": "https://employmenthero.com/legals/privacy-policy/",
+    "termsAndConditions.url": "https://employmenthero.com/legals/swag-spend-account-uk/"
+  },
+  "residentalAddress": {
+    "townOrCity": "City/Town",
+    "region": "Region"
+  },
+  "instapay": {
+    "consent": {
+      "verification_term": {
+        "checkbox_title": "I consent to the collection, use and disclosure of my personal information being checked with the document issuer or official record holder via third party systems for the purpose of confirming my identity."
+      }
+    }
+  },
+  "support": {
+    "financialWellness": {
+      "sections": {
+        "myFinancialInsights": {
+          "item1Title": "Free and impartial help with money and pensions ",
+          "item1Subtitle": "MoneyHelper",
+          "item2Title": "Free advice to help you move forward",
+          "item2Subtitle": "Citizens Advice",
+          "item3Title": "Free, trusted debt support",
+          "item3Subtitle": "NATIONAL DEBTLINE"
+        }
+      }
+    }
+  }
+}

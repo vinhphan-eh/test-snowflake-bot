@@ -1,0 +1,153 @@
+query GetActiveSuperfundMemberships {
+  me {
+    swagSuperfund {
+      usi
+    }
+    orgs {
+      id
+      uuid
+      name
+      memberId
+      memberUuid
+      activeSuperfundMembership {
+        usi
+        abn
+        fundChoice
+        fundName
+        memberNumber
+        updatedAt
+      }
+    }
+  }
+}
+
+query GetSwagSuperfundAndSuperContribution {
+  me {
+    id
+    swagSuperfund {
+      id
+      fundName
+      memberNumber
+      abn
+      usi
+      fundChoice
+      superfundFeatureFlag {
+        consolidationSupported
+      }
+      superfundMetadata {
+        externalLink
+      }
+    }
+    activeSuperContribution {
+      id
+      membershipId
+      contributionType
+      contributionValue
+      preserveAmount
+      status
+      startDate
+      endDate
+    }
+  }
+}
+
+query GetSuperContributions($statusIn: [SuperContributionStatus]) {
+  me {
+    orgs {
+      memberUuid
+      name
+    }
+    superContributions(statusIn: $statusIn) {
+      id
+      membershipId
+      contributionType
+      contributionValue
+      preserveAmount
+      status
+      startDate
+      endDate
+      acknowledgedNoContributionTracking
+    }
+  }
+}
+
+query GetSuperConsolidation($usi: String!) {
+  me {
+    superConsolidation(usi: $usi) {
+      fundName
+      memberNumber
+      usi
+      status
+      updatedAt
+      createdAt
+    }
+  }
+}
+
+query GetSuperConsolidationSupportRequest($usi: String!) {
+  me {
+    superConsolidationRequestSupport(usi: $usi) {
+      usi
+      updatedAt
+      createdAt
+      swagUserId
+      ehUserId
+    }
+  }
+}
+
+mutation CreateSwagSuperfund($input: CreateSwagSuperfundInput) {
+  createSwagSuperfund(input: $input) {
+    superfund {
+      memberNumber
+      abn
+      usi
+      fundName
+      fundChoice
+    }
+  }
+}
+
+mutation SubmitSuperContribution($input: SubmitSuperContributionInput) {
+  submitSuperContribution(input: $input) {
+    contribution {
+      contributionType
+      contributionValue
+      preserveAmount
+      startDate
+      endDate
+    }
+  }
+}
+
+mutation StopContributionByContributionId($id: String!) {
+  stopContributionByContributionId(id: $id) {
+    contribution {
+      id
+      status
+      contributionType
+      contributionValue
+      preserveAmount
+      startDate
+      endDate
+    }
+  }
+}
+
+mutation CreateSuperConsolidation($input: CreateSuperConsolidationInput) {
+  createSuperConsolidation(input: $input) {
+    consolidation {
+      fundName
+      usi
+      memberNumber
+    }
+  }
+}
+
+mutation CreateSuperConsolidationSupportRequest($usi: String!) {
+  createSuperConsolidationRequestSupport(usi: $usi) {
+    consolidationRequestSupport {
+      usi
+    }
+  }
+}

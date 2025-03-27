@@ -1,0 +1,375 @@
+query GetNoOrgPermissions($candidate: Boolean!) {
+  me {
+    noOrgPermissions(isCandidate: $candidate) {
+      instapay {
+        view
+      }
+      heroPoints {
+        view
+      }
+      superAppBenefits {
+        view
+      }
+      superAppHome {
+        view
+      }
+      superAppWallet {
+        view
+      }
+      superAppSettings {
+        view
+      }
+      superAppCashback {
+        view
+      }
+      superAppBenefitsFeaturedOffers {
+        view
+      }
+      superAppCashbackCategories {
+        view
+      }
+      superAppInstoreOffer {
+        view
+      }
+      ebenApplePay {
+        view
+      }
+      ebenGooglePay {
+        view
+      }
+      ebenDevHeroDollarPayment {
+        view
+      }
+      ebenCashbackStoreList {
+        view
+      }
+      pillar_money {
+        view
+      }
+      pillar_benefits {
+        view
+      }
+      eben_money_pillar_black_list {
+        view
+      }
+      eben_benefits_pillar_black_list {
+        view
+      }
+      ebenStorePopularList {
+        view
+      }
+      ebenStoreBuyAgainCarousel {
+        view
+      }
+      superChoiceSwag {
+        view
+      }
+      customFundAssetSwag {
+        view
+      }
+      superConsolidation {
+        view
+      }
+      ebenServiceFee {
+        view
+      }
+      eBenSpendHeroDollarsOnSwagCard {
+        view
+      }
+      eBenStash {
+        view
+      }
+      eBenWhitelistedUkMoney {
+        view
+      }
+      eBenWhitelistedUkBenefits {
+        view
+      }
+      superSalarySacrifice {
+        view
+      }
+      skipMegaDealsSurvey {
+        view
+      }
+      toggleMegaDealsMVPCta {
+        view
+      }
+      toggleMegaDealsCommunitiesCtas {
+        view
+      }
+      benefitsStripePaymentCheckout {
+        view
+      }
+      instapay2Alpha {
+        view
+      }
+      benefitsBillStreaming {
+        view
+      }
+      benefitsForceUpdate {
+        view
+      }
+      benefitsStoreAppUK {
+        view
+      }
+      billStreamingWaitlist {
+        view
+      }
+      benefitsPillarHomepage {
+        view
+      }
+      internationalBenefitsRefused {
+        view
+      }
+      benefitsXmas23Cashback {
+        view
+      }
+      cashbackDashboardV2 {
+        view
+      }
+      seOfferTiles {
+        view
+      }
+      eBenMoneyScheduledPayment {
+        view
+      }
+      eBenSwagInterestBearingAccountExperiment {
+        view
+      }
+      eBenPayeeAddressBook {
+        view
+      }
+      benefitsIAv2 {
+        view
+      }
+      ebenInstapayNowSimplifiedExperiment {
+        view
+      }
+      rostersInstapayExperiment {
+        view
+      }
+      timesheetsInstapayExperiment {
+        view
+      }
+      customSurveyInstapayExperiment {
+        view
+      }
+      payslipsExperimentInstapay {
+        view
+      }
+      payslipsExperimentBudgeting {
+        view
+      }
+      benefitsBillAhmPromoTile {
+        view
+      }
+      benefitsBillMedibankPromoTile {
+        view
+      }
+      benefitsFitnessFirst {
+        view
+      }
+      benefitsGoodlifeFitness {
+        view
+      }
+    }
+  }
+}
+
+query GetCurrentUser {
+  me {
+    details {
+      firstName
+      lastName
+      middleName
+      dateOfBirth
+      email
+      mailingAddress {
+        region
+        country
+        longForm
+        streetNumber
+        streetName
+        streetType
+        unitNumber
+        postcode
+        townOrCity
+      }
+      residentialAddress {
+        region
+        country
+        longForm
+        streetNumber
+        streetName
+        streetType
+        unitNumber
+        postcode
+        townOrCity
+      }
+      phoneNumber {
+        countryCode
+        number
+      }
+    }
+  }
+}
+
+query GetEHUserInitializationDetails($orgId: String) {
+  me {
+    eHUserInitializationDetails(orgId: $orgId) {
+      user {
+        firstName
+        lastName
+        middleName
+        dateOfBirth
+        address {
+          region
+          country
+          addressLine1
+          addressLine2
+          addressLine3
+          postcode
+          townOrCity
+        }
+        phoneNumber {
+          countryCode
+          number
+        }
+      }
+      error {
+        message
+      }
+    }
+  }
+}
+
+query GetKPUserInitializationDetails {
+  me {
+    kpUserInitializationDetails {
+      user {
+        firstName
+        lastName
+        middleName
+        dateOfBirth
+        address {
+          region
+          country
+          addressLine1
+          addressLine2
+          addressLine3
+          postcode
+          townOrCity
+        }
+        phoneNumber {
+          countryCode
+          number
+        }
+      }
+      error {
+        message
+      }
+    }
+  }
+}
+
+query GetMoneyProfile {
+  me {
+    profileChangeRequests {
+      requests {
+        dateOfBirth
+        createdAt
+        name {
+          firstName
+          lastName
+          middleName
+        }
+        type
+      }
+      error {
+        message
+      }
+    }
+    details {
+      firstName
+      lastName
+      middleName
+      dateOfBirth
+      email
+      mailingAddress {
+        region
+        country
+        longForm
+        streetNumber
+        streetName
+        streetType
+        unitNumber
+        postcode
+        townOrCity
+      }
+      residentialAddress {
+        region
+        country
+        longForm
+        streetNumber
+        streetName
+        streetType
+        unitNumber
+        postcode
+        townOrCity
+      }
+      phoneNumber {
+        countryCode
+        number
+      }
+    }
+  }
+}
+
+query MinSupportVersion {
+  me {
+    minSupportVersion {
+      benefits {
+        minSupportAppVersion
+      }
+    }
+  }
+}
+
+
+query UserPermission($permissionRequest: UserPermissionInput!) {
+  me {
+    userPermission(permissionRequest: $permissionRequest) {
+      permissions {
+        name
+        enabled
+      }
+      error {
+        message
+      }
+    }
+  }
+}
+
+mutation UpdateMailingAddress($input: UserAddressInput!) {
+  user {
+    updateMailingAddress(input: $input)
+  }
+}
+
+mutation PatchProfile(
+  $patch: EhProfilePatchInput!
+) {
+  user {
+    patchProfile(input: $patch) {
+      userId
+      userUuid
+      avatarUrl
+      firstName
+      lastName
+      email
+      phoneNumber
+      countryCode
+      stateCode
+    }
+  }
+}

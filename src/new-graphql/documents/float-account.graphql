@@ -1,0 +1,7 @@
+mutation AddBeneficiary($input: NewBeneficiaryInput!) {
+  floatAccount {
+    addBeneficiary(beneficiary: $input) {
+      beneficiaryId
+    }
+  }
+}

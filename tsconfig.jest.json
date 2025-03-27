@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  // Note: Excluding "e2e" folder causes issue Property 'gc' does not exist on type 'typeof global'.
+  // So cannot exclude "e2e" folder
+  "exclude": ["example"],
+  "compilerOptions": {
+    "jsx": "react",
+    "noEmit": true
+  }
+}

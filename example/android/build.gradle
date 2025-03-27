@@ -1,0 +1,63 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        // Following steps: https://github.com/react-native-community/react-native-device-info#v2tov3upgrade
+        // Option 3 (legacy GooglePlay dependency before AndroidX):
+        googlePlayServicesIidVersion = "17.0.0"
+
+        googlePlayServicesVersion = "17.0.0"
+        kotlinVersion = "1.8.0"
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 21
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        androidXBrowser = "1.5.0"
+        ndkVersion = "25.1.8937393"
+    }
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://dl.bintray.com/android/android-tools/" }
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath 'com.google.gms:google-services:4.3.14'
+        // Add the Crashlytics Gradle plugin.
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.1'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "https://maven.google.com" }
+        maven { url "$rootDir/../../node_modules/detox/Detox-android" }
+
+        // Weavr Biometrics
+        maven {
+            url "https://gitlab.com/api/v4/projects/35198152/packages/maven"
+            credentials(HttpHeaderCredentials) {
+                name = "Deploy-Token"
+                value = "e6ynt8p3b6PN_ec_btTQ"
+            }
+            authentication {
+                header(HttpHeaderAuthentication)
+            }
+        }
+        maven { url "https://maven.sumsub.com/repository/maven-public/" }
+        jcenter()
+        maven {
+            url "https://gitlab.okaythis.com/api/v4/projects/15/packages/maven"
+            name "GitLab"
+        }
+        maven {
+            url 'https://storage.googleapis.com/download.flutter.io'
+        }
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"

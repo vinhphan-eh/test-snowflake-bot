@@ -1,0 +1,108 @@
+mutation JoinWaitListWithCategories($categories: [UserCategoryInput], $categoryAction: CategoryAction!) {
+  group {
+    updateUserCategoriesPreference(input: { categories: $categories }) {
+      userCategoriesPreferences {
+        id
+      }
+    }
+
+    joinWaitList(input: { categoryAction: $categoryAction }) {
+      waitList {
+        userId
+      }
+    }
+  }
+}
+
+query GetUserWaitList {
+  me {
+    group {
+      waitList {
+        userId
+        createdAt
+      }
+    }
+  }
+}
+
+query GetGroupDetail($groupId: String!) {
+  group {
+    groupDetail(groupId: $groupId) {
+      id
+      imageSrc
+      title
+      promoTitle
+      subtitle
+      memberCount
+      savingRange
+      savingPeriod
+      description
+      howItWorks
+      shareContent
+      countries
+      categories {
+        id
+        name
+      }
+    }
+  }
+}
+
+query GetGroups($country: String) {
+  group {
+    groups(country: $country) {
+      id
+      imageSrc
+      title
+      promoTitle
+      subtitle
+      memberCount
+      savingRange
+      savingPeriod
+      description
+      howItWorks
+      shareContent
+      countries
+      categories {
+        id
+        name
+      }
+    }
+  }
+}
+
+query GetGroupCategories {
+  group {
+    categories {
+      id
+      name
+    }
+  }
+}
+
+query GetUserGroupMembershipAndConsent($groupId: String!) {
+  me {
+    group {
+      groupMembership(groupId: $groupId) {
+        position
+      }
+    }
+    userGroupConsent {
+      consented
+    }
+  }
+}
+
+mutation JoinGroupWithConsentAgreement($input: JoinGroupInput, $consented: Boolean!) {
+  group {
+    joinGroup(input: $input) {
+      groupMembership {
+        id
+        position
+      }
+    }
+    createConsentGroupAgreement(input: { consented: $consented }) {
+      consented
+    }
+  }
+}

@@ -1,0 +1,630 @@
+query InstapayUsageVerification {
+  me {
+    orgs {
+      instapay {
+        isFirstTime
+      }
+    }
+  }
+}
+
+query GetAllInstapayAvailableBalances {
+  me {
+    orgs {
+      id
+      uuid
+      kpBusinessId
+      name
+      member {
+        ehMemberUuid
+        kpEmployeeId
+        work_country
+      }
+      instapay {
+        balance {
+          ... on InstapayBalance {
+            __typename
+            balance
+            id
+          }
+          ... on InstapayError {
+            __typename
+            code
+            context {
+              ... on InstapayBalanceErrorContext {
+                payCycle
+              }
+            }
+          }
+        }
+        withdrawalLimit {
+          ... on InstapayWithdrawalLimit {
+            __typename
+            withdrawalMinLimit
+            withdrawalMaxLimit
+            schedulingWithdrawalMinLimit
+          }
+          ... on InstapayError {
+            __typename
+            code
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetBankAccountsForOrg($id: ID!) {
+  me {
+    org(id: $id) {
+      instapay {
+        bankAccounts {
+          accountName
+          accountNumber
+          bankAccountSource
+          bsb
+          sortCode
+          beneficiaryId
+          externalId
+          feeV2 {
+            type
+            percentage
+          }
+          isSSA
+        }
+      }
+    }
+  }
+}
+
+query GetInstapayTransactions($filters: InstapayTransactionsFilterInput!) {
+  me {
+    orgs {
+      instapay {
+        transactions(filters: $filters) {
+          ... on InstapayTransactions {
+            transactions {
+              id
+              amount {
+                units
+                subUnits
+                type
+              }
+              bankAccount {
+                accountName
+              }
+              createdAt
+            }
+            pageInfo {
+              endCursor
+              hasNextPage
+            }
+          }
+          ... on InstapayError {
+            code
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetInstapayUserTransactions($filters: InstapayTransactionsFilterInput!, $first: Int!, $after: String) {
+  me {
+    orgs {
+      ehMemberUuid
+      kpEmployeeId
+      name
+    }
+    instapay {
+      transactions(first: $first, filters: $filters, after: $after) {
+        ... on InstapayTransactions {
+          transactions {
+            id
+            memberId
+            amount {
+              units
+              subUnits
+              type
+            }
+            adminFee {
+              units
+              subUnits
+              type
+              sign
+            }
+            abaLodgementReference
+            createdAt
+            memberId
+            bankAccount {
+              accountName
+              bsb
+            }
+          }
+          pageInfo {
+            endCursor
+            hasNextPage
+          }
+        }
+        ... on InstapayError {
+          __typename
+          code
+        }
+      }
+    }
+  }
+}
+
+query GetInstapayVisibility {
+  me {
+    featureVisibility {
+      instapayNow {
+        showInstapay
+        showEstIncome
+        underMaintenance
+      }
+    }
+  }
+}
+
+query GetOrgs {
+  me {
+    orgs {
+      id
+      uuid
+      kpBusinessId
+      isIndependentContractor
+      source
+      ehMemberId
+    }
+  }
+}
+
+query showInstapayIntroduction($id: ID!) {
+  me {
+    org(id: $id) {
+      instapay {
+        showInstapayIntroductionV2
+      }
+    }
+  }
+}
+
+mutation DrawdownInstapay($input: DrawdownInput!) {
+  instapay {
+    drawdown(input: $input) {
+      success
+      messageCode
+      transactionId
+      version
+    }
+  }
+}
+
+mutation addPreferInstapayOption($input: InstapayOptionInput) {
+  instapay {
+    addPreferInstapayOption(instaPayOption: $input) {
+      success
+    }
+  }
+}
+
+query GetInstapayUsage {
+  me {
+    instapay {
+      usage {
+        ... on InstapayUsage {
+          __typename
+          isFirstTime
+        }
+        ... on InstapayError {
+          __typename
+          code
+        }
+      }
+    }
+  }
+}
+
+query getAvailableIncentives {
+  me {
+    orgs {
+      id
+      instapay {
+        availableIncentives {
+          ... on InstapayNowIncentivePayload {
+            incentives {
+              id
+              process {
+                earningProcess
+                isRedeemed
+              }
+              maxTransactionThreshold {
+                type
+                sign
+                units
+                subUnits
+              }
+            }
+          }
+          ... on InstapayError {
+            __typename
+            code
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetEstInstapayBalances {
+  me {
+    orgs {
+      instapay {
+        estBalance {
+          ... on InstapayEstBalance {
+            __typename
+            id
+            balance {
+              units
+              subUnits
+              type
+              sign
+            }
+            createdAt
+          }
+          ... on InstapayEstBalanceError {
+            __typename
+            code
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetEstimatedIncome($orgID: ID!) {
+  me {
+    org(id: $orgID) {
+      id
+      instapay {
+        estimatedIncome {
+          ... on EstimatedIncomePayload {
+            income {
+              type
+              sign
+              units
+              subUnits
+            }
+            payPeriod {
+              paymentDate
+            }
+            deductions {
+              amount {
+                type
+                sign
+                units
+                subUnits
+              }
+            }
+          }
+          ... on InstapayError {
+            __typename
+            code
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetInstapaySchedulingVisibility {
+  me {
+    featureVisibility {
+      instapayScheduling {
+        ... on Permission {
+          __typename
+          view
+        }
+        ... on InstapayError {
+          __typename
+          code
+        }
+      }
+    }
+  }
+}
+
+query GetRecurringByDayVisibility {
+  me {
+    featureVisibility {
+      recurringByDay {
+        showRecurringByDay
+      }
+    }
+  }
+}
+
+query GetInstaPayRecurringByDayPreview($orgID: ID!) {
+  me {
+    org(id: $orgID) {
+      recurringByDay {
+        preview {
+          ... on RecurringByDayPreview {
+            __typename
+            supportedPayCycles
+            memberPayCycleV2
+            estimatedBalances {
+              date
+              amount {
+                units
+                subUnits
+                type
+                sign
+              }
+            }
+            payPeriod {
+              starting
+              ending
+              paymentDate
+            }
+          }
+          ... on InstapayError {
+            __typename
+            code
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetAllInstapayRecurringByDaySubscription {
+  me {
+    orgs {
+      uuid
+      kpBusinessId
+      recurringByDay {
+        currentSubscription {
+          ... on RecurringByDaySubscription {
+            __typename
+            id
+            minPayAmount
+            maxPayAmount
+            minimumPayAmount {
+              units
+              subUnits
+              type
+              sign
+            }
+            maximumPayAmount {
+              units
+              subUnits
+              type
+              sign
+            }
+            bankAccountExternalId
+            status
+            payDay
+            payCycle
+            firstPaymentDate
+          }
+          ... on InstapayError {
+            __typename
+            code
+          }
+        }
+      }
+    }
+  }
+}
+
+mutation CreateSchedulingSubscription($input: CreateSchedulingSubscriptionInput!) {
+  instapay {
+    createSchedulingSubscription(input: $input) {
+      ... on SchedulingSubscriptionResult {
+        success
+      }
+    }
+  }
+}
+
+mutation CancelSchedulingSubscription($input: CancelSchedulingSubscriptionInput!) {
+  instapay {
+    cancelSchedulingSubscription(input: $input) {
+      ... on SchedulingSubscriptionResult {
+        success
+      }
+    }
+  }
+}
+
+mutation UpdateSchedulingSubscription($input: UpdateSchedulingSubscriptionInput!) {
+  instapay {
+    updateSchedulingSubscription(input: $input) {
+      ... on SchedulingSubscriptionResult {
+        success
+      }
+    }
+  }
+}
+
+query GetSchedulingSubscriptions {
+  me {
+    orgs {
+      id
+      uuid
+      kpBusinessId
+      instapay {
+        schedulingSubscriptions {
+          ... on GetSchedulingSubscription {
+            subscriptions {
+              id
+              plan
+              amount {
+                units
+                subUnits
+              }
+              bankAccountExternalId
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+mutation DisableEarnedWageAccessFeatures {
+  instapay {
+    disableEarnedWageAccessFeatures {
+      ... on DisableEarnedWageAccessFeaturesPayload {
+        success
+      }
+      ... on InstapayError {
+        code
+      }
+    }
+  }
+}
+
+mutation SubmitInstaPayDrawdownSurvey($input: SubmitInstaPayDrawdownSurveyInput!) {
+  instapay {
+    submitInstaPayDrawdownSurvey(input: $input) {
+      ... on SubmitInstaPayDrawdownSurveyPayload {
+        success
+      }
+      ... on InstapayError {
+        code
+      }
+    }
+  }
+}
+
+mutation SubscribeRecurringByDay($input: SubscribeRecurringByDayInput!) {
+  recurringByDay {
+    subscribeRecurringByDay(input: $input) {
+      ... on SubscribeRecurringByDayPayload {
+        success
+      }
+      ... on InstapayError {
+        code
+      }
+    }
+  }
+}
+
+mutation CancelRecurringByDay($input: CancelRecurringByDayInput!) {
+  recurringByDay {
+    cancelRecurringByDay(input: $input) {
+      ... on CancelRecurringByDayPayload {
+        success
+      }
+      ... on InstapayError {
+        code
+      }
+    }
+  }
+}
+
+mutation UpdateRecurringByDay($input: UpdateRecurringByDayInput!) {
+  recurringByDay {
+    updateRecurringByDay(input: $input) {
+      ... on UpdateRecurringByDayPayload {
+        success
+      }
+      ... on InstapayError {
+        code
+      }
+    }
+  }
+}
+
+query GetRecurringByAmountEligibility {
+  me {
+    orgs {
+      id
+      uuid
+      kpBusinessId
+      name
+      instapay {
+        recurringByAmountEligibility {
+          isEligible
+          errorCode
+        }
+      }
+    }
+  }
+}
+
+query GetEWAPushNotificationOptInStatusByFeature($feature: EWAPushNotificationFeature!, $orgId: ID!) {
+  me {
+    org(id: $orgId) {
+      ewaPushNotification {
+        optInStatusByFeature(feature: $feature) {
+          ... on EWAPushNotificationOptInStatusByFeature {
+            featureLevelOptedIn
+            statuses {
+              optedIn
+              type
+            }
+          }
+          ... on InstapayError {
+            code
+          }
+        }
+      }
+    }
+  }
+}
+
+mutation OptInEWAPushNotificationByType($input: OptInEWAPushNotificationByTypeInput!) {
+  ewaPushNotification {
+    optInByType(input: $input) {
+      ... on OptInOutEWAPushNotificationPayload {
+        success
+      }
+      ... on InstapayError {
+        code
+      }
+    }
+  }
+}
+
+mutation OptOutEWAPushNotificationByType($input: OptOutEWAPushNotificationByTypeInput!) {
+  ewaPushNotification {
+    optOutByType(input: $input) {
+      ... on OptInOutEWAPushNotificationPayload {
+        success
+      }
+      ... on InstapayError {
+        code
+      }
+    }
+  }
+}
+
+mutation OptInEWAPushNotificationByFeature($input: OptInEWAPushNotificationByFeatureInput!) {
+  ewaPushNotification {
+    optInByFeature(input: $input) {
+      ... on OptInOutEWAPushNotificationPayload {
+        success
+      }
+      ... on InstapayError {
+        code
+      }
+    }
+  }
+}
+
+mutation OptOutEWAPushNotificationByFeature($input: OptOutEWAPushNotificationByFeatureInput!) {
+  ewaPushNotification {
+    optOutByFeature(input: $input) {
+      ... on OptInOutEWAPushNotificationPayload {
+        success
+      }
+      ... on InstapayError {
+        code
+      }
+    }
+  }
+}

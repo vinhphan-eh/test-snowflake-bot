@@ -1,0 +1,55 @@
+#!/usr/bin/env expect
+
+set timeout 60
+
+# Initiate the connection to the backend
+set service_name [lindex $argv 0]
+spawn /bin/bash -c "herocli --server hero2.staging.ehrocks.com:443 app run-tty '$service_name'"
+
+# Prepare the i/o stream
+set inp_file [open [lindex $argv 1] r+]
+set out [lindex $argv 2]
+
+# Main loop
+while {1} {
+  gets $inp_file line
+  set command [lindex $line 0]
+  switch -exact -- $command {
+    "s" {
+      # Send a string to the backend; the string will be sent as-is
+      # plus an ending line-break.
+      # Example syntax:
+      # s ls -la
+      # s 1 + 1
+      # s anything might be meaninglessa hsjlfhajlwefh
+      set value [string range $line 2 end]
+      send "$value\n"
+    }
+    "e" {
+      # Expect a string to be visible.
+      # Example syntax:
+      # e hello are you there?
+      set value [string range $line 2 end]
+      expect "$value"
+    }
+    "c" {
+      set value [string range $line 2 end]
+      expect {
+        -re "$value (.*?)(\r\n|\r|\n)" {
+          set value $expect_out(1,string)
+          set out_file [open "$out" "w"]
+          puts $out_file $value
+          close $out_file
+        }
+      }
+    }
+    "q" {
+      exit
+    }
+    "" {
+    }
+    default {
+      puts "Unknown command: $command"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "benefits": {
+    "name": "Benefits",
+    "support": {
+      "benefitsMoney": "Benefits-Money"
+    },
+    "cardSetUp": {
+      "goToPerks": "Go to Benefits"
+    },
+    "comingSoon": {
+      "title": "{brandName} Benefits are coming soon!"
+    },
+    "forceUpdate": {
+      "caption": "Please update the {appName} app to the latest version to access Benefits."
+    }
+  }
+}

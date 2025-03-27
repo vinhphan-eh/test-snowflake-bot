@@ -1,0 +1,113 @@
+{
+  "product": "AU Product Name",
+  "onboarding": {
+    "carousel": {
+      "age": "Be aged {age} years or older",
+      "citizen": "Be an Australian citizen or permanent resident",
+      "personalDocument": "Have one physical form of ID ready (either your Australian passport or Australian drivers licence)",
+      "page_1": {
+        "introduction": "get a stylish Swag Visa Debit card and digital transaction account to pay, send, and save money."
+      }
+    },
+    "detailsConfirmation": {
+      "bottomSheet": "To get your account up and running quickly, please make sure that your full name and residential address match the details on your Australian passport or Australian drivers license chosen in the next step."
+    },
+    "tncScreen": {
+      "title": "Take the time to read and accept our Terms and Conditions and Privacy Policy."
+    }
+  },
+  "money": {
+    "faq": {
+      "url": "https://help.swagapp.com/hc/en-au/categories/6044879701135",
+      "newUrl": "https://workhelp.employmenthero.com/hc/en-au/categories/6044879701135"
+    }
+  },
+  "benefits": {
+    "faq": {
+      "url": "https://help.swagapp.com/hc/en-au/categories/6186480541839",
+      "newUrl": "https://workhelp.employmenthero.com/hc/en-au/categories/6186480541839"
+    },
+    "bill": {
+      "paymentDue": "Payment due",
+      "totalSaved": "Total saved",
+      "contactSE": "Contact ENGIE",
+      "wantToKnowMore": "Want to know more?",
+      "visitFAQ": "Visit our FAQs",
+      "makePayment": "Make Payment",
+      "dataNotRealTime": "Data is not updated in real-time. There may be a delay of one to two days before your payment is reflected.",
+      "noBillActivity": "You don’t have any bill activities yet.",
+      "getTransactionError": "Unable to retrieve your transactions.\nPlease come back later.",
+      "disclaimer": "Disclaimer",
+      "disclaimer.content": "Bill Management is a product provided to customers by Employment Hero Pty Ltd and its affiliates (Employment Hero) under its Swag brand. This product is provided by Employment Hero to facilitate its customers’ sign up process with the selected provider and to provide customers with the ability to view bills. The selected provider is an independent third party service provider and Employment Hero has no control over, or give any representation or warranties about, the selected provider’s services, business operations and websites. The selected provider will be solely responsible for any issues you have with their products, services or the content on their website. Your use of the selected provider’s services and access to their websites will be governed by their terms and conditions, including those which relate to data privacy and security. Any information provided in relation to the Bill Management product also does not take into account your objectives, financial situation or needs, and you should consider whether it is appropriate for you by carrying out your own research and seeking independent advice.",
+      "signUpTitle": "Online Offer sign up"
+    }
+  },
+  "spend-account": {
+    "privacyPolicy.url": "https://swagapp.com/legal/privacy-policy/",
+    "privacyPolicy.url.rebrand": "https://employmenthero.com/legals/privacy-policy/",
+    "termsAndConditions.url": "https://employmenthero.com/legals/swag-spend-account-au/",
+    "transactions": {
+      "warning.180days": "Transactions over 180 days failed to load, refresh to try again?"
+    }
+  },
+  "instapay": {
+    "pageTitle": "Your Earned Pay",
+    "consent": {
+      "page_title": "Almost there! For your first withdrawal to this account, we need one extra check for secure payment.",
+      "verification_term": {
+        "title": "Online verification terms",
+        "bottomsheet_title": "Online Identity Verification Terms",
+        "bottomsheet_content": "a. By proceeding with online identity verification, for the purpose of you verifying my identity, I:\n\ni. Consent to the collection, use and disclosure of my name, residential address, and date of birth (personal information) in accordance with Employment Hero’s Privacy Policy\n\n ii. Consent to my personal information being disclosed to a credit reporting agency \n\n iii. Consent to my personal information being checked with the document issuer or official record holder via third party systems in connection with a request to verify my identity in accordance with the Anti-Money Laundering and Counter Terrorism Financing Act 2006 (AML/CTF Act) \n\n iv. Consent to my personal information being disclosed to your verification agent(s), which will act as my intermediary, for the purpose of exercising my right, under the Australian Privacy Act 1988, to access personal information lawfully held about me by third parties. I consent to those third parties using my personal information for the purpose of monitoring and improving their verification services.\n\n b. In accordance to these terms, you confirm that you:\n\n i. Are authorised to provide the personal information presented, including details of your identity documents; and \n\n ii. Declare, to the best of your knowledge that the information you have provided is true and correct at the date of this declaration \n\n iii. Understand that providing false or misleading information is an offense under the AML/CTF Act. For further information, please view the Employment Hero Privacy Policy.",
+        "checkbox_title": "I consent to the collection, use and disclosure of my personal information in accordance to the Online Verification Terms and my information being checked with the document issuer or official record holder via third party systems for the purpose of confirming my identity."
+      }
+    },
+    "waiting": {
+      "title": "Checking your details",
+      "content": "Please wait a moment..."
+    }
+  },
+  "residentalAddress": {
+    "townOrCity": "Suburb",
+    "region": "State"
+  },
+  "pay-anyone": {
+    "cancelScheduledPaymentConfirmation.bottomSheet": "Are you sure? If you cancel this recurring payment to {recipient}, it’s gone forever",
+    "noScheduledPayments.message": "No existing scheduled payments",
+    "scheduledPayments.title": "Managed scheduled payments",
+    "payeeDetails": {
+      "newPayee.title": "New Payee",
+      "accountNumber": "Account number",
+      "bsb": "BSB",
+      "accountName": "Account name",
+      "friendlyName": "Account nickname",
+      "savingAddress": "Save payee to address book",
+      "savePayee": {
+        "title": "Create a nickname for the new payee?",
+        "header": "Save Payee"
+      }
+    }
+  },
+  "scheduledPayments": {
+    "startDate": "Start date",
+    "endDate": "End date",
+    "frequency": "Frequency",
+    "amount": "Amount",
+    "when": "When",
+    "description": "Description",
+    "numberOfPayments": "Number of payments"
+  },
+  "support": {
+    "financialWellness": {
+      "sections": {
+        "myFinancialInsights": {
+          "item1Title": "Offering tips and tools to maximise your money",
+          "item1Subtitle": "Moneysmart.gov.au",
+          "item2Title": "Provides useful & clear guide for common debt problems",
+          "item2Subtitle": "National Debt Helpline",
+          "item3Title": "Financial help for Small Business owners",
+          "item3Subtitle": "Small Business Debt Helpline"
+        }
+      }
+    }
+  }
+}

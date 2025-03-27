@@ -1,0 +1,375 @@
+mutation StartUkWalletCreation($input: StartUKWalletCreationInput!) {
+  startUKWalletCreation(input: $input) {
+    success
+  }
+}
+
+mutation StartUkKYC {
+  startUKKYC {
+    reference
+  }
+}
+
+query GetUKToken {
+  me {
+    wallet {
+      UKToken {
+        userToken
+      }
+    }
+  }
+}
+
+mutation CreateUKCard($input: CreateUKCardInput!, $accessToken: String!) {
+  createUKCard(input: $input, accessToken: $accessToken) {
+    cardId
+  }
+}
+
+query GetEWalletUKAccountDetails {
+  me {
+    wallet {
+      UKWalletDetails {
+        accountName
+        currency
+        totalBalance
+        availableBalance
+        accountNumber
+        sortCode
+        cardId
+      }
+    }
+  }
+}
+
+query GetEWalletAUAccountDetails {
+  me {
+    wallet {
+      details {
+        accountNumber
+        bsb
+        name
+        availableBalance {
+          type
+          sign
+          units
+          subUnits
+        }
+      }
+    }
+  }
+}
+
+query GetEWalletUKCurrentPaymentCardDetails($accessToken: String!) {
+  me {
+    wallet {
+      UKCurrentPaymentCardV2(accessToken: $accessToken) {
+        id
+        status
+        nameOnCard
+        isVirtual
+        issuedTimestamp
+        lastFourDigits
+      }
+    }
+  }
+}
+
+query GetEWalletUKPaymentCardProvisioningDetails($accessToken: String!) {
+  me {
+    wallet {
+      UKCurrentPaymentCardV2(accessToken: $accessToken) {
+        id
+        nameOnCard
+        cardNumberToken
+        cvvToken
+        expiryDate
+      }
+    }
+  }
+}
+
+mutation BlockUKCard($input: BlockUnblockCardInput!) {
+  blockUKCard(input: $input) {
+    success
+  }
+}
+
+mutation UnblockUKCard($input: BlockUnblockCardInput!) {
+  unblockUKCard(input: $input) {
+    success
+  }
+}
+
+mutation createUKPasscode($input: SetUKPasscodeInput!) {
+  setUKPasscode(input: $input) {
+    userToken
+  }
+}
+
+query GetIDVProfileV2($country: CountryOfOrigin!) {
+  me {
+    wallet {
+      IDVProfile(country: $country) {
+        status
+        token
+        applicantId
+      }
+    }
+  }
+}
+
+mutation sendUkFund($input: SendUkFundInput!) {
+  sendUkFund(input: $input) {
+    state
+    externalTransactionId
+  }
+}
+
+query GetWalletTransactionsV2($limit: Int!, $offset: Int!, $country: CountryOfOrigin!) {
+  me {
+    wallet {
+      transactions(limit: $limit, offset: $offset, country: $country) {
+        id
+        dateTimeUTC
+        merchant {
+          name
+          singleLineAddress
+        }
+        cardId
+        currencyAmount {
+          units
+          subUnits
+          type
+        }
+        pending
+        description
+        reference
+        type
+        transferPeerDetails {
+          ... on BSBTransferPeerDetails {
+            bsb
+            name
+            accountNumber
+          }
+          ... on FasterPaymentsTransferPeerDetails {
+            sortCode
+            name
+            accountNumber
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetUkTransactionState($externalTransactionId: String!) {
+  me {
+    wallet {
+      ukTransactionState(externalTransactionId: $externalTransactionId) {
+        state
+      }
+    }
+  }
+}
+
+mutation CreateScheduledPayment($input: CreateScheduledPaymentInput!) {
+  createScheduledPayment(input: $input) {
+    payment {
+      id
+      status
+    }
+    outcome
+  }
+}
+
+query GetActiveScheduledPayments {
+  me {
+    wallet {
+      auActiveScheduledPayments {
+        startDate
+        endDate
+        type
+        frequency
+        externalId
+        description
+        numberOfPayments
+        amount {
+          units
+          subUnits
+          type
+        }
+        recipient {
+          accountName
+          accountNumber
+          bsb
+        }
+      }
+    }
+  }
+}
+
+mutation CancelScheduledPayment($externalScheduledPaymentId: ID!) {
+  cancelScheduledPayment(externalId: $externalScheduledPaymentId) {
+    success
+  }
+}
+
+mutation SavePayeeAddress($input: SavePayeeAddressInput!) {
+  savePayeeAddress(input: $input) {
+    success
+  }
+}
+
+query GetAllPayeeAddresses {
+  me {
+    wallet {
+      payeeAddresses {
+        bsb
+        accountName
+        accountNumber
+        friendlyName
+      }
+    }
+  }
+}
+
+mutation RemovePayeeAddress($input: RemovePayeeAddressInput!) {
+  removePayeeAddress(input: $input) {
+    success
+  }
+}
+
+mutation StartValidateUkPhoneNumber {
+  startValidateUkPhoneNumber {
+    success
+  }
+}
+
+mutation VerifyUkMobileEnrollment($input: VerifyPhoneNumberRequest!) {
+  verifyUkPhoneNumber(input: $input) {
+    success
+  }
+}
+
+query GetUkAuthFactors {
+  me {
+    wallet {
+      ukAuthFactors {
+        type
+        status
+        channel
+      }
+    }
+  }
+}
+
+mutation UnlinkUkDevice {
+  unlinkUkDevice {
+    success
+  }
+}
+
+query GetUkLatestStepUpResult {
+  me {
+    wallet {
+      latestUkStepUpResult {
+        state
+        challengeId
+        accessToken
+      }
+    }
+  }
+}
+
+query GetWalletStatus {
+  me {
+    wallet {
+      details {
+        setupStatus {
+          status
+          message
+        }
+        status
+      }
+    }
+  }
+}
+
+query getWalletNotification($country: CountryOfOrigin!) {
+  me {
+    wallet {
+      notification(country: $country) {
+        content
+        note
+        ctaCaptions {
+          agree
+          disagree
+        }
+        updatedAt
+      }
+    }
+  }
+}
+query getPersistentNotifications {
+  me {
+    wallet {
+      persistentNotifications {
+        id
+        notificationStatus
+        type
+      }
+    }
+  }
+}
+
+mutation initiateEWalletSetup {
+  initiateAUWallet {
+    success
+  }
+}
+
+mutation saveWalletSetup($setupDetails: SaveAUWalletSetupInput!) {
+  saveAUWalletSetup(setupDetails: $setupDetails) {
+    idvToken
+  }
+}
+
+mutation transferAUWalletFunds($transferDetails: TransferAUWalletFundsInput!) {
+  transferAUWalletFunds(transferDetails: $transferDetails) {
+    transactionId
+    outcome
+  }
+}
+
+mutation clearPersistentNotification($type: WalletNotificationType!) {
+  clearPersistentNotifications(type: $type) {
+    success
+  }
+}
+
+mutation storeEvent($input: StoreEventInput!) {
+  storeEvent(input: $input) {
+    success
+  }
+}
+
+query GetSSACarouselTimestamp {
+  me {
+    wallet {
+      seenSSACarouselTimestamp
+    }
+  }
+}
+
+mutation SeenSSACarousel {
+  seenSSACarousel {
+    success
+  }
+}
+
+mutation UpdateWalletProfile($input: UpdateWalletProfileInput!) {
+  updateWalletProfile(input: $input) {
+    success
+  }
+}

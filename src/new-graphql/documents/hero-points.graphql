@@ -1,0 +1,80 @@
+query GetHeroPointsBalance($orgId: String) {
+  me {
+    heroPoints {
+      balance(orgId: $orgId)
+    }
+  }
+}
+
+query GetHeroPointsTransactionDetail($orgId: String!, $id: String!) {
+  me {
+    heroPoints {
+      transactionDetails(orgId: $orgId, id: $id) {
+        id
+        refId
+        points
+        transactionTimeUtc
+        transactionType
+        clientType
+        reason
+        reasonType
+        recognisedBy
+        organisationName
+        merchantName
+      }
+    }
+  }
+}
+
+query GetHeroPointsTransactionHistories($orgId: String!, $pageIndex: Int, $itemPerPage: Int) {
+  me {
+    heroPoints {
+      transactionHistories(orgId: $orgId, pageIndex: $pageIndex, itemPerPage: $itemPerPage) {
+        pageIndex
+        totalPages
+        items {
+          id
+          refId
+          points
+          transactionTimeUtc
+          transactionType
+          clientType
+          reason
+          reasonType
+        }
+      }
+    }
+  }
+}
+
+query GetHeroPointsPaymentPreferences {
+  me {
+    heroPoints {
+      paymentPreferences {
+        payWithHPOnSwagCard
+      }
+    }
+  }
+}
+
+query GetPayWithHpCarouselSeen {
+  me {
+    heroPoints {
+      payWithHPCarouselSeen
+    }
+  }
+}
+
+mutation UpdateHeroPointsPaymentPreferences($payWithHPOnSwagCard: Boolean) {
+  heroPoints {
+    paymentPreferences(payWithHPOnSwagCard: $payWithHPOnSwagCard) {
+      payWithHPOnSwagCard
+    }
+  }
+}
+
+mutation UpdatePayWithHpCarouselSeen {
+  heroPoints {
+    payWithHPCarouselSeen
+  }
+}

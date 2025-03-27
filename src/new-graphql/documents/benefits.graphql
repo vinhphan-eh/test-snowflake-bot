@@ -1,0 +1,172 @@
+query GetBenefitsCategories {
+  me {
+    benefits {
+      categories {
+        categoryCode
+        name
+        imageUrl
+      }
+    }
+  }
+}
+
+query SearchAllProducts($onlineInput: OnlineOffersInput, $instoreInput: AllAdvertisersInput, $billInput: BmOfferInput, $ssInput: SSAllOffersInput) {
+  me {
+    cashback {
+      onlineOffers(input: $onlineInput){
+         edges {
+          node {
+             id
+              type
+              categoryCode
+              title
+              description
+              cashback
+              imageUrl
+              logoUrl
+              trackingUrl
+              howItWorks
+              tnc
+              about
+              advertiserId
+              advertiserName
+              advertiserAbout
+              isCardLinkedOffer
+              popularScore
+              createdAt
+              updatedAt  
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+      }
+      instoreAdvertisers: allAdvertisers(input: $instoreInput) {
+        edges {
+          node {
+            id
+            advertiserId
+            advertiserName
+            advertiserAbout
+            type
+            offers {
+              ... on InstoreOfferV2 {
+                id
+                type
+                offerId
+                title
+                description
+                cashback
+                categoryCode
+                howItWorks
+                imageUrl
+                logoUrl
+                advertiserName
+                advertiserAbout
+                tnc
+                website
+                phone
+                locations {
+                  locationId
+                  address
+                  latitude
+                  longitude
+                }
+                popularScore
+                startDate
+                endDate
+                createdAt
+                updatedAt
+              }
+            }
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+      }
+    }
+  
+    billManagement {
+      offersV3(input: $billInput) {
+        edges {
+          node {
+            id
+            provider {
+              id
+              name
+              faq
+              contactInfo
+              paymentUrl
+            }
+            description
+            title
+            description
+            howItWorks
+            about
+            termsAndConditions
+            estBillAmount {
+              amount
+              currency
+            }
+            paidAmount {
+              amount
+              currency
+            }
+            categoryCode
+            reminder {
+              reminderDescription
+              reminderTextCopy
+            }
+            savingPercentage
+            signUpLink
+            logoUrl
+            imageUrl
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+      }
+    }
+    swagStore {
+      allOffers(input: $ssInput) {
+        edges {
+          cursor
+          node {
+            id
+            name
+            title
+            price
+            discountPrice
+            serviceFee
+            productCode
+            imageUrl
+            productType
+            description
+            termsAndConditions
+            country
+            currency
+            priceInPoints
+            discountPriceInPoints
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+      }
+    }
+  }
+}

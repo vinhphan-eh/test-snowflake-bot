@@ -1,0 +1,80 @@
+mutation createStash($stashInput: CreateStashInput!) {
+  createStash(input: $stashInput)
+}
+
+mutation closeStash($stashId: ID!) {
+  closeStash(stashId: $stashId)
+}
+
+mutation depositToStash($stashId: ID!, $input: DepositToStashInput!) {
+  depositToStash(stashId: $stashId, input: $input)
+}
+
+mutation withdrawFromStash($stashId: ID!, $input: WithdrawFromStashInput!) {
+  withdrawFromStash(stashId: $stashId, input: $input)
+}
+
+mutation setStashMetadata($input: SetStashMetadataInput!) {
+  setStashMetadata(input: $input)
+}
+
+query getStashes {
+  me {
+    wallet {
+      stash {
+        items {
+          id
+          name
+          targetAmount {
+            type
+            sign
+            units
+            subUnits
+          }
+          balance {
+            type
+            sign
+            units
+            subUnits
+          }
+          imageUrl
+          closedAtUtc
+          createdAtUtc
+          status
+        }
+      }
+    }
+  }
+}
+
+query getStashMetadata {
+  me {
+    wallet {
+      stash {
+        metadata {
+          isMarketingCardFinished
+          isStashEntryButtonInSpendAccountHidden
+        }
+      }
+    }
+  }
+}
+
+query getStashTransactions($stashId: ID!, $limit: Int!, $offset: Int!) {
+  me {
+    wallet {
+      stash {
+        transactions(stashId: $stashId, limit: $limit, offset: $offset) {
+          id
+          amount {
+            type
+            sign
+            units
+            subUnits
+          }
+          transactionTimeUtc
+        }
+      }
+    }
+  }
+}

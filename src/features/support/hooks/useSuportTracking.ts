@@ -1,0 +1,118 @@
+import { useMixpanel } from '../../../common/hooks/useMixpanel';
+import { INSTAPAY_MODULE_NAME } from '../../income/instapay/constants/trackingEvents';
+import {
+  CLICK_FINANCIAL_WELLNESS_AT_WORK_LINK,
+  CLICK_FINANCIAL_WELLNESS_BULLETPROOF_BUDGET_LINK,
+  CLICK_FINANCIAL_WELLNESS_CUT_EVERYDAY_EXPENSES_LINK,
+  CLICK_FINANCIAL_WELLNESS_DISABLE_EARNED_WAGE_ACCESS,
+  CLICK_FINANCIAL_WELLNESS_EMPLOYEE_BENEFITS_LINK,
+  CLICK_FINANCIAL_WELLNESS_MANAGE_YOUR_WAGE_ACCESS_SETTINGS,
+  CLICK_FINANCIAL_WELLNESS_MONEYSMART_LINK,
+  CLICK_FINANCIAL_WELLNESS_NATIONAL_DEBT_HELPLINE_LINK,
+  CLICK_FINANCIAL_WELLNESS_SMALL_BUSINESS_DEBT_HELPLINE_LINK,
+  FINANCIAL_WELLNESS_LOCATION,
+  FINANCIAL_WELLNESS_MODULE_NAME,
+  OPT_OUT_SCHEDULING_ON_SUPPORT,
+} from '../constants/mixpanel';
+import {
+  FINANCIAL_WELLNESS_AT_WORK_LINK,
+  FINANCIAL_WELLNESS_BULLETPROOF_BUDGET_LINK,
+  FINANCIAL_WELLNESS_CUT_EVERYDAY_EXPENSES_LINK,
+  FINANCIAL_WELLNESS_EMPLOYEE_BENEFITS_LINK,
+  FINANCIAL_WELLNESS_MONEYSMART_LINK_AU,
+  FINANCIAL_WELLNESS_NATIONAL_DEBT_HELPLINE_LINK_AU,
+  FINANCIAL_WELLNESS_SMALL_BUSINESS_DEBT_HELPLINE_LINK_AU,
+  FINANCIAL_WELLNESS_MONEY_HELPER_LINK_UK,
+  FINANCIAL_WELLNESS_CITIZEN_ADVICE_LINK_UK,
+  FINANCIAL_WELLNESS_NATIONAL_DEBT_HELPLINE_LINK_UK,
+  type FinancialWellnessLink,
+  NEW_FINANCIAL_WELLNESS_AT_WORK_LINK,
+  NEW_FINANCIAL_WELLNESS_BULLETPROOF_BUDGET_LINK,
+  NEW_FINANCIAL_WELLNESS_CUT_EVERYDAY_EXPENSES_LINK,
+  NEW_FINANCIAL_WELLNESS_EMPLOYEE_BENEFITS_LINK,
+} from '../constants/supportLinks';
+
+const financialWellnessEvent = (url: FinancialWellnessLink) => {
+  switch (url) {
+    case FINANCIAL_WELLNESS_AT_WORK_LINK:
+    case NEW_FINANCIAL_WELLNESS_AT_WORK_LINK:
+      return CLICK_FINANCIAL_WELLNESS_AT_WORK_LINK;
+    case FINANCIAL_WELLNESS_BULLETPROOF_BUDGET_LINK:
+    case NEW_FINANCIAL_WELLNESS_BULLETPROOF_BUDGET_LINK:
+      return CLICK_FINANCIAL_WELLNESS_BULLETPROOF_BUDGET_LINK;
+    case FINANCIAL_WELLNESS_CUT_EVERYDAY_EXPENSES_LINK:
+    case NEW_FINANCIAL_WELLNESS_CUT_EVERYDAY_EXPENSES_LINK:
+      return CLICK_FINANCIAL_WELLNESS_CUT_EVERYDAY_EXPENSES_LINK;
+    case FINANCIAL_WELLNESS_EMPLOYEE_BENEFITS_LINK:
+    case NEW_FINANCIAL_WELLNESS_EMPLOYEE_BENEFITS_LINK:
+      return CLICK_FINANCIAL_WELLNESS_EMPLOYEE_BENEFITS_LINK;
+    case FINANCIAL_WELLNESS_MONEYSMART_LINK_AU:
+    case FINANCIAL_WELLNESS_MONEY_HELPER_LINK_UK:
+      return CLICK_FINANCIAL_WELLNESS_MONEYSMART_LINK;
+    case FINANCIAL_WELLNESS_NATIONAL_DEBT_HELPLINE_LINK_AU:
+    case FINANCIAL_WELLNESS_CITIZEN_ADVICE_LINK_UK:
+      return CLICK_FINANCIAL_WELLNESS_NATIONAL_DEBT_HELPLINE_LINK;
+    case FINANCIAL_WELLNESS_SMALL_BUSINESS_DEBT_HELPLINE_LINK_AU:
+    case FINANCIAL_WELLNESS_NATIONAL_DEBT_HELPLINE_LINK_UK:
+      return CLICK_FINANCIAL_WELLNESS_SMALL_BUSINESS_DEBT_HELPLINE_LINK;
+    default:
+      return '';
+  }
+};
+
+export const useSupportTracking = () => {
+  const mixpanelTracking = useMixpanel();
+
+  const trackPressOptOutInstapayScheduling = (reason: string) => {
+    mixpanelTracking?.eventTracking({
+      event: OPT_OUT_SCHEDULING_ON_SUPPORT,
+      categoryName: 'user action',
+      metaData: {
+        module: INSTAPAY_MODULE_NAME,
+        location: 'Support Dashboard',
+        reason,
+      },
+    });
+  };
+
+  const trackPressFinancialWellnessLink = (url: FinancialWellnessLink) => {
+    mixpanelTracking?.eventTracking({
+      event: financialWellnessEvent(url),
+      categoryName: 'user action',
+      metaData: {
+        module: FINANCIAL_WELLNESS_MODULE_NAME,
+        location: FINANCIAL_WELLNESS_LOCATION,
+        url,
+      },
+    });
+  };
+
+  const trackPressManageYourWageAccessSettings = () => {
+    mixpanelTracking?.eventTracking({
+      event: CLICK_FINANCIAL_WELLNESS_MANAGE_YOUR_WAGE_ACCESS_SETTINGS,
+      categoryName: 'user action',
+      metaData: {
+        module: FINANCIAL_WELLNESS_MODULE_NAME,
+        location: FINANCIAL_WELLNESS_LOCATION,
+      },
+    });
+  };
+
+  const trackPressDisableEarnedWageAccessFeatures = () => {
+    mixpanelTracking?.eventTracking({
+      event: CLICK_FINANCIAL_WELLNESS_DISABLE_EARNED_WAGE_ACCESS,
+      categoryName: 'user action',
+      metaData: {
+        module: FINANCIAL_WELLNESS_MODULE_NAME,
+        location: FINANCIAL_WELLNESS_LOCATION,
+      },
+    });
+  };
+
+  return {
+    trackPressOptOutInstapayScheduling,
+    trackPressFinancialWellnessLink,
+    trackPressManageYourWageAccessSettings,
+    trackPressDisableEarnedWageAccessFeatures,
+  };
+};

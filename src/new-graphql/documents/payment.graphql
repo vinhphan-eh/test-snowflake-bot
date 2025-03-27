@@ -1,0 +1,30 @@
+mutation CreateStripeClientToken($createStripeClientTokenInput: CreateStripeClientTokenInput) {
+  payment {
+    createStripeClientToken(createStripeClientTokenInput: $createStripeClientTokenInput) {
+      clientToken
+      error {
+        message
+      }
+    }
+  }
+}
+
+mutation MakeStripePayment($makeStripePaymentInput: MakeStripePaymentInput!) {
+  payment {
+    makeStripePayment(makeStripePaymentInput: $makeStripePaymentInput) {
+      billableAmount
+      createdAt
+      freightCost
+      id
+      ipAddress
+      memberId
+      name
+      status
+      transactionFee
+      type
+      error {
+        message
+      }
+    }
+  }
+}

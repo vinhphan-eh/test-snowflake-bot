@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@ehrocks/react-native-swag-personal-app": ["./src/index"]
+    },
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "esModuleInterop": true,
+    // FIXME: why this rule effect to node_modules
+    "verbatimModuleSyntax": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noStrictGenericChecks": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext"
+  }
+}

@@ -1,0 +1,11 @@
+mutation CreateSSAComplaintTicket($input: CreateSSAComplaintTicketInput) {
+  createSSAComplaintTicket(input: $input) {
+    success
+  }
+}
+
+mutation CreateComplaintTicket($input: CreateComplaintTicketInput) {
+  createComplaintTicket(input: $input) {
+    success
+  }
+}

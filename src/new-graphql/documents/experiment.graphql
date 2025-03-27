@@ -1,0 +1,36 @@
+query ExperimentGetUserWaitList($projectId: ID!) {
+  me {
+    experiment {
+      waitList(projectID: $projectId) {
+        projectID
+        status
+      }
+    }
+  }
+}
+
+query GetInstapayAds {
+  me {
+    experiment {
+      instapayAds {
+        adDisplayInterval
+      }
+    }
+  }
+}
+
+mutation ExperimentAddEvent($event: EventInput!) {
+  experiment {
+    addEvent(event: $event) {
+      eventID
+    }
+  }
+}
+
+mutation ExperimentSubscribe($projectID: ID!) {
+  experiment {
+    subscribe(projectID: $projectID) {
+      subscribeID
+    }
+  }
+}

@@ -1,0 +1,422 @@
+query GetBmOffer($input: BmOfferInput) {
+  me {
+    billManagement {
+      offersV3(input: $input) {
+        edges {
+          node {
+            id
+            provider {
+              id
+              name
+            }
+            title
+            description
+            howItWorks
+            about
+            termsAndConditions
+            estBillAmount {
+              amount
+              currency
+            }
+            paidAmount {
+              amount
+              currency
+            }
+            savingPercentage
+            signUpLink
+            logoUrl
+            imageUrl
+            categoryCode
+            reminder {
+              reminderDescription
+              reminderTextCopy
+            }
+            stateBasedOffers {
+              state
+              combinedDiscount
+              offerExplaination
+              offerExplanationCta
+              tiles {
+                content
+                subContent
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetBmOfferDetail($input: OfferInput!) {
+  me {
+    billManagement {
+      offerV2(input: $input) {
+        id
+        provider {
+          id
+          name
+        }
+        title
+        description
+        howItWorks
+        about
+        termsAndConditions
+        estBillAmount {
+          amount
+          currency
+        }
+        paidAmount {
+          amount
+          currency
+        }
+        savingPercentage
+        signUpLink
+        logoUrl
+        imageUrl
+        categoryCode
+        reminder {
+          reminderDescription
+          reminderTextCopy
+        }
+        stateBasedOffers {
+          state
+          combinedDiscount
+          offerExplaination
+          offerExplanationCta
+          tiles {
+            content
+            subContent
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetSubscriptions($input: SubscriptionsInput) {
+  me {
+    billManagement {
+      subscriptions(input: $input) {
+        edges {
+          node {
+            id
+            status
+            createdAt
+            updatedAt
+            isHPPromo
+            provider {
+              id
+              name
+              logoUrl
+            }
+            totalSaved {
+              amount
+              currency
+            }
+            latestBill {
+              ... on BillTransaction {
+                id
+                createdAt
+                type
+                amount {
+                  amount
+                  currency
+                }
+                issueDate
+                dateFrom
+                dateTo
+                dueDate
+                status
+                transactionDate
+              }
+              ... on PaymentTransaction {
+                id
+                createdAt
+                type
+                amount {
+                  amount
+                  currency
+                }
+                paymentDate
+                paymentMethod
+                paymentType
+                transactionDate
+              }
+            }
+            subscriptionType
+            signUpLink
+            title
+            description
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+      }
+    }
+  }
+}
+
+query GetSubscriptionDetail($input: SubscriptionInput!) {
+  me {
+    billManagement {
+      subscription(input: $input) {
+        id
+        status
+        createdAt
+        updatedAt
+        isHPPromo
+        latestBill {
+          ... on BillTransaction {
+            id
+            createdAt
+            type
+            issueDate
+            dateFrom
+            dateTo
+            dueDate
+            status
+            transactionDate
+            amount {
+              amount
+              currency
+            }
+          }
+        }
+        subscriptionType
+        signUpLink
+        title
+        description
+        provider {
+          id
+          name
+          faq
+          contactInfo
+          paymentUrl
+        }
+        transactions {
+          edges {
+            node {
+              ... on PaymentTransaction {
+                id
+                createdAt
+                type
+                paymentDate
+                paymentMethod
+                paymentType
+                transactionDate
+                amount {
+                  amount
+                  currency
+                }
+              }
+              ... on BillTransaction {
+                id
+                createdAt
+                type
+                issueDate
+                dateFrom
+                dateTo
+                dueDate
+                status
+                transactionDate
+                amount {
+                  amount
+                  currency
+                }
+              }
+            }
+          }
+          pageInfo {
+            hasNextPage
+            endCursor
+          }
+        }
+        totalSaved {
+          amount
+          currency
+        }
+      }
+    }
+  }
+}
+
+query GetSubscriptionTransactions($subcriptionInput: SubscriptionInput!, $transactionsInput: TransactionsInput) {
+  me {
+    billManagement {
+      subscription(input: $subcriptionInput) {
+        transactions(input: $transactionsInput) {
+          pageInfo {
+            hasNextPage
+            endCursor
+          }
+          edges {
+            node {
+              ... on BillTransaction {
+                id
+                createdAt
+                type
+                issueDate
+                dateFrom
+                dateTo
+                dueDate
+                status
+                transactionDate
+                amount {
+                  amount
+                  currency
+                }
+              }
+              ... on PaymentTransaction {
+                id
+                createdAt
+                type
+                paymentDate
+                paymentMethod
+                paymentType
+                transactionDate
+                amount {
+                  amount
+                  currency
+                }
+              }
+            }
+          }
+          pageInfo {
+            hasNextPage
+            endCursor
+          }
+        }
+      }
+    }
+  }
+}
+
+mutation BsJoinWaitList($input: BsJoinWaitListInput) {
+  bsJoinWaitList(input: $input) {
+    success
+    message
+  }
+}
+
+mutation BmSubmitSubscription($input: BsSubmitSubscriptionInput) {
+  bmSubmitSubscription(inputL: $input) {
+    success
+  }
+}
+
+query SearchBillOffers($input: BmOfferInput) {
+  me {
+    billManagement {
+      offersV3(input: $input) {
+        edges {
+          node {
+            id
+            provider {
+              id
+              name
+              faq
+              contactInfo
+              paymentUrl
+            }
+            description
+            title
+            description
+            howItWorks
+            about
+            termsAndConditions
+            estBillAmount {
+              amount
+              currency
+            }
+            paidAmount {
+              amount
+              currency
+            }
+            savingPercentage
+            signUpLink
+            categoryCode
+            reminder {
+              reminderDescription
+              reminderTextCopy
+            }
+            stateBasedOffers {
+              state
+              combinedDiscount
+              offerExplaination
+              offerExplanationCta
+              tiles {
+                content
+                subContent
+              }
+            }
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+          totalCount
+          totalPages
+        }
+      }
+    }
+  }
+}
+
+query IsEligibleForPromotion($input: EligibleForPromotionInput) {
+  me {
+    billManagement {
+      isEligibleForPromotion(input: $input)
+    }
+  }
+}
+
+query GetHomeTiles {
+  me {
+    billManagement {
+      homeTiles {
+        tiles {
+          banner
+          title
+          subTitle
+          provider {
+            id
+          }
+        }
+      }
+    }
+  }
+}
+
+query GetPromotion {
+  me {
+    billManagement {
+      promotion {
+        homeTitle
+        homeSubTitle
+        cardTitle
+        cardSubTitle
+        tagContent
+        descriptionBtsTitle
+        descriptionBtsContent
+        offerTitle
+        offerSubTitle
+        termsAndConditions
+        signedUpBillStatusContent
+        signedUpCardTitle
+        signedUpCardSubTitle
+        searchCardTitle
+      }
+    }
+  }
+}
+
+query getAhmAccessToken {
+  me {
+    billManagement {
+      ahmAccessToken
+    }
+  }
+}

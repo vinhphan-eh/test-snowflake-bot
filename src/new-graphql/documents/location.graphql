@@ -1,0 +1,31 @@
+query GetLocations($input: GetLocationsRequest){
+  getLocations(input: $input){
+    addresses {
+      formattedAddress
+      latitude
+      longitude
+      placeId
+    }
+  }
+}
+
+query GetLocationByPlaceId($placeId: String!){
+  getLocationByPlaceId(placeId: $placeId){
+    addressDetails {
+      addressLine
+      townOrCity
+      postCode
+      region
+      country
+      formattedAddress
+      unitNumber
+      streetNumber
+      streetName
+      streetType
+      geometry{
+        latitude
+        longitude
+      }
+    }
+  }
+}

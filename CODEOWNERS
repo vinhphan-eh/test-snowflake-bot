@@ -1,0 +1,77 @@
+# For whole project
+
+* @Thinkei/ebenefits @Thinkei/squad-mobile
+
+## Ebenefits
+src/common/utils    @Thinkei/ebenefits
+
+## Owners for each feature/module
+
+### Hustle - @Thinkei/squad-hustle
+
+/src/features/benefits @Thinkei/squad-hustle
+/src/features/bill-management @Thinkei/squad-hustle
+src/features/swag-dashboard/instapay-introduction @Thinkei/squad-hustle
+src/features/income/instapay/components/instapay-exp-popup @Thinkei/squad-hustle
+src/common/utils/env.ts @dangkhoa2708
+
+### Squid - @Thinkei/squad-squid
+
+/src/features/income @Thinkei/squad-squid
+src/features/swag-dashboard/dynamic-tiles/InstaPayNowTile.tsx @Thinkei/squad-squid
+src/features/swag-payslips @Thinkei/squad-squid @Thinkei/squad-mobile
+
+### Sunny - @Thinkei/squad-sunny
+
+/src/features/hero-dollars @Thinkei/squad-sunny
+/src/features/hero-points @Thinkei/squad-sunny
+
+### HRV - @Thinkei/squad-hrv
+
+/src/features/super @Thinkei/squad-hrv
+/src/features/benefits/group @Thinkei/squad-hrv
+src/features/swag-dashboard/dynamic-tiles/SalarySacrificeTile.tsx @Thinkei/squad-hrv
+
+### Bounty Hunters - @Thinkei/squad-bounty-hunters
+
+/src/features/card-management @Thinkei/squad-bounty-hunters
+/src/features/my-profile @Thinkei/squad-bounty-hunters
+/src/features/notifications @Thinkei/squad-bounty-hunters
+/src/features/onboarding @Thinkei/squad-bounty-hunters
+/src/features/stash @Thinkei/squad-bounty-hunters
+/src/features/support @Thinkei/squad-bounty-hunters
+/src/features/wallet @Thinkei/squad-bounty-hunters
+/src/features/spend-account @Thinkei/squad-bounty-hunters
+
+### E2E Testing
+
+### Bounty Hunters Squad - @Thinkei/squad-bounty-hunters
+
+/e2e/specs/ssa @Thinkei/squad-bounty-hunters
+/e2e/specs/ewa/ewa-scheduling.e2e.ts @Thinkei/squad-bounty-hunters
+/e2e/pom/ewa-recurring/EWARecurringScreen.ts @Thinkei/squad-bounty-hunters
+/e2e/specs/ewa/ewa-eh.uk.e2e.ts @Thinkei/squad-bounty-hunters
+
+### HRV Squad - @Thinkei/squad-hrv
+
+/e2e/specs/super/super.e2e.ts @Thinkei/squad-hrv
+
+### Hustle Squad - @Thinkei/squad-hustle
+
+/e2e/specs/benefitsV2 @Thinkei/squad-hustle
+/e2e/specs/benefitsV2/bills @Thinkei/squad-hustle
+/e2e/specs/benefitsV2/cashback @Thinkei/squad-hustle
+/e2e/specs/benefitsV2/cashbackV2 @Thinkei/squad-hustle
+
+### Squid Squad - @Thinkei/squad-squid
+
+/e2e/specs/ewa                                                            @Thinkei/squad-squid
+/e2e/specs/earn-wage-access                                               @Thinkei/squad-squid
+/e2e/specs/ssa/createStash.e2e.ts                                         @Thinkei/squad-squid
+/e2e/specs/paySplit.e2e.ts                                                @Thinkei/squad-squid
+src/common/hooks/__tests__/useShowPaySplit.test.ts                        @Thinkei/squad-squid
+src/common/hooks/useShowPaySplit.ts                                       @Thinkei/squad-squid
+
+### Sunny Squad - @Thinkei/squad-sunny
+
+/e2e/specs/ssa/heroPoints.e2e.ts @Thinkei/squad-sunny

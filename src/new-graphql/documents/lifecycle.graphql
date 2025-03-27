@@ -1,0 +1,55 @@
+query GetEventsPaginated($input: GetEventsInput!) {
+  me {
+    lifecycle {
+      events(input: $input) {
+        id
+        code
+        source
+        user_id
+        owner_id
+        fund_usi
+        author_type
+        author_id
+        trigger_time
+        data
+        delivery_status
+        delivered_at
+        accepted
+        accepted_from
+        created_at
+        updated_at
+      }
+    }
+  }
+}
+
+query GetFundNotifyPreference($input: GetFundNotifyPreferenceInput!) {
+  me {
+    lifecycle {
+      fundNotifyPreference(input: $input) {
+        enabled
+      }
+    }
+  }
+}
+
+mutation AcceptEvent($input: AcceptEventInput!) {
+  lifecycle {
+    event {
+      accept(input: $input) {
+        success
+        message
+      }
+    }
+  }
+}
+
+mutation CreateTracking($input: LifecycleTrackingInput!) {
+  lifecycle {
+    event {
+      createTracking(input: $input) {
+        success
+      }
+    }
+  }
+}
