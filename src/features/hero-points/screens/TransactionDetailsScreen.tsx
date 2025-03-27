@@ -178,16 +178,16 @@ export const TransactionDetailsScreen = () => {
 
   return (
     <>
-      <CustomStatusBar barStyle="default" backgroundColor={colors.defaultGlobalSurface} />
+      <CustomStatusBar barStyle="default" backgroundColor={colors.defaultSurface} />
       <Page.TopBar
         onBack={onBack}
         hideRight
         title="Transaction Details"
-        style={{ backgroundColor: colors.defaultGlobalSurface }}
+        style={{ backgroundColor: colors.defaultSurface }}
       />
       <Page
         keyboardShouldPersistTaps="handled"
-        style={{ paddingBottom: bottomInset, backgroundColor: colors.defaultGlobalSurface }}
+        style={{ paddingBottom: bottomInset, backgroundColor: colors.defaultSurface }}
       >
         <Page.Body marginTop="large">
           <DataCard data={detailDataCard} hideIcon disabled />

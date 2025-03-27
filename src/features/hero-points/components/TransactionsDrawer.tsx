@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Spinner, Typography, useTheme } from '@hero-design/rn';
+import { Box, Spinner, Typography } from '@hero-design/rn';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { TransactionListItem } from './TransactionListItem';
 import { TransactionListSectionHeader } from './TransactionListSectionHeader';
@@ -26,15 +26,14 @@ const TransactionsDrawer = ({
   sections,
   snapPoints = ['50%', '100%'],
 }: TransactionsDrawerProps) => {
-  const { colors } = useTheme();
   const { bottom: bottomInset } = useSafeAreaInsets();
 
   const transactionListTitle = 'Points transactions';
 
   return (
     <Drawer
-      backgroundStyle={{ backgroundColor: colors.defaultGlobalSurface }}
       style={{
+        backgroundColor: 'white',
         shadowColor: '#001F23',
         shadowOffset: {
           width: 0,
@@ -74,7 +73,7 @@ const TransactionsDrawer = ({
           </Box>
         )}
         ItemSeparatorComponent={() => (
-          <Box marginHorizontal="smallMedium" backgroundColor="defaultGlobalSurface" style={{ height: 1 }} />
+          <Box marginHorizontal="smallMedium" backgroundColor="defaultSurface" style={{ height: 1 }} />
         )}
         onEndReached={onEndReached}
         onEndReachedThreshold={0.3}

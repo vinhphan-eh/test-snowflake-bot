@@ -50,7 +50,7 @@ export const SEPromoteTile = ({ backgroundImage, onPress, style, testID }: SEPro
         <Typography.Title
           style={[
             {
-              color: colors.defaultGlobalSurface,
+              color: colors.defaultSurface,
               paddingLeft: space.small,
             },
           ]}
@@ -64,7 +64,7 @@ export const SEPromoteTile = ({ backgroundImage, onPress, style, testID }: SEPro
       <Box
         style={{
           width: '100%',
-          backgroundColor: colors.defaultGlobalSurface,
+          backgroundColor: colors.defaultSurface,
           borderRadius: radii.xxxlarge,
           marginTop: -paddingVertical,
           justifyContent: 'center',

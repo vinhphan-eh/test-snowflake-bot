@@ -154,7 +154,7 @@ export const SupportRequestScreen = () => {
               placeholder="Description"
               testID="support-request-textarea"
               variant="textarea"
-              style={{ backgroundColor: hdColors.defaultGlobalSurface }}
+              style={{ backgroundColor: hdColors.defaultSurface }}
               onFocus={onFocus}
               onChangeText={text => {
                 setDescription(text);

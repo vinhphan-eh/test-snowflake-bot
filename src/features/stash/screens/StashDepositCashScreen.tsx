@@ -86,7 +86,7 @@ export const StashDepositCashScreen = () => {
                       error={error?.message}
                       onChangeText={field.onChange}
                       required={field.isRequired}
-                      style={{ backgroundColor: colors.defaultGlobalSurface, marginTop: space.medium }}
+                      style={{ backgroundColor: colors.defaultSurface, marginTop: space.medium }}
                       {...field}
                     />
                   )}

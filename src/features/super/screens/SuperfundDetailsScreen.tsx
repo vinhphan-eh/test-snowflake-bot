@@ -80,7 +80,7 @@ export const SuperfundDetailsScreen = () => {
       />
       <Page
         keyboardShouldPersistTaps="handled"
-        style={{ paddingBottom: bottomInset, backgroundColor: colors.defaultGlobalSurface }}
+        style={{ paddingBottom: bottomInset, backgroundColor: colors.defaultSurface }}
       >
         <Page.Body marginTop="large">
           <DataCard

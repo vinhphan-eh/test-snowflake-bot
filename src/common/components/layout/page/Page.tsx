@@ -98,7 +98,7 @@ const PageRef = forwardRef<ScrollView, PageProps>(
           scrollViewProps.contentContainerStyle,
         ]}
         style={[
-          { flex: 1, backgroundColor: colors.defaultGlobalSurface, marginBottom: -1, borderWidth: 0 },
+          { flex: 1, backgroundColor: colors.defaultSurface, marginBottom: -1, borderWidth: 0 },
           style,
           // KeyboardAvoiding pushes bottom up with content so when keyboard opens, should remove all bottom of Page
           isKeyboardVisible && { paddingBottom: 0, marginBottom: 0 },

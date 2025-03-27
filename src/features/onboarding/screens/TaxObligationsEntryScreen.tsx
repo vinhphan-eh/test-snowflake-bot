@@ -183,7 +183,7 @@ const TaxObligationsEntryScreen = () => {
                         query={searchValue}
                         onQueryChange={setSearchFilter}
                         onDismiss={() => setSearchFilter('')}
-                        style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                        style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                       />
                     )}
                   </Field>
@@ -199,7 +199,7 @@ const TaxObligationsEntryScreen = () => {
                         required={field.isRequired}
                         {...field}
                         ref={tfRef}
-                        style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                        style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                       />
                     )}
                   </Field>

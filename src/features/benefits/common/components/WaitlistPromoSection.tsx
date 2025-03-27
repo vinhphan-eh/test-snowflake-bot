@@ -26,7 +26,7 @@ export const WaitlistPromoSection = () => {
     <Box
       style={{
         marginTop: -3,
-        backgroundColor: colors.defaultGlobalSurface,
+        backgroundColor: colors.defaultSurface,
         paddingHorizontal: space.medium,
         paddingBottom: space.large,
         paddingTop: space.medium,

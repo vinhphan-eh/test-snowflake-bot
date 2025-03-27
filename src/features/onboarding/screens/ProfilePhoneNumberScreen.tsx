@@ -101,7 +101,7 @@ const ProfilePhoneNumberScreen = () => {
                         query={searchValue}
                         onQueryChange={setSearchFilter}
                         onDismiss={() => setSearchFilter('')}
-                        style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                        style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                       />
                     )}
                   </Field>
@@ -116,7 +116,7 @@ const ProfilePhoneNumberScreen = () => {
                         onChangeText={field.onChange}
                         required={field.isRequired}
                         {...field}
-                        style={{ backgroundColor: colors.defaultGlobalSurface }}
+                        style={{ backgroundColor: colors.defaultSurface }}
                       />
                     )}
                   </Field>

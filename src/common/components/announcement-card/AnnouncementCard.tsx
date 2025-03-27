@@ -14,7 +14,7 @@ type AnnouncementCardProps = {
 
 export const AnnouncementCard = ({
   accessibilityLabel,
-  backgroundColor = 'defaultGlobalSurface',
+  backgroundColor = 'defaultSurface',
   description,
   image,
   subtitle,

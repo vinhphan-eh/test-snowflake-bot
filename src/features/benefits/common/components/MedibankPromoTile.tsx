@@ -71,7 +71,7 @@ export const MedibankPromoTile = ({ style, testID }: MedibankPromoTileProps) => 
         />
         <Box
           style={{
-            backgroundColor: colors.defaultGlobalSurface,
+            backgroundColor: colors.defaultSurface,
             paddingHorizontal: space.medium,
             paddingBottom: space.large,
             paddingTop: space.medium,

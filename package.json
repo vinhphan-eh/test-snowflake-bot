@@ -198,7 +198,7 @@
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-ebf-local-rules": "file:./ebf-local-rules/eslint-plugin-ebf-local-rules-1.0.2.tgz",
+    "eslint-plugin-ebf-local-rules": "file:./ebf-local-rules/eslint-plugin-ebf-local-rules-1.0.1.tgz",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",

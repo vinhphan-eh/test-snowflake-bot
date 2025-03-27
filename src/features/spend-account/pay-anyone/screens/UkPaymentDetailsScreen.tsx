@@ -101,7 +101,7 @@ const UkPaymentDetailsScreen = () => {
                       required={field.isRequired}
                       currencySymbol={<Typography.Body variant="small">£</Typography.Body>}
                       {...field}
-                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>
@@ -115,7 +115,7 @@ const UkPaymentDetailsScreen = () => {
                       onChangeText={field.onChange}
                       required={field.isRequired}
                       {...field}
-                      style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                      style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                     />
                   )}
                 </Field>

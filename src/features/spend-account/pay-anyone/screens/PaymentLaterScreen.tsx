@@ -71,7 +71,7 @@ const PaymentLaterScreen = () => {
                       required={field.isRequired}
                       onChange={date => handleConfirm(date, setValue)}
                       minDate={getTomorrow()}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

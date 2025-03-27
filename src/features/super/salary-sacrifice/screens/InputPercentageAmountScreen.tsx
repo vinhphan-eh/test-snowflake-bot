@@ -114,7 +114,7 @@ export const InputPercentageAmountScreen = () => {
                       onChange={value => handleOnChange(value, setValue)}
                       required={field.isRequired}
                       error={error?.message}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

@@ -173,7 +173,7 @@ export const UkWalletCardHeader = ({ accessToken, isCardActivated, isFirstTime }
                   height: 96,
                 }}
                 textSize="16"
-                textColor={colors.defaultGlobalSurface}
+                textColor={colors.defaultSurface}
                 fontStyle={{
                   fontFamily: 'BeVietnamPro-SemiBold',
                 }}
@@ -200,7 +200,7 @@ export const UkWalletCardHeader = ({ accessToken, isCardActivated, isFirstTime }
                     fontFamily: 'BeVietnamPro-SemiBold',
                   }}
                   textSize="14"
-                  textColor={colors.defaultGlobalSurface}
+                  textColor={colors.defaultSurface}
                   copyOnClick
                   onCopyToClipboard={resp => onCopyContent('cvv', JSON.stringify(resp))}
                   toDetokenize={cardProvisioningDetails?.me?.wallet?.UKCurrentPaymentCardV2?.cvvToken || undefined}

@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import type { ListRenderItem } from 'react-native';
-import { Box, Spinner, Typography, useTheme } from '@hero-design/rn';
+import { Box, Spinner, Typography } from '@hero-design/rn';
 import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { DataCard } from '../../../../common/components/data-card';
@@ -15,7 +15,6 @@ export interface FeaturedOffersDrawerProps {
 
 const FeaturedOffersDrawer = ({ snapPoints = ['50%', '100%'] }: FeaturedOffersDrawerProps) => {
   const { bottom: bottomInset } = useSafeAreaInsets();
-  const { colors } = useTheme();
   const navigation = useNavigation<RootStackNavigationProp<'dashboard'>>();
 
   const { data: featuredOnlineOffersData, isLoading } = useGetFeaturedOffersQuery();
@@ -67,7 +66,7 @@ const FeaturedOffersDrawer = ({ snapPoints = ['50%', '100%'] }: FeaturedOffersDr
   return (
     <Drawer
       style={{
-        backgroundColor: colors.defaultGlobalSurface,
+        backgroundColor: 'white',
         shadowColor: '#001F23',
         shadowOffset: {
           width: 0,

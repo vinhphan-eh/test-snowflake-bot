@@ -102,7 +102,7 @@ export const InputDollarAmountScreen = () => {
                       required={field.isRequired}
                       testID="salary-sacrifice-dollar-amount-input"
                       error={error?.message}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

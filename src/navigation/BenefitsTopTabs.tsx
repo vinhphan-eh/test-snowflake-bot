@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Box, Spinner, Tabs, useTheme } from '@hero-design/rn';
+import { Box, Spinner, Tabs } from '@hero-design/rn';
 import { useIsFocused } from '@react-navigation/native';
 import { addBreadcrumb } from '@sentry/react-native';
 import { topTabUtils } from './utils';
@@ -23,7 +23,6 @@ import { useCountryPicker } from '../providers/CountryPickerProvider/useCountryP
 
 export const BenefitsTopTabs = () => {
   const usePickCountry = useRef(false);
-  const { colors } = useTheme();
   const { setReady: setDeeplinkReady } = useHandlePendingDeepLink(false);
   const { setReady: setNotiReady } = useHandlePendingOpenedNotification(false);
   const [selectedTabKey, setSelectedTabKey] = useState<BenefitsTabKeysType>(BenefitsTabKeys.NONE);
@@ -139,7 +138,7 @@ export const BenefitsTopTabs = () => {
   return (
     <Tabs.Scroll
       containerStyle={{ flex: 1 }}
-      barStyle={{ backgroundColor: colors.defaultGlobalSurface }}
+      barStyle={{ backgroundColor: 'white' }}
       onTabPress={newTabKey => setSelectedTabKey(newTabKey as BenefitsTabKeysType)}
       selectedTabKey={selectedTabKey}
       tabs={tabs}

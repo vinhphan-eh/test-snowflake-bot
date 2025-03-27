@@ -77,7 +77,7 @@ export const UkPayeeDetailsScreen = () => {
                       testID="uk-account-name-input"
                       error={error?.message}
                       {...field}
-                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>
@@ -92,7 +92,7 @@ export const UkPayeeDetailsScreen = () => {
                       keyboardType="numeric"
                       {...field}
                       error={error?.message}
-                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>
@@ -113,7 +113,7 @@ export const UkPayeeDetailsScreen = () => {
                       testID="uk-account-number-input"
                       {...field}
                       error={error?.message}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

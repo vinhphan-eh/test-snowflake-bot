@@ -104,7 +104,7 @@ const ProfileNameScreen = () => {
                   required={field.isRequired}
                   error={getErrorMessage('firstName', error)}
                   {...field}
-                  style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                  style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                 />
               )}
             </Field>
@@ -118,7 +118,7 @@ const ProfileNameScreen = () => {
                   error={getErrorMessage('middleName', error)}
                   onChangeText={field.onChange}
                   {...field}
-                  style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                  style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                 />
               )}
             </Field>
@@ -132,7 +132,7 @@ const ProfileNameScreen = () => {
                   onChangeText={field.onChange}
                   required={field.isRequired}
                   {...field}
-                  style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+                  style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
                 />
               )}
             </Field>

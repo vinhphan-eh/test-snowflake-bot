@@ -7,6 +7,7 @@ import {
   Button,
   Drawer,
   Icon,
+  ThemeSwitcher,
   Typography,
   useTheme,
 } from '@hero-design/rn';
@@ -32,7 +33,6 @@ import {
 import { SWAGDashboard } from '../features/swag/SWAGDashboard';
 import { PillarIds, PILLARS } from './constants';
 import Content from './Content';
-import ThemeSwitcher from '../../../src/common/utils/ThemeSwitcher';
 
 const WalletApp = () => {
   return (

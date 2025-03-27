@@ -46,7 +46,7 @@ export const AdModal = React.forwardRef<AdModalMethods, AdModalProps>(
         <Box
           flex={1}
           justifyContent="space-between"
-          backgroundColor="defaultGlobalSurface"
+          backgroundColor="defaultSurface"
           style={{ paddingBottom: bottomInset + space.medium }}
         >
           <Box flex={1} style={{ marginBottom: -space.medium }}>
@@ -58,7 +58,7 @@ export const AdModal = React.forwardRef<AdModalMethods, AdModalProps>(
             </Pressable>
           </Box>
           <Box
-            backgroundColor="defaultGlobalSurface"
+            backgroundColor="defaultSurface"
             paddingHorizontal="medium"
             borderTopRightRadius="xxxlarge"
             borderTopLeftRadius="xxxlarge"

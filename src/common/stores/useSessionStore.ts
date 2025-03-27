@@ -92,7 +92,6 @@ interface SessionStore {
   swagRebrandEnabled?: boolean;
   swagTextAndImageRebrandEnabled?: boolean;
   getEnvConfig?: () => typeof Config;
-  darkModeEnabled?: boolean;
 }
 
 export const useSessionStore = create<SessionStore>()(() => ({

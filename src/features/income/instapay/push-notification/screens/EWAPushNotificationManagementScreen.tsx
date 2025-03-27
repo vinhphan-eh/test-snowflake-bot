@@ -1,12 +1,11 @@
 import React from 'react';
-import { Box, Typography, useTheme } from '@hero-design/rn';
+import { Box, ThemeSwitcher, Typography, useTheme } from '@hero-design/rn';
 import { useNavigation } from '@react-navigation/native';
-import { Page } from '../../../../../common/components/layout/page';
-import { CustomStatusBar } from '../../../../../common/components/status-bar/CustomStatusBar';
-import ThemeSwitcher from '../../../../../common/utils/ThemeSwitcher';
 import { useIntl } from '../../../../../providers/LocalisationProvider';
-import type { InstaPayScreenNavigationProp } from '../../navigation/navigationTypes';
+import { CustomStatusBar } from '../../../../../common/components/status-bar/CustomStatusBar';
+import { Page } from '../../../../../common/components/layout/page';
 import { EWARecurringPushNotificationManagement } from '../recurring/components/EWARecurringPushNotificationManagement';
+import type { InstaPayScreenNavigationProp } from '../../navigation/navigationTypes';
 
 export const EWAPushNotificationManagementScreen = () => {
   const navigation = useNavigation<InstaPayScreenNavigationProp<'EWAPushNotificationManagement'>>();
@@ -18,7 +17,7 @@ export const EWAPushNotificationManagementScreen = () => {
   };
 
   return (
-    <ThemeSwitcher>
+    <ThemeSwitcher name="swagLight">
       <Box backgroundColor="defaultGlobalSurface" flex={1}>
         <CustomStatusBar barStyle="decorative" backgroundColor={colors.defaultGlobalSurface} />
         <Page.TopBar

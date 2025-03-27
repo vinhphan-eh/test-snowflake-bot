@@ -57,7 +57,7 @@ export const PayeeFriendlyNameScreen = () => {
                       testID="friendlyName-input"
                       error={error?.message}
                       {...field}
-                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

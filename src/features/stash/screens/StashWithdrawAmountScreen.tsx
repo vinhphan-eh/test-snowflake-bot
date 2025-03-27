@@ -178,7 +178,7 @@ export const StashWithdrawAmountScreen = () => {
                         onAmountInputChange(value);
                       }}
                       value={field.value as string}
-                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ marginBottom: space.smallMedium, backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

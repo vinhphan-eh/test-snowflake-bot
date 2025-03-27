@@ -86,7 +86,7 @@ export const BillCard = ({
             <Pressable
               onPress={onRenew}
               style={({ pressed }) => ({
-                backgroundColor: pressed ? colors.highlightedSurface : colors.defaultGlobalSurface,
+                backgroundColor: pressed ? colors.highlightedSurface : 'white',
                 flexDirection: 'row',
                 alignItems: 'center',
               })}

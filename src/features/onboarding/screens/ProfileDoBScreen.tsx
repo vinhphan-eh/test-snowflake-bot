@@ -65,7 +65,7 @@ const ProfileDoBScreen = () => {
                       value={field.value as Date}
                       required={field.isRequired}
                       onChange={date => handleConfirm(date, setValue)}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

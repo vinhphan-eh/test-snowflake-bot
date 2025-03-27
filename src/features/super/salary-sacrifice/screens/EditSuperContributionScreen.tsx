@@ -123,7 +123,7 @@ export const EditSuperContributionScreen = () => {
                         required={field.isRequired}
                         testID="edit-contribution-value-input"
                         error={error?.message}
-                        style={{ backgroundColor: colors.defaultGlobalSurface }}
+                        style={{ backgroundColor: colors.defaultSurface }}
                       />
                     ) : (
                       <CurrencyInput
@@ -142,7 +142,7 @@ export const EditSuperContributionScreen = () => {
                         onChange={value => field.onChange(userInputToMachineNumber({ inputValue: value }))}
                         required={field.isRequired}
                         error={error?.message}
-                        style={{ backgroundColor: colors.defaultGlobalSurface }}
+                        style={{ backgroundColor: colors.defaultSurface }}
                       />
                     )
                   }
@@ -160,7 +160,7 @@ export const EditSuperContributionScreen = () => {
                       onChange={value => field.onChange(userInputToMachineNumber({ inputValue: value }))}
                       required={field.isRequired}
                       error={error?.message}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>
@@ -176,7 +176,7 @@ export const EditSuperContributionScreen = () => {
                       value={field.value as Date}
                       required={field.isRequired}
                       onChange={date => handleOnChangeStartDate(date, setValue)}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>
@@ -192,7 +192,7 @@ export const EditSuperContributionScreen = () => {
                       confirmLabel="Confirm"
                       value={field.value as Date}
                       onChange={date => handleOnChangeEndDate(date, setValue)}
-                      style={{ backgroundColor: colors.defaultGlobalSurface }}
+                      style={{ backgroundColor: colors.defaultSurface }}
                     />
                   )}
                 </Field>

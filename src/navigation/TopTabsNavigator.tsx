@@ -331,7 +331,7 @@ export const TopTabsNavigator = () => {
   return (
     <Tabs.Scroll
       containerStyle={{ flex: 1, backgroundColor: colors.neutralGlobalSurface }}
-      barStyle={{ backgroundColor: colors.defaultGlobalSurface }}
+      barStyle={{ backgroundColor: 'white' }}
       onTabPress={newTabKey => {
         const tabKey = newTabKey as TabKeysType;
         topTabUtils.selectedTab = tabKey;

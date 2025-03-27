@@ -15,13 +15,13 @@ export const useInAppBrowser = () => {
         await InAppBrowser.open(url, {
           // iOS Properties
           dismissButtonStyle: 'close',
-          preferredBarTintColor: colors.defaultGlobalSurface,
+          preferredBarTintColor: 'white',
           preferredControlTintColor: colors.onInfoSurface,
           readerMode: false,
           animated: true,
           // Android Properties
           showTitle: true,
-          toolbarColor: colors.defaultGlobalSurface,
+          toolbarColor: 'white',
           secondaryToolbarColor: 'black',
           navigationBarColor: 'black',
           navigationBarDividerColor: colors.onInfoSurface,

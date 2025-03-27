@@ -51,7 +51,7 @@ export const StateRegionInput = ({ control, currentRegion, label, marginRight }:
             label={field.label ?? ''}
             required={field.isRequired}
             error={error?.message}
-            style={{ backgroundColor: colors.defaultGlobalSurface, marginBottom: space.smallMedium }}
+            style={{ backgroundColor: colors.defaultSurface, marginBottom: space.smallMedium }}
           />
         )}
       </Field>
