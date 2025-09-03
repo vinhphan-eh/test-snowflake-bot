@@ -1,6 +1,6 @@
 {
-  "name": "vinhphan-react-native-swag-personal-app",
-  "version": "1.479.0",
+  "name": "vinhphan-react-native-swag-personal-app-demo",
+  "version": "1.479.2",
   "description": "SWAG personal app as a library",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -53,9 +53,6 @@
   "author": "eBenefits <duc.nguyenanh@employmenthero.com>",
   "license": "MIT",
   "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
   "homepage": "https://github.com/Thinkei/swag-personal-app/#readme",
   "repository": {
     "type": "git",
