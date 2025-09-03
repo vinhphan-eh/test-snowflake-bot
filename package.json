@@ -1,5 +1,5 @@
 {
-  "name": "@ehrocks/react-native-swag-personal-app",
+  "name": "vinhphan-react-native-swag-personal-app",
   "version": "1.479.0",
   "description": "SWAG personal app as a library",
   "main": "lib/commonjs/index",
@@ -17,7 +17,7 @@
     "test:ci": "yarn pretest  && jest --ci --config=\"./jest.config.ci.js\" --logHeapUsage --forceExit --reporters=default --reporters=jest-junit --silent",
     "lint:check": "eslint \"{src/**/*.{js,ts,tsx},src/**/graphql-documents/*.graphql}\"",
     "lint:fix": "eslint --fix \"{src/**/*.{js,ts,tsx},src/**/graphql-documents/*.graphql}\"",
-    "prepare": "husky install",
+    "prepare": "echo 'Skipping husky install for publishing'",
     "build": "bob build",
     "clean:ios": "cd example && rm -rf ios/Build && rm -rf ios/Pods",
     "clean:node": "cd example && rm -rf node_modules",
@@ -52,7 +52,15 @@
   ],
   "author": "eBenefits <duc.nguyenanh@employmenthero.com>",
   "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/Thinkei/swag-personal-app/#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thinkei/swag-personal-app.git"
+  },
   "peerDependencies": {
     "@braze/react-native-sdk": "*",
     "@ehrocks/react-native-meawallet-mcd": "*",
@@ -150,7 +158,7 @@
     "@hero-design/react-native-month-year-picker": "^8.42.9",
     "@hero-design/rn": "^8.91.8",
     "@meawallet/react-native-mpp": "1.6.0",
-    "@onfido/react-native-sdk": "patch:@onfido/react-native-sdk@npm%3A12.1.0#~/.yarn/patches/@onfido-react-native-sdk-npm-12.1.0-33835272cf.patch",
+    "@onfido/react-native-sdk": "12.1.0",
     "@ptomasroos/react-native-multi-slider": "2.2.2",
     "@react-native-async-storage/async-storage": "^1.17.10",
     "@react-native-clipboard/clipboard": "^1.13.2",
@@ -224,7 +232,7 @@
     "pod-install": "^0.1.36",
     "prettier": "2.8.8",
     "react": "18.2.0",
-    "react-native": "patch:react-native@npm%3A0.73.8#~/.yarn/patches/react-native-npm-0.73.8-de8a762340.patch",
+    "react-native": "0.73.8",
     "react-native-barcode-creator": "^0.1.7",
     "react-native-builder-bob": "^0.30.2",
     "react-native-config": "^1.5.1",
